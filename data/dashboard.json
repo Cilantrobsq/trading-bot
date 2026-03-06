@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-06T13:00:01.743157+00:00",
+  "exported_at": "2026-03-06T13:07:02.198956+00:00",
   "portfolio": {
     "balance": 10000,
     "initial_balance": 10000,
@@ -12,97 +12,343 @@
   "signals": {
     "signals": [
       {
-        "name": "10Y Treasury Yield",
-        "ticker": "^TNX",
-        "value": null,
-        "threshold": 4.5,
-        "direction": "rising yields = negative for housing",
-        "status": "awaiting_data",
-        "theme": "Housing Market / Bond Yields / Geopolitical War Pressure"
-      },
-      {
-        "name": "30Y Treasury Yield",
-        "ticker": "^TYX",
-        "value": null,
-        "threshold": 5.0,
-        "direction": "rising yields = negative for housing",
-        "status": "awaiting_data",
-        "theme": "Housing Market / Bond Yields / Geopolitical War Pressure"
-      },
-      {
-        "name": "30Y Fixed Mortgage Rate",
-        "ticker": "MORTGAGE30US",
-        "value": null,
-        "threshold": 7.5,
-        "direction": "rising rates = affordability stress",
-        "status": "awaiting_data",
-        "theme": "Housing Market / Bond Yields / Geopolitical War Pressure"
-      },
-      {
-        "name": "Yield Curve (10Y-2Y spread)",
-        "ticker": "N/A",
-        "value": null,
+        "ticker": "AMT",
+        "name": "AMT",
+        "price": 187.64,
+        "prev_close": 187.0,
+        "change_pct": 0.34,
         "threshold": null,
-        "direction": "Inverted yield curve signals recession risk, accelerates REIT selloffs",
-        "status": "awaiting_data",
-        "theme": "Housing Market / Bond Yields / Geopolitical War Pressure"
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
       },
       {
-        "name": "USD/EUR exchange rate",
-        "ticker": "EURUSD=X",
-        "value": null,
+        "ticker": "CLNX.MC",
+        "name": "Cellnex Telecom",
+        "price": 28.72,
+        "prev_close": 30.06,
+        "change_pct": -4.46,
         "threshold": null,
-        "direction": "War pressure strengthens USD, weakens EUR-denominated assets",
-        "status": "awaiting_data",
-        "theme": "Housing Market / Bond Yields / Geopolitical War Pressure"
+        "threshold_breached": false,
+        "signal": "bearish",
+        "source": "yfinance",
+        "error": null
       },
       {
-        "name": "VIX (Volatility Index)",
-        "ticker": "^VIX",
-        "value": null,
-        "threshold": 25,
-        "direction": "High VIX correlates with risk-off rotation, REIT weakness",
-        "status": "awaiting_data",
-        "theme": "Housing Market / Bond Yields / Geopolitical War Pressure"
-      },
-      {
-        "name": "EUR/USD",
-        "ticker": "EURUSD=X",
-        "value": null,
+        "ticker": "COL.MC",
+        "name": "COL.MC",
+        "price": 5.27,
+        "prev_close": 5.29,
+        "change_pct": -0.38,
         "threshold": null,
-        "direction": "Stronger EUR makes Mallorca less attractive to non-EUR buyers (UK, US, Nordics)",
-        "status": "awaiting_data",
-        "theme": "Mallorca / Balearic Islands Opportunity Strategy"
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
       },
       {
-        "name": "EUR/GBP",
+        "ticker": "DHI",
+        "name": "DHI",
+        "price": 149.88,
+        "prev_close": 149.89,
+        "change_pct": -0.01,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
         "ticker": "EURGBP=X",
-        "value": null,
+        "name": "EURGBP=X",
+        "price": 0.8671,
+        "prev_close": 0.869,
+        "change_pct": -0.21,
         "threshold": null,
-        "direction": "GBP weakness reduces British buyer demand for Balearic property",
-        "status": "awaiting_data",
-        "theme": "Mallorca / Balearic Islands Opportunity Strategy"
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
       },
       {
-        "name": "European Tourism Index",
-        "ticker": "TOUR.AS",
-        "value": null,
+        "ticker": "EURUSD=X",
+        "name": "EURUSD=X",
+        "price": 1.1562,
+        "prev_close": 1.1612,
+        "change_pct": -0.43,
         "threshold": null,
-        "direction": "Major European package tour operator, Mallorca is core destination",
-        "status": "awaiting_data",
-        "theme": "Mallorca / Balearic Islands Opportunity Strategy"
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
       },
       {
-        "name": "Spanish Property Price Index",
-        "ticker": "N/A",
-        "value": null,
+        "ticker": "IAG.L",
+        "name": "IAG.L",
+        "price": 363.4,
+        "prev_close": 371.15,
+        "change_pct": -2.09,
         "threshold": null,
-        "direction": "Monitor Baleares-specific figures when available",
-        "status": "awaiting_data",
-        "theme": "Mallorca / Balearic Islands Opportunity Strategy"
+        "threshold_breached": false,
+        "signal": "bearish",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "ITA",
+        "name": "ITA",
+        "price": 240.04,
+        "prev_close": 240.7453,
+        "change_pct": -0.29,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "ITB",
+        "name": "ITB",
+        "price": 100.58,
+        "prev_close": 101.01,
+        "change_pct": -0.43,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "KGX.DE",
+        "name": "Knorr-Bremse (indirect German wealth proxy)",
+        "price": 51.1,
+        "prev_close": 52.05,
+        "change_pct": -1.83,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "bearish",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "LEN",
+        "name": "LEN",
+        "price": 104.3,
+        "prev_close": 104.76,
+        "change_pct": -0.44,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "LMT",
+        "name": "LMT",
+        "price": 655.0,
+        "prev_close": 655.04,
+        "change_pct": -0.01,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "MBB",
+        "name": "MBB",
+        "price": 95.62,
+        "prev_close": 95.95,
+        "change_pct": -0.34,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "MEL.MC",
+        "name": "MEL.MC",
+        "price": 8.0,
+        "prev_close": 8.025,
+        "change_pct": -0.31,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "MORTGAGE30US",
+        "name": "30Y Fixed Mortgage Rate",
+        "price": null,
+        "prev_close": null,
+        "change_pct": null,
+        "threshold": 7.5,
+        "threshold_breached": false,
+        "signal": "error",
+        "source": "yfinance",
+        "error": "no price data returned"
+      },
+      {
+        "ticker": "MRL.MC",
+        "name": "MRL.MC",
+        "price": 14.26,
+        "prev_close": 14.51,
+        "change_pct": -1.72,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "bearish",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "O",
+        "name": "O",
+        "price": 64.8,
+        "prev_close": 64.6,
+        "change_pct": 0.31,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "PHM",
+        "name": "PHM",
+        "price": 129.65,
+        "prev_close": 129.92,
+        "change_pct": -0.21,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "RTX",
+        "name": "RTX",
+        "price": 203.86,
+        "prev_close": 204.25,
+        "change_pct": -0.19,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "TOL",
+        "name": "TOL",
+        "price": 149.64,
+        "prev_close": 150.0,
+        "change_pct": -0.24,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "TUI1.DE",
+        "name": "TUI1.DE",
+        "price": 7.284,
+        "prev_close": 7.314,
+        "change_pct": -0.41,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "VMBS",
+        "name": "VMBS",
+        "price": 47.24,
+        "prev_close": 47.36,
+        "change_pct": -0.25,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "VNQ",
+        "name": "VNQ",
+        "price": 94.58,
+        "prev_close": 94.79,
+        "change_pct": -0.22,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "XHB",
+        "name": "XHB",
+        "price": 108.28,
+        "prev_close": 108.45,
+        "change_pct": -0.16,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "XLRE",
+        "name": "XLRE",
+        "price": 43.34,
+        "prev_close": 43.393,
+        "change_pct": -0.12,
+        "threshold": null,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "^TNX",
+        "name": "^TNX",
+        "price": 4.146,
+        "prev_close": 4.08,
+        "change_pct": 1.62,
+        "threshold": 4.5,
+        "threshold_breached": false,
+        "signal": "bullish",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "^TYX",
+        "name": "^TYX",
+        "price": 4.752,
+        "prev_close": 4.716,
+        "change_pct": 0.76,
+        "threshold": 5.0,
+        "threshold_breached": false,
+        "signal": "neutral",
+        "source": "yfinance",
+        "error": null
+      },
+      {
+        "ticker": "^VIX",
+        "name": "^VIX",
+        "price": 26.16,
+        "prev_close": 23.75,
+        "change_pct": 10.15,
+        "threshold": 25,
+        "threshold_breached": true,
+        "signal": "bullish",
+        "source": "yfinance",
+        "error": null
       }
     ],
-    "last_updated": null
+    "fetched_at": "2026-03-06T13:04:28.865855+00:00"
   },
   "opportunities": {
     "opportunities": [],
@@ -188,7 +434,7 @@
           "MEL.MC",
           "IAG.L",
           "TUI1.DE",
-          "MRLB.MC",
+          "MRL.MC",
           "COL.MC"
         ],
         "news_feeds": [
@@ -488,10 +734,10 @@
             },
             {
               "signal": "European Tourism Index",
-              "ticker": "TOUR.AS",
+              "ticker": "TUI1.DE",
               "name": "TUI AG",
               "note": "Major European package tour operator, Mallorca is core destination",
-              "source": "Amsterdam Stock Exchange"
+              "source": "Frankfurt (XETRA)"
             },
             {
               "signal": "Spanish Property Price Index",
@@ -525,14 +771,6 @@
                 "play": "dominant European tour operator, Mallorca is top destination; long on package holiday demand",
                 "mallorca_exposure": "direct - largest foreign tour operator in Balearics",
                 "liquidity": "medium"
-              },
-              {
-                "ticker": "NH.MC",
-                "name": "NH Hotel Group",
-                "exchange": "BME (Madrid)",
-                "play": "urban-focused hotel chain with Spanish exposure",
-                "mallorca_exposure": "indirect",
-                "liquidity": "medium"
               }
             ],
             "spanish_reits_socimis": [
@@ -543,7 +781,7 @@
                 "note": "Infrastructure, not directly Balearic but major Spanish listed company"
               },
               {
-                "ticker": "MRLB.MC",
+                "ticker": "MRL.MC",
                 "name": "Merlin Properties",
                 "exchange": "BME (Madrid)",
                 "play": "largest Spanish SOCIMI (REIT equivalent), diversified Spanish commercial RE",
@@ -561,11 +799,6 @@
               }
             ],
             "luxury_real_estate_proxies": [
-              {
-                "ticker": "SAFG.SW",
-                "name": "Sothebys / luxury RE proxies",
-                "note": "No direct Mallorca luxury RE listed vehicles; use SICAV structures or private funds"
-              },
               {
                 "ticker": "KGX.DE",
                 "name": "Knorr-Bremse (indirect German wealth proxy)",
@@ -642,5 +875,923 @@
         ]
       }
     }
+  },
+  "brain": {
+    "market_regime": "neutral",
+    "regime_confidence": 60,
+    "overall_sentiment": 0.0,
+    "active_themes": [
+      {
+        "theme_id": "theme-housing-bonds-war",
+        "theme_name": "Housing Market / Bond Yields / Geopolitical War Pressure",
+        "conviction": 1.0,
+        "signals_supporting": [
+          "30Y Fixed Mortgage Rate"
+        ],
+        "signals_against": []
+      },
+      {
+        "theme_id": "theme-mallorca",
+        "theme_name": "Mallorca / Balearic Islands Opportunity Strategy",
+        "conviction": 0.0,
+        "signals_supporting": [],
+        "signals_against": []
+      }
+    ],
+    "planned_actions": [],
+    "risk_state": {
+      "daily_pnl": 0,
+      "daily_pnl_pct": 0.0,
+      "max_daily_loss_pct": -5.0,
+      "circuit_breaker_active": false,
+      "exposure_pct": 0.0,
+      "max_exposure_pct": 80.0,
+      "correlation_warning": false,
+      "correlation_details": ""
+    },
+    "last_updated": "2026-03-06T13:04:30.944656+00:00"
+  },
+  "decisions": [
+    {
+      "id": "28506952",
+      "timestamp": "2026-03-06T13:04:30.944348+00:00",
+      "decision_type": "signal_eval",
+      "input_data": {
+        "signals_count": 27
+      },
+      "output_data": {
+        "regime": "neutral",
+        "confidence": 60,
+        "sentiment": 0.0
+      },
+      "reasoning": "Market regime assessed as neutral",
+      "confidence": 60,
+      "action_taken": "regime_assessed"
+    },
+    {
+      "id": "ffd07371",
+      "timestamp": "2026-03-06T13:04:28.866229+00:00",
+      "decision_type": "signal_eval",
+      "input_data": {
+        "ticker_count": 28
+      },
+      "output_data": {
+        "ok": 27,
+        "errors": 1,
+        "bullish": 2,
+        "bearish": 4
+      },
+      "reasoning": "Fetched 28 macro signals via yfinance",
+      "confidence": 80,
+      "action_taken": "signals_updated"
+    }
+  ],
+  "theses": [],
+  "overrides": [],
+  "kill_switch": {
+    "active": false,
+    "reason": null,
+    "activated_at": null
+  },
+  "regime": {
+    "regime": "unknown",
+    "risk_multiplier": 1.0,
+    "details": {},
+    "last_updated": null
+  },
+  "circuit_breaker": {
+    "active": false,
+    "daily_pnl": 0,
+    "hourly_pnl": 0,
+    "trades_this_hour": 0,
+    "last_trigger": null,
+    "reason": null
+  },
+  "correlations": {
+    "diversification_score": 100,
+    "high_correlations": [],
+    "warnings": [],
+    "suggested_hedges": []
+  },
+  "niche_markets": [],
+  "fred": {
+    "signals": [],
+    "fetched_at": null
+  },
+  "news": [
+    {
+      "title": "The Treasury Yield Pivot: Geopolitical Chaos and Energy Shocks Paralyze the Bond Market - FinancialContent",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcWg2U3lZQ3FGamtzMnA1TWc4ZzJQUHVqMk5LYlRCdlFJZ0RRTkdzT0hlOXJqSG1RWm5zVVZmMTlNalh6djg1SUdpNGJ6ZWdPRFhDMUxBVHVZVG0tNlRWM3ZqaDRTMERoMjVQY3NKRl9VcnM0Qm1lTVZEc1luNUx1dGs4VjlvalhyZ2Q2Y0xtb3dRNWtrdTVhSGtaLTIwb3RiRktiZVhBaFZoazhsM2hoRnNncFF5UDhQSDZQNEhYSW01am5QZFBuNFhWWC1zY3dTd2NXYXpfYVdmdl9nY0EtSHNpV1V6UVpGNEdIVEp5QXhTZw?oc=5",
+      "published": "Thu, 05 Mar 2026 19:19:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "bond",
+        "treasury",
+        "geopolitical",
+        "yield",
+        "market"
+      ],
+      "relevance_score": 1.0,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Mortgage Rates Dipped Below 6% in February Amid Treasury Rally - Eye On Housing",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR0lPU09JOXNnTkQ0RE9NOHAwR3JxQ2ZaRFdFNjV4UXRvMmM3eDdadkNVQWJ1TEhiMk1kSF9lRmdwOU1qZU1lVk10OUJHTk1vOXNfVEdqbE53XzFid01xdFpWZWFrUVJTOXg0YjZKUk9NcWk3M05NZG9DQ01SRlZfby05SExwX1NWX1ViWlRnN1g0QzVlVjN0Sm5nTQ?oc=5",
+      "published": "Wed, 04 Mar 2026 21:10:26 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "mortgage",
+        "treasury",
+        "housing"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "positive"
+    },
+    {
+      "title": "Iran war hits housing market as mortgage rates rise to 6% on inflation fears - CBS News",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZi1YQ1BwVFg5OEI0c2xRTjdnaDFEN1puRlFPbDdhUm1JcGRzb2xMX0RkVHg4bno1Mml1ek1WRGN5SGJWNFZhLW1HRExxZVc1ZUhhZ0VtSnVtVnVMWFNaZ3pESHNpSEFQTkk4QXpOMVJuZnF0bzZadDA2MkRELU4yWEVNOUrSAYoBQVVfeXFMT1RGQXBXR0hNcXlZM2ZFRmdGMGpQX3ktbFk4X2hhZmpIZFg5RVFaSWJVR3RLTkZZUThhTHR6WkpPVXFvdWFBQzRxckVMejJFdkMyTEo1VkplWFZDRVFjYUdXazQ1eEhkYkV2WHl0cUJmdkRJRTA0Q051RlFYY0VJSll0UFVVeXpCZWl3?oc=5",
+      "published": "Thu, 05 Mar 2026 21:49:02 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "mortgage",
+        "housing",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "U.S. Treasury yields reach weekly highs as inflation risk mounts - Canadian Mortgage Trends",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcUp1NWgxVjREdDBLc1JkMDgwNzNTUkxyWmltckQ5TlMzcHlPeFNhc2xxUFlQcWMtTkd1dXdrOFhVODJFOW91TlpEaTh3a2llUHhJcW1uWUVRYzZHVXBicEZxTDBCR3NJVzczRmJ6bkduOHR1a3czdUY4d0hTOU5xVGpjM1FKX2lpVFZoWXNQaXR4TllWd1hZRV9wcWpuZjVUM2F1NWVQZ0tYRTFIV19UbQ?oc=5",
+      "published": "Thu, 05 Mar 2026 15:09:49 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "mortgage",
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury yields rise after jobless claims signal improving labor market - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaVJpTkhjeGlwUi1mTkR2VkFtbkVNNG1kMzAyaGZWbGRnNFpDTlFDZWJjS1pkMHlVSXNpUUFrSVRIUFlINDFPU2pXUmlUYWMyZjZNcUU5T29HNmgxa2ctY3VYdzRVSndJSHp4TkNma25KeVRzcWp4dEF3OTFHSUFlTGNsM0NhYUk2TFUxbWFoeHhxeUtNakFmUDZyZ3ZGOTha0gGmAUFVX3lxTE9Ia3ZoTzlHNmliTHNQWUc5RWxDbzVBOHY3RXcxbTFMd1ZmcmVqRWtVWE1TcF9mUW5HdFA2ek1SeERmQ1ZPbXpqVVhyWWVTMkFUdENCZjlibkt6STBQemtWRUk3TFhGU3M1ckM1WW9hdmdJM3BOTkZDQ3NRWmI5bDhCOVVkcExyZ2xYRDhLclltdzBnYlFWb3I4TnlhR2dSeHNLZWg1bXc?oc=5",
+      "published": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "On Tuesday, gold falls over 4% as surging US Treasury yields pressure its safe-haven appeal - VT Markets",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUGdZOGtNZG1qU2o1MHJkZnJUOGtpSDBER2V3NTV5QWM0WFdCMGh5ZWREdkZ1MGZPRjVRczlieERmUnp3WlpDeWFTam9IdnFfSGFnR2FGWk9fNGQ3ckozSWo5aDRud0ZfZm9ucjJMOXlKTVc0VGloRE1VX0xGWWs5dGJ1ajNucGVYWlJua0pYbC1iYWp0bkR3Rk5fWjhuRGd0a19GZ3lrUjlFT2NGdzJPSG9ONWtoZGxiWXZ3U0ZOR2ladWVyTnZtYg?oc=5",
+      "published": "Wed, 04 Mar 2026 01:44:57 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields",
+        "pressure"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "10-year Treasury yield declines on signs of weaker labor market - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdV9jeUtXVllZU01xUXNzNDR0b1JpZTEzZ1Q4Y0hVRzRnSzIzbGNTNHJoRXVnOFVUTHZnQUpMUzhoLWpjUG5PRDNLNkpmc3BwUDB0ZmtUTHJmSHRodFRNYVdLQW85UmJxVGRISHV0cFJzWDJoYTlzTzFJT0tDQ1dBWGh3dnJCaTDSAYwBQVVfeXFMUDhqdnlvdEtzakF3MjQ4Y3JoYVY2cmJZQnkyUDV0Q0FfeFlFSVZFdjZOc0dUcEV1czdwZ3NfNGRVbXVyVTFjajRPRVVzYkxnUU1EUERzY29IQS1mZUpCUkFCcVZybXBIRWpfV1Zvb0tVXzFHeWsxVXgyUTc0bGdvRS1kMnJESlU5dGhVZWI?oc=5",
+      "published": "Tue, 25 Nov 2025 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yield",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "US mortgage rates rise to 6% after three-week slide as oil-driven bond yields climb - MSN",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdm1BMkdEVkFxZ21LbEJxbEo3MV9mVDU2Um92WDdNLWxObVp3MTlyRUxHWmRuSDliNXJadWFrTWJ6cjNtQ0g5Vmo1S3h2dldWNTFhemhGY1M3N2RoeXFZcXFDVmVPLXZrQW5LTVhNRUN6WFdqN3VxYlpSVlNEZ1dGX285V1VVbDhrNGplVWNkX0t5dlFQMkQtVkxtb3ZZX3ZROXExV3R0QUJaYm1sbkwtTmZKMGp5UW1iV0ZrS3ExMDl3NEZLYnRKOXVPdVlBWWM?oc=5",
+      "published": "Fri, 06 Mar 2026 06:29:46 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "mortgage",
+        "bond",
+        "yields"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury yields slide as Fed cuts rates, expands short term bond-buying - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbjZuMy1EX3Fnb2p2STJGSHRLTTl0UUJzZVV0WU1MZGJScmJNNFlkWlV2WThXUExmVXJSNVdGejNNMHJ2WnFhSXMzZERJV1dmdlhKeDRwN2ppbEFOSE1meENqcmZpUGNCaGZDQUh0bTd1LXVUeXBlM3hNYTdWenFwdTZvOWU4TGNmREdHb0JVU2k2Z252bkdScjExNNIBoAFBVV95cUxNNl80QmMtaEVHenAzXzVpTTBSVXc5STdNVzNxNVhnTmJZZy1COWE3Y3B6Tm9lQjFUdkY1bl9wLXhmWi05eEdUWUVPRXp4OUtfS2IxXzJqX0ZuaFl6Mno3dmo4ZF9vQVRSTXhWSkNldHA4azVKLUVSRkdYWVp2OFFqV3JIT1ZOOGl4Rk9aVkRZOF8tcktxSU9NSE9rY0hHclE3?oc=5",
+      "published": "Wed, 10 Dec 2025 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "bond",
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "U.S. Treasury yields add to gains after data; yield on 10-year Treasury note last up 5.8 basis points at 4.14% - marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQc3BtUTFjWTVmOURWSWNMY1JObEZSOFJkWGd1TzI2Q0R0YzE1WW9zRUFtTUJxZ1MtdXEyTXpKRzZzRGNFNjlpZDZQbEU2ajlhMG5TYWZnazJBV2E0U3hGOVhPdWZGRTVQYllJOXlmc0tQWUJzT0Q0WjNuU0ZCLWI0Y1U3eHo5elNZSlVjekVUaXNHWVVVMENiQlBKZzdHeXNTYzZqLXd1c3k5bV9tUVB5Y2hPSFY5TEZwd3EtSFBYaXdVMGNkOGlzN3ZwU3NVSEVHYXlCeFJXOHlBaXBaanA5OXpuRWx1Zw?oc=5",
+      "published": "Thu, 05 Mar 2026 13:35:04 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yield",
+        "yields"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "\u2018Worse than 2008\u2019: Housing expert Melody Wright says the US real estate market could correct soon. Protect yourself now - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOW5nNXV6TzNtWTdfOVhpazUzUG1ZcHE4SU4xcDFVd0ppR0x1Um5rakFCWFVZa0NqUWFON19peU5GN2Z5M1ZlSXBJcUROSm5seno2cDVNZTVVQ3BUNmo1UVpYd2ZBbVFYWWdFclAyVXoxRE11OTZoWHl5S2tmLUNQZnVnRXk?oc=5",
+      "published": "Wed, 04 Mar 2026 17:37:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Housing Market Predictions 2026: Is a Crash Coming or a Rebalance? - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQekl0aHFjY3l6dXFuNTA5ZnFBQ3B0Mll1MVZCVExhYnpTcUhOalJ2ZzhvZ21FMzdDdWU4OEVYTzhleG9ZOGFaNE9teGFXSFZRT1ROcUwxelZScGJzLXBkaW9NNklVZ1NMSGlBeC1JeU1Ic2M5dzQ2Y29xUnNFTHNJS1lWV2tNeHZYZ284c3VKdHRWLVJiVXB4dUM5eXFBeU1MS0otZlVR?oc=5",
+      "published": "Thu, 05 Mar 2026 14:05:56 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Real Estate Experts Predict The Biggest Housing Market Trends Coming In 2026 - Forbes",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV1RKdGt0UnRNaHFOcFc5aTh2OEs3Wkg3andKSDhOYmdVRHJmU01ELXBCLUVkR1NhLWdVbmFhNTVhQXI3SVl0NFBlVnZ0UHpTYURxMDVBOU9EdEZHdjY4RUxEcjJqUHJVcEs2dUlaQWlERVFqWEttdFFhMlRlSVpmLTFTZGlESVVJNk5waDlDNWJ2WEJ6c3BrUnR5a3lvZUlKbWdWS0V5RThoTHNUVl9IYngtRXdxU3JLUjdNV2J4Z1RCOEpWcnE4dm9n?oc=5",
+      "published": "Mon, 22 Dec 2025 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Will the Housing Market Crash in 2026? What Real Estate Experts Say - Better Homes & Gardens",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzQ3pqSkJwYjlnU3p5RFhxWVhOMC1VZHhVcTd6T204WjEzMWJBRFJ1R19iYVE5NEtLeE14MjRmQVZucGM1U1NOMFpmQkoyUjE0WGF0clJiVlRvaXF0SEFoVTA1eUwtc0x0d3ZZ?oc=5",
+      "published": "Sat, 10 Jan 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Real-time house price model shows U.S. housing market firming - Federal Reserve Bank of Dallas",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xOURNRjU3V3RUOHk5d1FxVlBTOFVNMVNCNFVEcmNkSjVfSlBselZ2VFoxYll5ZXM3UTZfLTlZdmZiWXBvT2FDM0JIWXU3YmdVMFFQTWJsN0RrS3JBeWFfZkpHZUY?oc=5",
+      "published": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Real estate agents say the housing market is starting to balance out - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaFAwSmRqUHkxR2pmM2RFMENWU3lxX3l4Skx4YlF3ZGV4UEZTcUpRU0JvZEtiTkVENEx2MkxLSE4yaFB3Znp3UDlHdTFJblhPbkNvUndaRjNESldFaENodFY5LUN2OE1TdGFGUkdjeHlYX2R2RjBmeEN2OGxSV05UUW5zak91aXIwYmfSAY8BQVVfeXFMUG04ZlZwdTBSS09ELWRkUnYxcW5BOHdDallhejc1T0ZqWHpPZHlKaVpZVE1ENE1IUjBGV3Jpd1VyNTU2QzhfaWlzYWd6NGxGM3hZd0Q0YXdTallpN0VxRldNVnU0UTdEYnJYbTJWNVkwVk9DYWpBYnpqLUFQak1xTk9ZQjNpd3ExdkVBSWRnNXc?oc=5",
+      "published": "Thu, 08 Jan 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Housing Market Predictions for the Next 4 Years: 2026-2029 - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9KVFBiUUNDcTN6N1BRSjh5VVpCM0xhYzVjdjQ2Zk1QOEZmak5Md0VFTDZnUEpMdUJ5NF9wOFB6Q1RQQUpDNWJDWDRpaGE1TmJrX0hnQ2JJZWI0SjZsN1hkanhUcks4a1Z6Um9XX3A3Vkk5a2UwdWdQSXRNOGs?oc=5",
+      "published": "Tue, 10 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Will 2026 Finally Shift the Housing Market to Buyers? - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX0dMLTRpd0tTVVB6UDl1bFg1SWJ1akFvQlVmcFR3YzZsaTlpbWdmWi16Zm03NTk5bElEZnBseUs4TU5YUHU1NmNxRWl4Wnhfc0g2WUFFeGNqWW4yT3RsUXhyeFpmVTNVTUtsSFBYUGx2YWp3YmpfNjdCeHBkTXpIX0pSYWJfSGY5cVc5aUVIT2FSa3MyREE?oc=5",
+      "published": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Buyers and sellers fear housing market crash in 2026 - National Mortgage News",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVozMHQ2MWpOc3BnWkkyVDJfY1pBZzhEbjZzekUwMVBiMUVJMmtvUi10bFhTRFF3NnBXR01Qc3Y0cnUxZEJsUVVpUkZvSWQ3b2tfNGRRN2tfQU1HaUJlczNNWDhBb2JsSzNRUDJBZVZmT2xraTZVV2h6ZVNjT1U0TWF3OHcwaEdWRjYtZGx1WkhzYm1JTWQ4bVRn?oc=5",
+      "published": "Tue, 09 Dec 2025 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "mortgage",
+        "housing",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Home values drop in Denver, delistings climb, yet real estate experts stress housing market isn't crashing - 9News",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOa1hNNXp4Q3d0cjJxd2w1VHo3OG1VRTdoNmk3dElJNXFDbVdWeHROcjBMVVlGWHpOVEtMRnI0Skc1ajJ3YXlGMjFPaE9LNGNPWWxTTGU1NXFvNHA4T2JKUjNEVWVlbTQ2LTBEaVRkMW12R3BMQ20yeUpYUl9LcUUtQTBHRzVvMkhXWUNwNG45X1NnRDBIRUd1REpOS095SDFRZk0wd3pxcWxCM2Y5NldocnZWQ09xOHQzVk5BQUJJSWJYdVVjaVlIU2pKNGNLck5HSl9SalpvWmFtbHRBeTlzZ0FaM3pEVUdncV9zXzFTeUpmVW5SUUdCa1VjV0R3ODJPWGpRUg?oc=5",
+      "published": "Tue, 16 Dec 2025 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "I\u2019m a Real Estate Agent: 6 Metro Areas at Huge Risk of a Housing Market Crash in 2025 - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JQVJyVUVER1I4cGQyQTZRb2YzdzZ1aG5ROE41czJ5SVhMZTN6UDN1WG16V254eXpnaG9EaHIySlhvWVRDYVVoWjZwWXJkN0U4VmRoc2NZTzJkRTdmMkVwWTFSd3IxYmVMSXQ0SW1pVVVaZDZqaVE?oc=5",
+      "published": "Sat, 16 Aug 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Will the Canada Housing Market Crash or Stabilize in 2025? - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaEpwbkpQbmc3TElCdGZzUnlPRTNoY2tLNkhVMU90THNVaTUyYnBSV0dJbER1cU5SNm54R3ZaSUluNWRpaDN0YkRIeE9iM08zUDl6YnVWTFEyTFRabUR4QjFzWUU2YmFoUEJMM0NrX0dFbTdJc2d4Qm4xM0g4NVJNNDNjbnhZZGd2TWxtTnRlS2MwUWpMUHJRcHMzdTU?oc=5",
+      "published": "Fri, 10 Oct 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "2025-2030 Five-Year Housing Market Predictions - U.S. News Real Estate",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOGp4RXlmSE9HNnRDWVg4Sk9PSmdEZUdpSlFjMzhLLWpYNWEtSENScmJyUDAxX2FkNzVkZE1DWXM4TnN5UHQ0bWVXU3piN1I0aDRtQ2dFSGV4VDlyc0RyOFB5ZXNTaEJ5WkdpQ015NmdvNkwteHdlTDNKekg5SWktYmZjN0xPbGgwUEFoVWk5SHJzQU1mSUt0T2JCR2NQeGRpaGxRUFR5T1hERzdKOHg2UnpxSVlZQnJ0NWpv?oc=5",
+      "published": "Wed, 09 Jul 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Housing Market Predictions 2026: No Crash, No Boom, Just Rebalancing - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaWlqVVBLMkw2STJGZ2pwTkNJTzlQR1VCLXFCY1dlN2l1VzZLeUt5SWc1Z1pTODZxbGZsUDZuOHNWbE56a0tJREZOZ0JRZ2lhRkFsZE0zbEpuN0NBNlI0dU1tMWxNdWxnQy1UNmR1Qkp5a0hQQ0xZRFVNVFpuaW16b3hESGdOQk1Id1NCb29xYVVpRWVVOEpDMWFaZUtfRXg2NTJJY19KVQ?oc=5",
+      "published": "Sun, 28 Dec 2025 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Opinion: The Hidden Crisis Behind the Housing Market\u2019s Stalemate - Davis Vanguard",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSk01MV9pRjh1YkZnSThDOWxqNmt2cWxfeFdxeDQ3TUV6b0JBZ1k0MlNvdGNubTl4RW5sckxuLTk0eDVkQU94a3ZhQ2E3XzV2RDBEVGhKaDdtUEdSWWsxaWJ6VGV4Y2lUSEFhcTFsUnNFTDJZa3JzcWx3U0Q4OWtKQXBR?oc=5",
+      "published": "Tue, 24 Jun 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "vanguard",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Housing Market Crash 2008 Explained: Causes and Effects - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ONDdNOFdfc3JLWWlGNE1ZVmludlplQlVOZ3UxZnBsajl3LTdYUWtnbzdxckxhaVBGdVJsWFd5RWphY2hkdnNMcTA5Yk04cmx6WVMyZjBKc19GSGVvZXhiR3pFbk5wU1pYeFNwM3BwTndhdw?oc=5",
+      "published": "Sun, 20 Jul 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "California Housing Market Forecast 2026: Will it Crash or Recover? - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUDdWNHhmS2ZLTERCbm83aTJJSkpJYzN0dDJGSVN3dHhYYS00N3B5b3lfeXFrZWJtWmwwMTJ0WHlabzM0RF9YU2JWYnYyWnJ0Z21zTUwwVDlLTjVnS3kzNFVrdDNnMVFMZnozUE56d0F5cUt2dmVINkFYMTJCQnZTVWc4UzMyQ2hweFRkSVliLWJoX0tFWmNmcE9ydUIyd2pSTjQ2YXJ3?oc=5",
+      "published": "Wed, 01 Oct 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Why is Cape Coral Housing Market in Florida Doomed to Crash in 2025? - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZkZFSUFRWVYwM20wTTQzZ0E2WEhIQW5zaUEzckU4b0tEU2dyZk1hekxDU01uRVVub2RRWDhsRG41N0xfdEg3YUpLUkJJY1E3cDZqU1FrcTVtT01WMkdIcGo2SlBISWJmQzVTTER2cUFsWXg4dHJvU01BaWY2b3ZDQWdKUlY3UzRyN09qSlZ1VUpSdlN0Z0o0ZWx3a2RGTWJ3RUlJLTZMNkhpZw?oc=5",
+      "published": "Fri, 10 Oct 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Will the Austin Housing Market Crash or Stabilize in 2026? - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMElkd0lSTm9SU09TT28welpSX201dV9jSDRCWTdSWnN3Z1Jzbld3dEt4aGgwbUFLWjg2ZS1IbmFJZXdvN095U3BvNURUejZDcml6NzZjNlRVZXIzb2R5MDVTbVhyTHp1c0M1bjhMQ3JNTUtFNktRSGUwdHNkVjdubm1EWTBjT3BHUGYxMlhDTkdiZWVTb2FTZjIyZWw?oc=5",
+      "published": "Sun, 01 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Will the Housing Market Crash in the Next 10 Years? - Norada Real Estate Investments",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPY19sZUVBZmVQRG1MVmt1UzR0WGkxci1yNTczMC1kd3NLNWkxbmF0TGNNQWlQMHFrUkFveWdJeG5Ib3g5bEhZNjItQXM1Nk1yX0M4WXlLLXFXMHI1MEFBZWo3SlJFa2N4azBmYU1meU1WanRRSTUxaUMzcXhsWlFoY2JFTklGelh4dUI5SS1ncng5U0k?oc=5",
+      "published": "Mon, 26 Jan 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "housing",
+        "real",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "\u2018Help With Mortgage\u2019 Searches Are Highest Since Housing Market Crash - Newsweek",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYk45OThtTnhMcU1UR0Y2WnNnR3AxX0c5Rm56Q1poN2szYTZ0ekFmVWRhSlJzOXc1Nms3YWl0T2ZBNXFlWmxXSFNuUy1wWDZhNHY5X0pmc3E0U0M4R0o5UjBnTXZfREljN1JXQmV0WmNrTFpXQmJtZkttNjVxMWNWUlRZY3J4UTllLTlkeHByMVRkaHdaRU12bkJPcjVTSmJDQ2c?oc=5",
+      "published": "Fri, 03 Oct 2025 07:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "mortgage",
+        "housing",
+        "market"
+      ],
+      "relevance_score": 0.6,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Iran prediction market trades spark insider trading concerns - American Banker",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSy0wSFU0UkhJSGZfVDBQNF9KdlVYR3hsWkd3dU00dkhORGF2ejVtV09QNE90My1PX3NUUWlzTGozcWcwcDNIVkxnLVVHSGphRURoNmZZaUpxbjcxSFFRZjhJazVtWmlxOUxxc2YtdnFaZnpIZ1J1NEVLbTRwSU1xMnZVUTNVX2twUm41TDNBdUN1ODFyOURDcTJ2eHo?oc=5",
+      "published": "Wed, 04 Mar 2026 19:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=prediction+market",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "american",
+        "market"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "Treasury yields move higher as investors await key jobs data - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNWppTmdoSXV2cEpYMU16QTEtcG5ZWjc5cmZvNFR1SEFmcFlnZmF3S3VqRTlpOFJaYVVSN0FMUS1WQlRXTXVEc1ZYYldsbTZ5aW8zV0k0MGUxRjRuaVQteGI0ZTcyNHU2Qm0yM2Rmb2Y0N2VHdGl5UlJwVTZwWXh3bWxoSnlhZGhTYTdwWm12VdIBlAFBVV95cUxPcFhlekRRb2dERjdLcmxsWkNTd0RIWXJwdzNKV2gxaVdIV1ZGRGZNSXVwMVdHZFBLM2s5M1FXZGhXbE00am00cXl4dmRSb3AwTjgtWlJRb01lZTNSWWdyQXJpRFFtWE9RRU9TaWstOHFyaTZ3YnB1YnQ0bzNGd0dYYkw4a0NkV2dQbTIzRjhoY1lCVnVS?oc=5",
+      "published": "Fri, 06 Mar 2026 12:16:01 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "positive"
+    },
+    {
+      "title": "Treasury Yields Climb to Three-Week High as Inflation Fears Grow - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZldyYlNPVmxWa3FMYTB5Zm94OEJ4TDhzQkhyQ1pSWXdlR1VLRWRxMEcwSWxFdGRjU2xtbFc4YmVzdDZfcTZ2RDZCaGkxbnV0REV4SzZfenlSaXZSY3pTYUNhY1FMa2QyZ1lMQlAwczFySi0zY3c3ZVBQay02V2NFNHFxWTBZU1ZFeVBJQUFZRlpVRjdFdVZKZXNEV1FlYTNTRnB0d09YS0N6U1Z6aVAxOFZkeUdudw?oc=5",
+      "published": "Thu, 05 Mar 2026 20:53:36 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Arthur Hayes Says Rising Treasury Yields Could Trigger A Money-Printing Bailout And 'Benefit' Bitcoin - Benzinga",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPazJUMEZQMXcwRW5vNm9sbmdUT0xWcnFka2tfcExDYXczUUI1ZlRMdk5mdFJ4d2JNLXZ0Uk9od0s2MTdMOEtwWjJVYjBra0lQOHFFSDhGNTE1THUwTjdRNXJCWE15cDl1akRweFo1alFMbDNrQ21RZmtrU2o1ZzZGb3d6ZWlzbkRkdEZhdFNLVUtxeHc3TVE5ZHNzMnM3V3BYc3BkSWQzUlZ6a3ZvYlNyWEpmQk1WNFVidGJGbVFSSGEycmY2cFhmbF9yY0xqenFpTm9jTHlnNXlpRzctNjZMOHNrTGNUVjVSeDI1cFE1SFVrTzg?oc=5",
+      "published": "Fri, 06 Mar 2026 05:14:35 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury yields move higher amid rising oil and labor costs - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZFJnRWoyT3dWMFpISTdFQVJpelZXczZscHJRWE0tQVpPNDlBY3I2RHJjT3MwRzBVVEJxX0lpMGNPUnVQUHFQQXJqbDhxOVpQUEx5clJpQmczcTN6SkFqMTk1MmVEZWpQTXdKZDh0aDJiTFUzRGw0bVJlLVVkLTdqUjc2OEpTNG1adV85b3Z3dkRXcjF10gGaAUFVX3lxTE5yeldCaGxMcHpEN0d2eklUS2NTSG9SdE9udVh6aFhtTzVxZ2NnbzZRMHZYYmVQUTlRaFpZaXBNeWlQOGo0eG5sWEE3bi15RHdoemQ3WHpmcDBFMlZPZnhjYXREUmpVTTdfZHlweWlod2hIa0dIbzkzdDJOSWtzX05QX19RTWd3NU1mMmRfU1dMazlSeGt0SmZNd1E?oc=5",
+      "published": "Thu, 05 Mar 2026 08:14:22 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "positive"
+    },
+    {
+      "title": "Treasury yields edge higher as investors monitor the latest on the U.S.-Iran war - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT3ktV01KQWlQQnc1UDBPTzRFTkdzWDZubUkyS0cwZG8yR29BcThmRWlITmx1SW1VYm5IRTRRcWttZml1YkRUSlZ1ZXdjX2FtT3V1bDkzVUdrXzhEZ1ljNjJPNVBoMHZIekhKZUx3REk3ZkFVZU1kUWtHV1VubmdRanFFRnVfME82TUJHRVNjazlQNjlQWUZmbF9ickU2WjJXaUHSAacBQVVfeXFMTlB0Rm1uS29wMHZPRW5TNmp4STJIY1RYQnZUOGVBZGJiWjhwNXNtLTc4X3A4RlNDemZoRXlUTDViYllwaGlDdXo4WGZTYWtkZ0ZEaUQyYm1FdEVxVXZLTzJySjhtdWszY3RVLXlYSjNyVzZkZS1XT1UxSkg5VkFZUFVvY3BzN05BYU5CWFM0VDBvUVhvTURGemt6Yzc5d1Z6TlBQTGd6dlk?oc=5",
+      "published": "Wed, 04 Mar 2026 11:51:25 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "10-year Treasury yield tops 4.06% as surging oil prices from Iran conflict raise inflation angst - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbnZhRXdhUkJKd3BWTXZBa2FoVXVKTzJ6VGRYOUdvN0diMllfcGphM25HUjZMelV0R2NnOGpYTDJrZXRabFp3SGVpZTVwYm9iUFdlY3E4T0tTckVGb0o0NGxVMjgtQVlwZnZXRF82TmxyQk5SQ0s4NDRZcUNxd0YyM0NEMGZBQU5yOUtJUHR5YXN4dlktdEHSAZsBQVVfeXFMT2dQVUFBVnQ2M3E3OEpCV0hicFI4R1FadkhTYUJFV2N2WEJidjFLMDZBQ1NZVkdGSTFNM28ta1VXbWhLZjVTbGxhb3F3LVNlVDBfcmVSdkdTVXFYRkw2bV9VYzlBZU0yUE5GOUpsRDRBeUJRWjJZWjZMSTJjVTlxUjB1dUVxblI5c1pZUWFqa25rSng3dFR4cFNXaEE?oc=5",
+      "published": "Tue, 03 Mar 2026 08:54:49 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yield"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "10-year Treasury yield hits a three-month low \u2014 and it may have to do with AI, strategist says - MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMi4ANBVV95cUxQOU5SQ29oR1NjZkNqWTBMajdDVVpFazlhWnRNbllLMFlkOEtUZ0RUZzRRV3hHS0J4NWRrN3M0OGRjcUo5R3NqVGVEV3ZkUVhWTmlEX0cxNHZjSlRXWEkxam9fbVFYOGhNM2RBQ2lXWEkzdXk0czJVZ2Y3QTFfcnc5N3BoUFZCOTcwd0hPNDYtRFhhN0ZuTmRZdmxGNW9MakV0ZnJjY1BYLTNuLXhNTDMyOUNCeWNRdVlvOHU5YWxwVktuajZNYWhPTWF3ZGVubldUN2phb0dicjFSbnZMSDdiN1U5NlltQjViNEd0LXE3enBWM2JWTG4wTy1JQUpEd0ZzMEc5eTBLVHNRdVdZU3J0R3dEY3k5d29rRGF1U2Nhc0kzM2NHdk50WDRNX3R2YWpNRHpjY29XdHVqNHk0UjQ0aWlmYkVieEFYS0ZlRUhoUFR4N05zeVJ6ZW1aUG55aWxwV0liVGdjMjZmUkdjOFBEYWpFSEt6OVY1YUlTLXdYUWZDWEUtZ3M5T2ZYV2VCSEFGVTlKVmZhNEM1U3didUF4NDVnLUQzczl4NlN6RzdIVkxtYV9WbFF1cFJUVmxBMTlZbFBScEZ6RVpsM1JsajQwVmdSbW5FMWdfU2hKLTdIZ18?oc=5",
+      "published": "Thu, 26 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yield"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury Yields Soared on Tuesday. Why That Could Be a Big Problem - Investopedia",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX25GZzdvU0tpMy1NX0hNRHluaWlySzhESHktdEViYVVsakZDa2IyeFdsd2pQUU9FVG1PNzh2Ny1RU0V1VFo2blAyWnVCMUJIUUxaMzRyUW5tVlBQMWtpWVprV1JjNkxoVDM5aGhrc3ZSdFFBdjFoS05DSjVFRUd1V0l1eUlxdnpMOEwtNmpqUGUwUXZVdDVKQVZHZTNKaFNYM1V6T0Z4TEo?oc=5",
+      "published": "Tue, 20 Jan 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury yields fall as investors await more economic data - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLVdJWllkMmhTeG1zNmUxSGI1UXcwSDYtZ2FPdmgzNW5lZ2FkUXFsMGJKV1NaZEdsRm1Zak1rWjN2RVJ3ZDZVY1libTZfT3FSMDJRajJTcnYtWkdSX1FVNUhUdmh0M3FFdGFmZXFDYUlTNWpnWDN1czJ3b2N0YW16azhYMXpJdko3MU5oN2p3ZkhMV2JOS2fSAZsBQVVfeXFMUE1nUDN0NW5KMjNObTlTd3laUVBTM2M4am9uX3lNdFhuOW9VcEY1bmQ0bjZ4OW0tYmJOSEpxUi04Y3hxLU8wTlYzNmRudnRYVXlkVUtXNm5NQW5BSXA5ekFBZnF6dUtzX2N3UkJwQno3bU15VEYtNmpaSnhRdXVoYkxaYnd3dzhyTjVWRDgwbXcya21GV25MXzRpTEk?oc=5",
+      "published": "Thu, 26 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury yields edge higher in the wake of Trump's State of Union address - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdWszc0lmUE9GQU5WSkRRaGVqd3FGVG8wWGZ4SFVsQldlcVZLdndNSllxMC1IS0xyY2hOcVV3bDk1T0FFWVJENldWN25yX2pXVG9JSjU1eklKYnRxZk0zSFQ2YnRKMFNuYm9nQ1RNLWt1RklPUFlzSjNKYVRxTWU1bWpleW5JWVdhUmFYQ2Q1ZjhrRnR3Z09uNDNCSldzRTUtZkt30gGoAUFVX3lxTE9vYUZVWHNIS19oQjUwUXNYSDYydVN1RmFNakdURVhJS0VKcjhBbTZlQjdMTlV3SkdwdXdxVHdQb0lPN1RuWUptaWR2dS1QTWtSQ1d3QmNBLU9ZX19FakRhZDhTX1ZsTVhxc0Y2aHBWZkQ0STRkX0lZSG8tbXlheEZ5c3J6UFl2TldsQjNVd3RIWWV5VUtISFRrWHRhRzJGc1UxMEQ5UUp0Ug?oc=5",
+      "published": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "positive"
+    },
+    {
+      "title": "10-Year Treasury Yield Long-Term Perspective: February 2026 - Advisor Perspectives",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOakZQcnZkOEFEaEd3Z3JpbDZFM0JpUlNvMU03NWVKemxySlZWenJVSXVwejJhWUJoNW5rbFdQVTUxNFp0bjJUTnJYeVYwVjJZOWNFMk9KWno4YU5XY3ZYaDdTejBncERGNlc2aGF4SHBvaWtYT25jNTN5bWdGU2tVUFcxaTJtTVhLS0kyQWRXQW9pZGZDYlZoMEhaUS1KZWtXWUVCa0o4SkNRODlzNktGMUJ3S2FHQUZYQVoweA?oc=5",
+      "published": "Mon, 02 Mar 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yield"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury Yields Snapshot: February 27, 2026 - Advisor Perspectives",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQTFuREVNMlFEelVzTlQ0UklWckY3R212a3lMV2RmTUxPUUZPMjdzeF9saWMxeHJwNTYyVmR1S2lhbmp0VVFmRmVEY0ZFT2ZBbV9LOEdhV09KVThWLWQ0NDQtQ1lka19LZkdjYnBBbzNKNU03eE1JWEdETFpWVjE2a1dHS3FBSzlEZEVQZEpocXQwNVFrdjltWEZ2SVhVQVBtZ2tqdHFB?oc=5",
+      "published": "Fri, 27 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "10-year Treasury yield rises back above 4% as U.S.-Israel strikes fail to spark safe-haven buying - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWHB1WEUyV3hiYXU2QXVjTndzT05Vc2E2Vno1UEtiVTgwX1pOU3JCY2NQNkhUWF9Ta0I4cE9Cakc5VlZGQjNXU3VoemVPOVJ1QVhEQS00ZjBvbTRuUGdGZTFHc1MybUNybG5zRzB0YzVZcFZRUk43WU5CNmM5QzVMN295dmZXVE5tWnJrTnRyT3EwR0pLRWZXVWpsTkFmd3RD0gGmAUFVX3lxTE01SU4yRWc1MlRtMmZwdTdQakF6dEU3UjdEa3U4MHZZbzFRV3UzQ0k4bTVBWjBkendRN1otNnBCam5uY2dadGp1bVlVdmd1OFJpYkNUdDVNa0lVckswdlVnNW1jNlc0elRkYXhtSk1pWGQzaUEzZmpCZkdrZTFleThya0RrdEQxYS1xTG1ubUdrUnRLZlRYMkJKQ216dUhheWNzRV93WHc?oc=5",
+      "published": "Mon, 02 Mar 2026 09:49:34 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yield"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Treasury yields are little changed after data shows robust U.S. economy - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMGg4OEwyd0tlRDluYTZlaHBnbjczdHJtVXpzSkdXemJVNGlxMUhodkdmeWw1eU0zZDJlMzdaRXplZGpGajZWcG5TdDFBMGJJWlFKR0g5TXRxTXpxX3dqTENwLWNmYjI0dXRleXkyU0NoZl9IS1hrVlloQ1VacjFWQ1RxcDhIYnZESHZtZmoyb0JGLVNU0gGaAUFVX3lxTFBsd2VQckM2a055ZWktZjNFaWJFNXV4MjRCTnZjcDF6WnlCYml3QUNoR25fTTN3WUdHZDRROU9LQ2ptVmVWM3hrQWhTSEszSjRTb1g4SDlvTEp6ekZ5djRodHptVTdzc0Eza1B0U2RuQjdYV29zZjk0dU9kMkYyZkEtamZwRXFmSS1hY09WYU1Sc3R5emRUa1gwYmc?oc=5",
+      "published": "Thu, 19 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "negative"
+    },
+    {
+      "title": "10-year Treasury yields rise after high court rebukes Trump's tariffs - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNDR0ODBzUzdrS0xZRmQ4Z2hNQ2lERnRvZXVSd0lSYWE4eDh5NGJlUnUza2RDN2ZnTW5ka0tyYzlQZ1VVQkc0NHlDdVNqZkYtLUZwak1DcFhYMVhTcEgwY04zeng0QTVEZVYxdFlCZzM1NkhZMDM4eE5zNWdkVHpIYkRyelM2RTZicmfSAY8BQVVfeXFMUHpBR1NJVzdHVFBfMFVaQl95SW9kaE9ZUk1VT013VjZTV0NJVG5XeTJRbXR0b3BfSVJibThZWWIzUy0yYXI5QkRjay13VnRtd1RYUkVSa05kTlc5bklZeW5JWmhFVU9FeHFNOEVxR2laZzV5dW9weG4tb3E3UWpfUUt2c0d2SEp5MF9LenljZDQ?oc=5",
+      "published": "Fri, 20 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "positive"
+    },
+    {
+      "title": "Treasury yields fall as investors weigh new Trump tariffs - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSjQ3UzR6LXU1UjR4UHdjYnRpMTg0T1ByRVFwZk9jUE1HSHY2Nm1NZWxiUWUtOUhtS3V6QmxBR0haeV9xZGczUFdwOWNuSFpaMGxUMV9rRi1iazZNZWZmdXo1cVBEYm5HcVgtdzZIQVBPR1dEMDVHRG1nUDhJTno2bTdlOG9ZTGtvN29BVDNUR0U2V03SAZgBQVVfeXFMTlhpQWdaWk0tQWozTjJMREhqUmktZVVUU1dkd2NFWnlBcncxOXg4Szg5ZVdSXzlOUDdSNWxzam0yMDBxeUFTQVIzYkdkX0tNN3pyMFVuS1FmeWlmZlRmeE9JOGJWMjNSUGlMNElHMGFGbXM4SkE3MTVEUTd3cjY5OXpfSlFIaktuQWQ0akdnYzkwMERiTUF6emo?oc=5",
+      "published": "Mon, 23 Feb 2026 08:00:00 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Geopolitics Hits Mortgage Rates As Iran Conflict Drives Oil And Yields Higher - National Mortgage Professional",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTTFhRVlhZkJoQlNJMWNvd2FCRi1LY2VUbExmQkgwV1dUMjkzeTdFRHgycndhMTRDeFhFUzlBbVc2Z3VVUGtXZlczOTNYQ3VYelNDZ2NZNURxMnJLVm5yR1locTQtMzdkbWhYbklQOG1lZVUtcmN3eWJCUGYzMkVCdGF1LVpSdkFfaF9vUlVaMnlaOWdwa1RSRDZyMTdHLUVXMW1fNDlad0NrRkhIa3EzeFRqbG91WkowWUhzSQ?oc=5",
+      "published": "Wed, 04 Mar 2026 15:45:36 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "mortgage",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "positive"
+    },
+    {
+      "title": "Treasury yields advance for fourth day as oil prices raise inflation risk - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUjhqaUZseUF2Um5JQjZNRDdWRGNkNFEwU3FfazlDNmZBSS10YldkdHhYRWM3aUljeXAzNm1xVnFPZWVYeV9KU05TT2JVR2pTaG9qeTdRSHlZWWM0YWtLazNpdDkzX1Q4WGtMTFJhUjBwZ0FSYWZXeUtrMHhBbWFuMHFXTHVFZV9yN3o4MEFoUS1jUjdFWTJxemZRMDZnUHVsWFRIZUNaRzdMYmxYMkFVc1JqT1J2V3R6SF9pNlJkTEJCZTNwQXptZHlLTlpDOGNGajgtQjhjelhIdjg?oc=5",
+      "published": "Thu, 05 Mar 2026 20:11:11 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "treasury",
+        "yields"
+      ],
+      "relevance_score": 0.4,
+      "sentiment_hint": "negative"
+    }
+  ],
+  "snapshot": {
+    "timestamp": "2026-03-06T13:04:30.944791+00:00",
+    "regime": "neutral",
+    "regime_confidence": 60,
+    "sentiment": 0.0,
+    "portfolio": {
+      "initial_balance": 10000,
+      "current_value": 10000,
+      "cash": 10000,
+      "total_return_usd": 0,
+      "total_return_pct": 0.0,
+      "unrealized_pnl": 0,
+      "realized_pnl": 0,
+      "open_positions": 0,
+      "total_trades": 0,
+      "winning_trades": 0,
+      "losing_trades": 0,
+      "win_rate_pct": 0
+    },
+    "signals_summary": {
+      "total": 28,
+      "bullish": 2,
+      "bearish": 4,
+      "neutral": 21,
+      "errors": 1
+    },
+    "news_count": 381,
+    "active_theses": 0,
+    "planned_actions": 0,
+    "circuit_breaker": false
   }
 }
