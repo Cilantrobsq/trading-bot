@@ -25,8 +25,8 @@ web3>=6.15.0
 eth-account>=0.11.0
 
 # Dashboard API
-flask>=3.0.0
-flask-cors>=4.0.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
 
 # Utilities
 schedule>=1.2.0

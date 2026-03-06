@@ -64,7 +64,13 @@
       {"id": "CPIAUCSL",    "name": "CPI All Urban Consumers",  "threshold": null, "direction": "rising"},
       {"id": "FEDFUNDS",    "name": "Federal Funds Rate",       "threshold": 5.5,  "direction": "rising"},
       {"id": "GDP",         "name": "Gross Domestic Product",    "threshold": null, "direction": "falling"},
-      {"id": "UMCSENT",     "name": "Consumer Sentiment",       "threshold": 60.0, "direction": "falling"}
+      {"id": "UMCSENT",     "name": "Consumer Sentiment",       "threshold": 60.0, "direction": "falling"},
+      {"id": "T10Y3M",     "name": "10Y-3M Yield Curve",      "threshold": -0.5, "direction": "falling"},
+      {"id": "STLFSI4",    "name": "Financial Stress Index",    "threshold": 1.5,  "direction": "rising"},
+      {"id": "BAMLH0A0HYM2","name": "HY Credit Spread",        "threshold": 5.0,  "direction": "rising"},
+      {"id": "ICSA",       "name": "Weekly Jobless Claims",     "threshold": 300000, "direction": "rising"},
+      {"id": "M2SL",       "name": "M2 Money Supply",           "threshold": null, "direction": "falling"},
+      {"id": "DTWEXBGS",   "name": "Trade-Weighted USD Index",  "threshold": 130.0, "direction": "rising"}
     ]
   },
 

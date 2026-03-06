@@ -214,6 +214,84 @@ class Portfolio:
                 )
 
     # ------------------------------------------------------------------
+    # Kelly criterion sizing
+    # ------------------------------------------------------------------
+
+    def kelly_size(
+        self,
+        win_probability: float,
+        win_amount: float = 1.0,
+        loss_amount: float = 1.0,
+    ) -> float:
+        """
+        Calculate optimal position size using Kelly criterion.
+
+        Args:
+            win_probability: Estimated probability of winning (0.0 to 1.0).
+            win_amount: Amount won per dollar risked if correct.
+            loss_amount: Amount lost per dollar risked if wrong.
+
+        Returns:
+            Optimal fraction of portfolio to risk (already scaled by kelly_fraction
+            from config for safety).
+        """
+        if win_probability <= 0 or win_probability >= 1:
+            return 0.0
+        if win_amount <= 0 or loss_amount <= 0:
+            return 0.0
+
+        # Full Kelly: f* = (bp - q) / b
+        # where b = win_amount/loss_amount, p = win_prob, q = 1-p
+        b = win_amount / loss_amount
+        p = win_probability
+        q = 1 - p
+        full_kelly = (b * p - q) / b
+
+        if full_kelly <= 0:
+            return 0.0
+
+        # Apply fractional Kelly (from config, default 0.25 = quarter Kelly)
+        fraction = self.risk.kelly_fraction
+        safe_kelly = full_kelly * fraction
+
+        # Clamp to max position size
+        return min(safe_kelly, self.risk.max_position_size_pct / 100)
+
+    def kelly_quantity(
+        self,
+        price: float,
+        win_probability: float,
+    ) -> float:
+        """
+        Calculate the number of shares to buy using Kelly criterion.
+
+        For prediction markets: win_amount = (1 - price) / price,
+        loss_amount = 1.0 (you lose your stake).
+
+        Args:
+            price: Market price (0.01 to 0.99).
+            win_probability: Your estimated probability the outcome is YES.
+
+        Returns:
+            Number of shares to buy (may be 0 if Kelly says don't bet).
+        """
+        if price <= 0.01 or price >= 0.99:
+            return 0.0
+
+        win_amount = (1.0 - price) / price  # payout ratio
+        loss_amount = 1.0
+
+        kelly_frac = self.kelly_size(win_probability, win_amount, loss_amount)
+        if kelly_frac <= 0:
+            return 0.0
+
+        portfolio_value = self.total_portfolio_value()
+        bet_amount = portfolio_value * kelly_frac
+        quantity = bet_amount / price
+
+        return max(0.0, round(quantity, 1))
+
+    # ------------------------------------------------------------------
     # Position management
     # ------------------------------------------------------------------
 
