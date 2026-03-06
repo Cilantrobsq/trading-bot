@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { PortfolioView } from '@/components/PortfolioView'
 import { SignalsView } from '@/components/SignalsView'
 import { OpportunitiesView } from '@/components/OpportunitiesView'
+import { ProposalsView } from '@/components/ProposalsView'
 import { TradesView } from '@/components/TradesView'
 import { ConfigView } from '@/components/ConfigView'
 import { BrainView } from '@/components/BrainView'
@@ -100,6 +101,7 @@ function App() {
             <TabsTrigger value="portfolio">Portfolio</TabsTrigger>
             <TabsTrigger value="signals">Signals</TabsTrigger>
             <TabsTrigger value="theses">Theses</TabsTrigger>
+            <TabsTrigger value="proposals">Proposals</TabsTrigger>
             <TabsTrigger value="opportunities">Opportunities</TabsTrigger>
             <TabsTrigger value="niche">Edge</TabsTrigger>
             <TabsTrigger value="news">News</TabsTrigger>
@@ -128,6 +130,9 @@ function App() {
           </TabsContent>
           <TabsContent value="theses">
             <ThesesView theses={data?.theses} overrides={data?.overrides} apiBase={API_BASE} onRefresh={fetchData} />
+          </TabsContent>
+          <TabsContent value="proposals">
+            <ProposalsView proposals={data?.proposals} />
           </TabsContent>
           <TabsContent value="opportunities">
             <OpportunitiesView data={data?.opportunities} />

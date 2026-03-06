@@ -160,6 +160,29 @@ def get_cross_correlations():
     return data
 
 
+def get_proposals():
+    proposals_file = DATA_DIR / "proposals" / "active.json"
+    data = read_json(proposals_file)
+    if data is None or not isinstance(data, list):
+        return None
+    # Add seconds_remaining for each proposal
+    from datetime import datetime, timezone as tz
+    now = datetime.now(tz.utc)
+    for p in data:
+        expires = p.get("expires_at", "")
+        if expires:
+            try:
+                exp_dt = datetime.fromisoformat(expires)
+                remaining = max(0, int((exp_dt - now).total_seconds()))
+                p["seconds_remaining"] = remaining
+            except (ValueError, TypeError):
+                p["seconds_remaining"] = 0
+        else:
+            p["seconds_remaining"] = -1
+    # Filter to active only
+    return [p for p in data if p.get("status") == "active" and p.get("seconds_remaining", 0) > 0]
+
+
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -186,6 +209,11 @@ def main():
         dashboard["timezone_arb"] = tz_arb
     if cross_corr:
         dashboard["cross_correlations"] = cross_corr
+
+    # Trade proposals
+    proposals = get_proposals()
+    if proposals:
+        dashboard["proposals"] = proposals
 
     output_path = OUTPUT_DIR / "dashboard.json"
     with open(output_path, "w") as f:

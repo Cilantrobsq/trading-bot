@@ -36,6 +36,7 @@ from src.signals.timezone_arb import TimezoneArbDetector
 from src.signals.cross_correlation import CrossCorrelationEngine
 from src.reasoning.thesis import ThesisManager
 from src.reasoning.overrides import OverrideManager
+from src.reasoning.trade_proposals import TradeProposalGenerator
 
 
 def _log(msg: str) -> None:
@@ -301,6 +302,46 @@ def run():
         json.dump(snapshot, f, indent=2)
     with open(cfg.data_path("snapshots", "latest-snapshot.json"), "w") as f:
         json.dump(snapshot, f, indent=2)
+
+    # Step 9: Generate trade proposals
+    _log("Step 9: Generating trade proposals...")
+    try:
+        proposal_gen = TradeProposalGenerator(portfolio_value=pnl.get("current_value", 10000))
+
+        # Load FRED data if available
+        fred_snapshot = None
+        fred_path = cfg.data_path("snapshots", "latest-fred.json")
+        if os.path.isfile(fred_path):
+            with open(fred_path) as f:
+                fred_snapshot = json.load(f)
+
+        proposals = proposal_gen.generate_all(
+            signals_data=signals_data,
+            fred_data=fred_snapshot,
+            global_data=global_data if global_data else None,
+            tz_arb_data=tz_arb_data if tz_arb_data else None,
+            corr_data=correlation_data if correlation_data else None,
+            brain_data=state,
+            theses=active_theses,
+        )
+        _log(f"  Proposals: {len(proposals)} active")
+
+        for p in proposals[:5]:
+            _log(f"    [{p.category}] {p.name}: {p.direction} @ {p.entry_price} "
+                 f"-> {p.target_price} (R:R {p.risk_reward}:1, {p.confidence}%)")
+
+        decision_log.log_decision(
+            decision_type="proposal_generation",
+            input_data={"signal_sources": ["yfinance", "fred", "global", "tz_arb", "correlations", "theses"]},
+            output_data={"total_proposals": len(proposals), "categories": list(set(p.category for p in proposals))},
+            reasoning=f"Generated {len(proposals)} trade proposals from all signal sources",
+            confidence=70,
+            action_taken="proposals_updated",
+        )
+    except Exception as e:
+        _log(f"  Proposal generation failed: {e}")
+        import traceback
+        traceback.print_exc()
 
     _log("=== Trading Bot Run Complete ===")
     _log(f"  Regime: {regime}, Sentiment: {state['overall_sentiment']}")

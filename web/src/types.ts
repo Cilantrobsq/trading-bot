@@ -415,6 +415,32 @@ export interface CrossCorrelationData {
   analyzed_at: string
 }
 
+// Trade Proposals
+export interface TradeProposal {
+  id: string
+  ticker: string
+  name: string
+  direction: string
+  entry_price: number
+  target_price: number
+  stop_price: number
+  risk_reward: number
+  position_size_pct: number
+  position_size_usd: number
+  confidence: number
+  max_loss_usd: number
+  max_gain_usd: number
+  category: string
+  reasoning: string
+  supporting_signals: string[]
+  opposing_signals: string[]
+  created_at: string
+  expires_at: string
+  status: string
+  urgency: string
+  seconds_remaining: number
+}
+
 export interface DashboardData {
   exported_at: string
   portfolio: PortfolioData
@@ -439,4 +465,5 @@ export interface DashboardData {
   global_macro?: GlobalMacroData
   timezone_arb?: TimezoneArbData
   cross_correlations?: CrossCorrelationData
+  proposals?: TradeProposal[]
 }
