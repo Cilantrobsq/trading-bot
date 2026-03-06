@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Bot Dashboard</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-card: #161b22;
+    --bg-row: #1c2128;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --green: #3fb950;
+    --red: #f85149;
+    --yellow: #d29922;
+    --blue: #58a6ff;
+    --cyan: #39d2c0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    padding: 20px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .header h1 { font-size: 24px; font-weight: 600; }
+  .mode-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .mode-paper { background: rgba(210, 153, 34, 0.2); color: var(--yellow); border: 1px solid var(--yellow); }
+  .mode-live { background: rgba(248, 81, 73, 0.2); color: var(--red); border: 1px solid var(--red); }
+  .refresh-info { font-size: 12px; color: var(--text-dim); }
+
+  /* Grid layout */
+  .grid { display: grid; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-1 { grid-template-columns: 1fr; }
+
+  /* Cards */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .card h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+
+  /* Stats */
+  .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .stat-label { font-size: 13px; color: var(--text-dim); }
+  .positive { color: var(--green); }
+  .negative { color: var(--red); }
+  .neutral { color: var(--text-dim); }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-dim);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+    white-space: nowrap;
+  }
+  tr:hover td { background: var(--bg-row); }
+
+  /* Status dots */
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  .dot-green { background: var(--green); }
+  .dot-red { background: var(--red); }
+  .dot-yellow { background: var(--yellow); }
+  .dot-gray { background: var(--text-dim); }
+
+  /* Empty state */
+  .empty {
+    text-align: center;
+    padding: 32px 16px;
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+
+  /* Spread bar */
+  .spread-bar {
+    display: inline-block;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--green);
+    min-width: 4px;
+    vertical-align: middle;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .grid-3 { grid-template-columns: 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
+    td, th { padding: 6px 8px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Trading Bot</h1>
+  </div>
+  <div style="text-align: right;">
+    <span id="mode-badge" class="mode-badge mode-paper">PAPER</span>
+    <div class="refresh-info" id="refresh-info">Refreshing...</div>
+  </div>
+</div>
+
+<!-- Portfolio stats -->
+<div class="grid grid-3" id="portfolio-stats">
+  <div class="card">
+    <h2>Balance</h2>
+    <div class="stat-value" id="stat-balance">--</div>
+    <div class="stat-label">USD</div>
+  </div>
+  <div class="card">
+    <h2>Total P&amp;L</h2>
+    <div class="stat-value" id="stat-pnl">--</div>
+    <div class="stat-label" id="stat-pnl-label">--</div>
+  </div>
+  <div class="card">
+    <h2>Open Positions</h2>
+    <div class="stat-value" id="stat-positions">--</div>
+    <div class="stat-label">active</div>
+  </div>
+</div>
+
+<!-- Positions table -->
+<div class="card" style="margin-bottom: 20px;">
+  <h2>Open Positions</h2>
+  <div id="positions-container">
+    <div class="empty">No open positions</div>
+  </div>
+</div>
+
+<!-- Signals and Opportunities side by side -->
+<div class="grid grid-2">
+  <div class="card">
+    <h2>Macro Signals</h2>
+    <div id="signals-container">
+      <div class="empty">Loading signals...</div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Opportunities</h2>
+    <div id="opportunities-container">
+      <div class="empty">Loading opportunities...</div>
+    </div>
+  </div>
+</div>
+
+<!-- Trade History -->
+<div class="card" style="margin-top: 20px;">
+  <h2>Recent Trades</h2>
+  <div id="trades-container">
+    <div class="empty">Loading trades...</div>
+  </div>
+</div>
+
+<!-- Config summary -->
+<div class="card" style="margin-top: 20px;">
+  <h2>Strategy Config</h2>
+  <div id="config-container">
+    <div class="empty">Loading config...</div>
+  </div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+
+function fmt(n, decimals = 2) {
+  if (n == null || isNaN(n)) return '--';
+  return Number(n).toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+}
+
+function pnlClass(n) {
+  if (n == null) return 'neutral';
+  return n > 0 ? 'positive' : n < 0 ? 'negative' : 'neutral';
+}
+
+function signalDot(status) {
+  if (!status) return '<span class="dot dot-gray"></span>';
+  const s = status.toLowerCase();
+  if (s.includes('alert') || s.includes('above') || s.includes('high')) return '<span class="dot dot-red"></span>';
+  if (s.includes('warn') || s.includes('near')) return '<span class="dot dot-yellow"></span>';
+  if (s.includes('normal') || s.includes('ok') || s.includes('below')) return '<span class="dot dot-green"></span>';
+  return '<span class="dot dot-gray"></span>';
+}
+
+function timeAgo(ts) {
+  if (!ts) return '--';
+  const d = new Date(ts);
+  const now = new Date();
+  const diff = Math.floor((now - d) / 1000);
+  if (diff < 60) return diff + 's ago';
+  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+  return Math.floor(diff / 86400) + 'd ago';
+}
+
+async function fetchJSON(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+async function loadPortfolio() {
+  const data = await fetchJSON('/api/portfolio');
+  if (!data) return;
+
+  // Mode badge
+  const mode = data.mode || 'paper';
+  const badge = $('mode-badge');
+  badge.textContent = mode.toUpperCase();
+  badge.className = 'mode-badge mode-' + mode;
+
+  // Stats
+  $('stat-balance').textContent = '$' + fmt(data.balance);
+  const pnl = data.total_pnl || 0;
+  const pnlPct = data.total_pnl_pct || 0;
+  $('stat-pnl').textContent = (pnl >= 0 ? '+$' : '-$') + fmt(Math.abs(pnl));
+  $('stat-pnl').className = 'stat-value ' + pnlClass(pnl);
+  $('stat-pnl-label').textContent = (pnlPct >= 0 ? '+' : '') + fmt(pnlPct) + '% all time';
+
+  const positions = data.positions || [];
+  $('stat-positions').textContent = positions.length;
+
+  // Positions table
+  const pc = $('positions-container');
+  if (positions.length === 0) {
+    pc.innerHTML = '<div class="empty">No open positions</div>';
+  } else {
+    let html = '<table><thead><tr><th>Market</th><th>Side</th><th>Size</th><th>Entry</th><th>Current</th><th>P&L</th><th>P&L %</th></tr></thead><tbody>';
+    for (const p of positions) {
+      const pl = p.pnl || p.unrealized_pnl || 0;
+      const plPct = p.pnl_pct || p.unrealized_pnl_pct || 0;
+      html += `<tr>
+        <td>${p.market || p.symbol || '--'}</td>
+        <td>${(p.side || '--').toUpperCase()}</td>
+        <td>$${fmt(p.size || p.notional || 0)}</td>
+        <td>${fmt(p.entry_price || p.avg_price || 0, 4)}</td>
+        <td>${fmt(p.current_price || p.mark_price || 0, 4)}</td>
+        <td class="${pnlClass(pl)}">${pl >= 0 ? '+' : ''}$${fmt(Math.abs(pl))}</td>
+        <td class="${pnlClass(plPct)}">${plPct >= 0 ? '+' : ''}${fmt(plPct)}%</td>
+      </tr>`;
+    }
+    html += '</tbody></table>';
+    pc.innerHTML = html;
+  }
+}
+
+async function loadSignals() {
+  const data = await fetchJSON('/api/signals');
+  const sc = $('signals-container');
+  if (!data || !data.signals || data.signals.length === 0) {
+    sc.innerHTML = '<div class="empty">No signal data yet</div>';
+    return;
+  }
+
+  let html = '<table><thead><tr><th>Signal</th><th>Ticker</th><th>Value</th><th>Threshold</th><th>Status</th></tr></thead><tbody>';
+  for (const s of data.signals) {
+    const val = s.value != null ? fmt(s.value, 2) : '--';
+    const thresh = s.threshold != null ? fmt(s.threshold, 2) : '--';
+    const status = s.status || 'awaiting_data';
+    html += `<tr>
+      <td>${s.name || '--'}</td>
+      <td style="color:var(--blue)">${s.ticker || '--'}</td>
+      <td>${val}</td>
+      <td>${thresh}</td>
+      <td>${signalDot(status)} ${status.replace(/_/g, ' ')}</td>
+    </tr>`;
+  }
+  html += '</tbody></table>';
+  if (data._note) html += `<div class="empty" style="padding:8px; font-size:12px;">${data._note}</div>`;
+  sc.innerHTML = html;
+}
+
+async function loadOpportunities() {
+  const data = await fetchJSON('/api/opportunities');
+  const oc = $('opportunities-container');
+  if (!data || !data.opportunities || data.opportunities.length === 0) {
+    const note = (data && data._note) ? data._note : 'No opportunities detected';
+    oc.innerHTML = `<div class="empty">${note}</div>`;
+    return;
+  }
+
+  let html = '<table><thead><tr><th>Market</th><th>Poly Price</th><th>Ref Price</th><th>Spread</th><th>Rec</th></tr></thead><tbody>';
+  for (const o of data.opportunities) {
+    const spread = o.spread_pct || o.spread || 0;
+    const barW = Math.min(Math.abs(spread) * 5, 80);
+    html += `<tr>
+      <td>${o.market || o.question || '--'}</td>
+      <td>${fmt(o.polymarket_price || o.poly_price || 0, 3)}</td>
+      <td>${fmt(o.reference_price || o.ref_price || 0, 3)}</td>
+      <td>
+        <span class="spread-bar" style="width:${barW}px"></span>
+        <span style="margin-left:6px; color:${spread > 0 ? 'var(--green)' : 'var(--red)'}">${spread > 0 ? '+' : ''}${fmt(spread)}%</span>
+      </td>
+      <td>${o.recommendation || o.action || '--'}</td>
+    </tr>`;
+  }
+  html += '</tbody></table>';
+  oc.innerHTML = html;
+}
+
+async function loadTrades() {
+  const data = await fetchJSON('/api/trades');
+  const tc = $('trades-container');
+  if (!data || !data.trades || data.trades.length === 0) {
+    tc.innerHTML = '<div class="empty">No trades recorded yet</div>';
+    return;
+  }
+
+  let html = '<table><thead><tr><th>Time</th><th>Market</th><th>Side</th><th>Price</th><th>Size</th><th>P&L</th></tr></thead><tbody>';
+  for (const t of data.trades.slice(0, 50)) {
+    const ts = t.timestamp || t.time || '';
+    const pl = t.pnl || t.realized_pnl || null;
+    html += `<tr>
+      <td title="${ts}">${timeAgo(ts)}</td>
+      <td>${t.market || t.symbol || '--'}</td>
+      <td>${(t.side || t.direction || '--').toUpperCase()}</td>
+      <td>${fmt(t.price || t.fill_price || 0, 4)}</td>
+      <td>$${fmt(t.size || t.notional || t.amount || 0)}</td>
+      <td class="${pnlClass(pl)}">${pl != null ? (pl >= 0 ? '+$' : '-$') + fmt(Math.abs(pl)) : '--'}</td>
+    </tr>`;
+  }
+  html += '</tbody></table>';
+  tc.innerHTML = html;
+}
+
+async function loadConfig() {
+  const data = await fetchJSON('/api/config');
+  const cc = $('config-container');
+  if (!data) {
+    cc.innerHTML = '<div class="empty">Could not load config</div>';
+    return;
+  }
+
+  const s = data.strategy || {};
+  const t = data.themes || {};
+  const themes = (t.themes || []).map(th => th.name || th.id).join(', ') || 'None';
+
+  const rm = s.risk_management || {};
+  let html = '<table><tbody>';
+  html += `<tr><td style="color:var(--text-dim)">Status</td><td>${s.status || '--'}</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Mode</td><td>${s.paper_trading?.enabled ? 'Paper Trading' : 'Live'}</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Initial Balance</td><td>$${fmt(s.paper_trading?.initial_balance_usd || 0)}</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Max Position Size</td><td>${rm.max_position_size_pct || '--'}%</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Stop Loss</td><td>${rm.stop_loss_pct || '--'}%</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Take Profit</td><td>${rm.take_profit_pct || '--'}%</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Kelly Fraction</td><td>${rm.kelly_fraction || '--'}</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Themes</td><td>${themes}</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Polymarket</td><td>${s.polymarket?.enabled ? 'Enabled' : 'Disabled'}</td></tr>`;
+  html += `<tr><td style="color:var(--text-dim)">Kalshi</td><td>${s.kalshi?.enabled ? 'Enabled' : 'Disabled'}</td></tr>`;
+  html += '</tbody></table>';
+  cc.innerHTML = html;
+}
+
+async function refresh() {
+  const start = Date.now();
+  await Promise.all([loadPortfolio(), loadSignals(), loadOpportunities(), loadTrades(), loadConfig()]);
+  const elapsed = Date.now() - start;
+  const now = new Date().toLocaleTimeString();
+  $('refresh-info').textContent = `Updated ${now} (${elapsed}ms) · Next in 30s`;
+}
+
+// Initial load and auto-refresh
+refresh();
+setInterval(refresh, 30000);
+</script>
+</body>
+</html>
