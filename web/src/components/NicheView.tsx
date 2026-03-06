@@ -93,7 +93,7 @@ export function NicheView({ nicheMarkets = [], correlations, circuitBreaker, reg
             <div className="flex flex-wrap gap-2">
               {correlations.high_correlations.map((c, i) => (
                 <Badge key={i} variant="destructive" className="text-xs">
-                  {c.pair.join(' / ')} = {fmt(c.correlation)}
+                  {c.ticker_a} / {c.ticker_b} = {fmt(c.correlation)}
                 </Badge>
               ))}
             </div>
@@ -101,7 +101,7 @@ export function NicheView({ nicheMarkets = [], correlations, circuitBreaker, reg
               <div className="mt-3">
                 <div className="text-xs text-muted-foreground mb-1">Suggested hedges:</div>
                 {correlations.suggested_hedges.map((h, i) => (
-                  <Badge key={i} variant="outline" className="text-xs mr-1 mb-1">{h}</Badge>
+                  <Badge key={i} variant="outline" className="text-xs mr-1 mb-1">{h.ticker} ({h.hedge_effectiveness})</Badge>
                 ))}
               </div>
             )}

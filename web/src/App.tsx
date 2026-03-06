@@ -12,6 +12,8 @@ import { DecisionsView } from '@/components/DecisionsView'
 import { NicheView } from '@/components/NicheView'
 import { NewsView } from '@/components/NewsView'
 import { GlobalView } from '@/components/GlobalView'
+import { CryptoView } from '@/components/CryptoView'
+import { InfluencerView } from '@/components/InfluencerView'
 import type { DashboardData } from '@/types'
 
 const BASE = import.meta.env.BASE_URL
@@ -97,9 +99,11 @@ function App() {
           <div className="overflow-x-auto -mx-3 sm:-mx-4 px-3 sm:px-4 mb-4">
           <TabsList className="inline-flex w-max sm:w-auto">
             <TabsTrigger value="brain">Brain</TabsTrigger>
+            <TabsTrigger value="crypto">Crypto</TabsTrigger>
             <TabsTrigger value="global">Global</TabsTrigger>
             <TabsTrigger value="portfolio">Portfolio</TabsTrigger>
             <TabsTrigger value="signals">Signals</TabsTrigger>
+            <TabsTrigger value="influencers">Influencers</TabsTrigger>
             <TabsTrigger value="theses">Theses</TabsTrigger>
             <TabsTrigger value="proposals">Proposals</TabsTrigger>
             <TabsTrigger value="opportunities">Opportunities</TabsTrigger>
@@ -114,6 +118,9 @@ function App() {
           <TabsContent value="brain">
             <BrainView data={data?.brain} killSwitch={data?.kill_switch} onToggleKillSwitch={API_BASE ? toggleKillSwitch : undefined} />
           </TabsContent>
+          <TabsContent value="crypto">
+            <CryptoView data={data?.crypto} />
+          </TabsContent>
           <TabsContent value="global">
             <GlobalView
               globalMarkets={data?.global_markets}
@@ -123,10 +130,13 @@ function App() {
             />
           </TabsContent>
           <TabsContent value="portfolio">
-            <PortfolioView data={data?.portfolio} equityHistory={data?.equity_history} />
+            <PortfolioView data={data?.portfolio} />
           </TabsContent>
           <TabsContent value="signals">
-            <SignalsView data={data?.signals} fred={data?.fred} />
+            <SignalsView data={data?.signals} />
+          </TabsContent>
+          <TabsContent value="influencers">
+            <InfluencerView data={data?.influencers} />
           </TabsContent>
           <TabsContent value="theses">
             <ThesesView theses={data?.theses} overrides={data?.overrides} apiBase={API_BASE} onRefresh={fetchData} />
@@ -143,11 +153,6 @@ function App() {
               correlations={data?.correlations}
               circuitBreaker={data?.circuit_breaker}
               regime={data?.regime}
-              fred={data?.fred}
-              signals={data?.signals}
-              brain={data?.brain}
-              decisions={data?.decisions}
-              snapshot={data?.snapshot}
             />
           </TabsContent>
           <TabsContent value="news">

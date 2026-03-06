@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "status": "development",
 
   "risk_management": {
@@ -40,16 +40,72 @@
 
   "data_sources": {
     "yfinance_tickers": [
-      "^TNX", "^TYX", "^VIX", "EURUSD=X", "EURGBP=X",
-      "XHB", "ITB", "XLRE", "LEN", "DHI", "TOL", "PHM",
-      "O", "AMT", "VNQ", "ITA", "LMT", "RTX", "MBB", "VMBS",
-      "MEL.MC", "IAG.L", "TUI1.DE", "MRL.MC", "COL.MC"
+      "__comment_indices__", "^GSPC", "^IXIC", "^DJI", "^RUT", "^VIX",
+      "__comment_bonds__", "^TNX", "^TYX", "^FVX", "TLT", "SHY", "LQD", "HYG", "AGG",
+      "__comment_sectors_us__", "XLK", "XLF", "XLE", "XLV", "XLI", "XLP", "XLU", "XLY", "XLB", "XLRE", "XLC",
+      "__comment_mega_tech__", "AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA", "AMD", "AVGO", "CRM",
+      "__comment_ai_semis__", "SMCI", "ARM", "MRVL", "INTC", "QCOM", "MU", "TSM",
+      "__comment_crypto_equities__", "MSTR", "COIN", "MARA", "RIOT", "CLSK", "HUT",
+      "__comment_commodities__", "GC=F", "SI=F", "CL=F", "BZ=F", "NG=F", "HG=F", "ZW=F", "ZC=F",
+      "__comment_commodity_etfs__", "GLD", "SLV", "USO", "UNG", "DBA",
+      "__comment_emerging__", "EEM", "FXI", "EWZ", "INDA", "EWY", "EWT",
+      "__comment_forex__", "EURUSD=X", "GBPUSD=X", "USDJPY=X", "USDCNH=X", "AUDUSD=X", "DX-Y.NYB",
+      "__comment_crypto__", "BTC-USD", "ETH-USD", "SOL-USD", "XRP-USD", "ADA-USD", "DOGE-USD", "AVAX-USD", "DOT-USD", "LINK-USD", "MATIC-USD", "UNI-USD", "AAVE-USD", "BNB-USD", "NEAR-USD", "ARB11841-USD", "OP-USD", "ATOM-USD", "FIL-USD", "LTC-USD", "BCH-USD",
+      "__comment_defense_energy__", "ITA", "LMT", "RTX", "XOM", "CVX", "OXY",
+      "__comment_housing__", "XHB", "ITB", "VNQ", "O", "LEN", "DHI",
+      "__comment_europe__", "MEL.MC", "IAG.L", "TUI1.DE", "MRL.MC"
     ],
     "news_feeds": [
-      "https://news.google.com/rss/search?q=polymarket",
-      "https://news.google.com/rss/search?q=prediction+market",
-      "https://news.google.com/rss/search?q=treasury+yields",
-      "https://news.google.com/rss/search?q=housing+market+crash"
+      "__comment_macro__",
+      "https://news.google.com/rss/search?q=federal+reserve+interest+rates",
+      "https://news.google.com/rss/search?q=ECB+monetary+policy",
+      "https://news.google.com/rss/search?q=bank+of+japan+policy",
+      "https://news.google.com/rss/search?q=inflation+CPI+data",
+      "https://news.google.com/rss/search?q=treasury+yields+bonds",
+      "https://news.google.com/rss/search?q=recession+economic+downturn",
+
+      "__comment_crypto__",
+      "https://news.google.com/rss/search?q=bitcoin+BTC+price",
+      "https://news.google.com/rss/search?q=ethereum+ETH+DeFi",
+      "https://news.google.com/rss/search?q=crypto+regulation+SEC",
+      "https://news.google.com/rss/search?q=crypto+ETF+institutional",
+      "https://news.google.com/rss/search?q=stablecoin+USDT+USDC",
+      "https://news.google.com/rss/search?q=solana+altcoin+rally",
+
+      "__comment_tech_ai__",
+      "https://news.google.com/rss/search?q=nvidia+AI+chips",
+      "https://news.google.com/rss/search?q=artificial+intelligence+investment",
+      "https://news.google.com/rss/search?q=big+tech+earnings+results",
+      "https://news.google.com/rss/search?q=semiconductor+chip+shortage",
+
+      "__comment_geopolitics__",
+      "https://news.google.com/rss/search?q=US+China+trade+war+tariffs",
+      "https://news.google.com/rss/search?q=Ukraine+Russia+war+NATO",
+      "https://news.google.com/rss/search?q=Middle+East+conflict+oil",
+      "https://news.google.com/rss/search?q=Taiwan+strait+tensions",
+      "https://news.google.com/rss/search?q=sanctions+geopolitical+risk",
+
+      "__comment_commodities__",
+      "https://news.google.com/rss/search?q=oil+price+OPEC+production",
+      "https://news.google.com/rss/search?q=gold+price+safe+haven",
+      "https://news.google.com/rss/search?q=copper+commodities+demand",
+
+      "__comment_markets_general__",
+      "https://news.google.com/rss/search?q=stock+market+crash+correction",
+      "https://news.google.com/rss/search?q=IPO+market+SPAC",
+      "https://news.google.com/rss/search?q=short+squeeze+meme+stock",
+      "https://news.google.com/rss/search?q=hedge+fund+positioning",
+
+      "__comment_prediction_markets__",
+      "https://news.google.com/rss/search?q=polymarket+prediction+market",
+      "https://news.google.com/rss/search?q=kalshi+event+contracts",
+
+      "__comment_global__",
+      "https://news.google.com/rss/search?q=emerging+markets+crisis",
+      "https://news.google.com/rss/search?q=Japan+economy+yen",
+      "https://news.google.com/rss/search?q=China+economy+property",
+      "https://news.google.com/rss/search?q=India+economy+growth",
+      "https://news.google.com/rss/search?q=European+economy+outlook"
     ]
   },
 
@@ -75,8 +131,8 @@
   },
 
   "finnhub": {
-    "tickers": ["AAPL", "TSLA", "SPY", "NVDA", "MSFT"],
-    "crypto_symbols": ["BTC", "ETH"]
+    "tickers": ["AAPL", "TSLA", "SPY", "NVDA", "MSFT", "GOOGL", "AMZN", "META", "AMD", "COIN"],
+    "crypto_symbols": ["BTC", "ETH", "SOL", "XRP", "ADA", "DOGE", "AVAX", "DOT"]
   },
 
   "llm_analysis": {

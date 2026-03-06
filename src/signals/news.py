@@ -143,12 +143,18 @@ class NewsFeedMonitor:
                                 if len(words) > 1:
                                     keywords.add(name.lower())
 
-            # Key concepts from description
+            # Key concepts from description (broad market coverage)
             desc_keywords = {
-                "housing", "bond", "yield", "treasury", "mortgage", "geopolitical",
-                "defense", "reit", "homebuilder", "mallorca", "balearic", "tourism",
-                "airbnb", "rental", "hotel", "spain", "spanish",
+                "bitcoin", "crypto", "ethereum", "defi", "stablecoin", "altcoin",
+                "ai", "artificial intelligence", "semiconductor", "gpu", "chip",
+                "bond", "yield", "treasury", "mortgage", "rate", "inflation",
+                "geopolitical", "tariff", "sanctions", "war", "defense",
+                "oil", "gold", "copper", "commodity", "opec",
+                "housing", "reit", "real estate",
+                "emerging", "china", "india", "japan", "brazil",
                 "polymarket", "prediction", "prediction market",
+                "recession", "crash", "rally", "earnings",
+                "fed", "ecb", "central bank", "monetary policy",
             }
             for dk in desc_keywords:
                 if dk in theme.description.lower():

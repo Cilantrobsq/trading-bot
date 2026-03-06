@@ -652,6 +652,169 @@ class TradeProposalGenerator:
         return proposals
 
     # ------------------------------------------------------------------
+    # Crypto proposals
+    # ------------------------------------------------------------------
+
+    def _from_crypto_signals(self, crypto_data: Dict) -> List[TradeProposal]:
+        """Generate proposals from crypto market signals."""
+        proposals = []
+        coins = crypto_data.get("coins", [])
+        fear_greed = crypto_data.get("fear_greed", {})
+        anomalies = crypto_data.get("anomalies", [])
+        crypto_signals = crypto_data.get("signals", [])
+
+        if not coins:
+            return proposals
+
+        prices = {c["symbol"]: c["price"] for c in coins if c.get("price")}
+
+        # Fear & Greed extreme
+        fg_value = fear_greed.get("value")
+        if fg_value is not None and fg_value <= 20:
+            btc_price = prices.get("BTC", 0)
+            if btc_price > 0:
+                p = self._make_proposal(
+                    ticker="BTC-USD", name="Bitcoin (Extreme Fear Buy)",
+                    direction="long",
+                    entry_price=btc_price, target_price=btc_price * 1.10,
+                    stop_price=btc_price * 0.92,
+                    confidence=70, category="crypto",
+                    reasoning=f"Crypto Fear & Greed at {fg_value} (Extreme Fear). "
+                              f"Historically strong buying signal.",
+                    supporting=[f"Fear & Greed: {fg_value}"],
+                    opposing=["Fear can persist in prolonged bear markets"],
+                    validity_hours=48.0,
+                )
+                if p:
+                    proposals.append(p)
+        elif fg_value is not None and fg_value >= 80:
+            btc_price = prices.get("BTC", 0)
+            if btc_price > 0:
+                p = self._make_proposal(
+                    ticker="BTC-USD", name="Bitcoin (Extreme Greed Caution)",
+                    direction="short",
+                    entry_price=btc_price, target_price=btc_price * 0.90,
+                    stop_price=btc_price * 1.05,
+                    confidence=60, category="crypto",
+                    reasoning=f"Crypto Fear & Greed at {fg_value} (Extreme Greed). Distribution risk.",
+                    supporting=[f"Fear & Greed: {fg_value}"],
+                    opposing=["Greed can sustain in parabolic moves"],
+                    validity_hours=48.0,
+                )
+                if p:
+                    proposals.append(p)
+
+        # Large crypto movers
+        for anomaly in anomalies:
+            if anomaly.get("type") in ("large_move_24h", "flash_move_1h"):
+                symbol = anomaly.get("symbol", "")
+                change = anomaly.get("value", 0)
+                price = prices.get(symbol, 0)
+                if price <= 0 or abs(change) < 15:
+                    continue
+                direction = "short" if change > 0 else "long"
+                if direction == "short":
+                    target = price * 0.90
+                    stop = price * 1.05
+                else:
+                    target = price * 1.10
+                    stop = price * 0.95
+                p = self._make_proposal(
+                    ticker=f"{symbol}-USD", name=f"{symbol} Mean Reversion",
+                    direction=direction,
+                    entry_price=price, target_price=target, stop_price=stop,
+                    confidence=55, category="crypto",
+                    reasoning=f"{symbol} moved {change:+.1f}%. Mean reversion expected.",
+                    supporting=[anomaly.get("description", "")],
+                    opposing=["Momentum can persist in crypto"],
+                    validity_hours=12.0,
+                )
+                if p:
+                    proposals.append(p)
+
+        # Sector rotation
+        for sig in crypto_signals:
+            if "sector_hot" in sig.get("signal", ""):
+                affected = sig.get("affected", [])
+                if affected:
+                    symbol = affected[0]
+                    price = prices.get(symbol, 0)
+                    if price > 0:
+                        p = self._make_proposal(
+                            ticker=f"{symbol}-USD", name=f"{symbol} Sector Momentum",
+                            direction="long",
+                            entry_price=price, target_price=price * 1.08,
+                            stop_price=price * 0.95,
+                            confidence=60, category="crypto",
+                            reasoning=sig.get("description", "Sector momentum"),
+                            supporting=[sig.get("description", "")],
+                            opposing=["Sector rotations can reverse quickly"],
+                            validity_hours=24.0,
+                        )
+                        if p:
+                            proposals.append(p)
+
+        return proposals
+
+    # ------------------------------------------------------------------
+    # Influencer proposals
+    # ------------------------------------------------------------------
+
+    def _from_influencer_signals(self, influencer_data: Dict) -> List[TradeProposal]:
+        """Generate proposals from influencer sentiment signals."""
+        proposals = []
+        signals = influencer_data.get("signals", [])
+        if not signals:
+            return proposals
+
+        for sig in signals:
+            if sig.get("strength", 0) < 0.5:
+                continue
+            direction = sig.get("direction", "neutral")
+            if direction == "neutral":
+                continue
+
+            topics = sig.get("topics", [])
+            description = sig.get("description", "")
+            ticker, name, price_approx = None, None, None
+
+            if "Bitcoin" in topics or "Crypto" in topics:
+                ticker, name, price_approx = "BTC-USD", "Bitcoin (Influencer Signal)", 85000
+            elif "AI" in topics or "Semiconductors" in topics:
+                ticker, name, price_approx = "NVDA", "NVIDIA (AI Influencer Signal)", 900
+            elif "Interest Rates" in topics or "Treasuries" in topics:
+                ticker, name, price_approx = "TLT", "Treasury Bonds (Rate Signal)", 90
+            elif "Gold" in topics:
+                ticker, name, price_approx = "GLD", "Gold (Safe Haven Signal)", 280
+            elif "Equities" in topics:
+                ticker, name, price_approx = "SPY", "S&P 500 (Market Signal)", 560
+
+            if ticker and price_approx:
+                trade_dir = "long" if direction == "bullish" else "short"
+                if trade_dir == "long":
+                    target = price_approx * 1.03
+                    stop = price_approx * 0.985
+                else:
+                    target = price_approx * 0.97
+                    stop = price_approx * 1.015
+
+                confidence = min(65, 45 + int(sig.get("strength", 0) * 25))
+                p = self._make_proposal(
+                    ticker=ticker, name=name,
+                    direction=trade_dir,
+                    entry_price=price_approx, target_price=target, stop_price=stop,
+                    confidence=confidence, category="influencer",
+                    reasoning=f"Key figure signal: {description[:200]}",
+                    supporting=[description[:100]],
+                    opposing=["Influencer sentiment can be contrarian indicator"],
+                    validity_hours=12.0,
+                )
+                if p:
+                    proposals.append(p)
+
+        return proposals
+
+    # ------------------------------------------------------------------
     # Main entry point
     # ------------------------------------------------------------------
 
@@ -664,6 +827,8 @@ class TradeProposalGenerator:
         corr_data: Optional[Dict] = None,
         brain_data: Optional[Dict] = None,
         theses: Optional[List[Dict]] = None,
+        crypto_data: Optional[Dict] = None,
+        influencer_data: Optional[Dict] = None,
     ) -> List[TradeProposal]:
         """
         Run all proposal generators and return combined list.
@@ -697,6 +862,12 @@ class TradeProposalGenerator:
 
         if brain_data and signals_data:
             new_proposals.extend(self._from_brain_planned_actions(brain_data, signals_data))
+
+        if crypto_data:
+            new_proposals.extend(self._from_crypto_signals(crypto_data))
+
+        if influencer_data:
+            new_proposals.extend(self._from_influencer_signals(influencer_data))
 
         # Add new proposals to active list
         self.proposals.extend(new_proposals)

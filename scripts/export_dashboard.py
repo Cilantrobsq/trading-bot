@@ -230,6 +230,20 @@ def get_proposals():
     return [p for p in data if p.get("status") == "active" and p.get("seconds_remaining", 0) > 0]
 
 
+def get_crypto():
+    data = read_json(SNAPSHOTS_DIR / "latest-crypto.json")
+    if data is None:
+        return None
+    return data
+
+
+def get_influencers():
+    data = read_json(SNAPSHOTS_DIR / "latest-influencers.json")
+    if data is None:
+        return None
+    return data
+
+
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -241,6 +255,8 @@ def main():
     fred = get_fred()
     news = get_news()
     decisions = get_decisions()
+    crypto = get_crypto()
+    influencers = get_influencers()
 
     dashboard = {
         "exported_at": datetime.now(timezone.utc).isoformat(),
@@ -281,6 +297,14 @@ def main():
     proposals = get_proposals()
     if proposals:
         dashboard["proposals"] = proposals
+
+    # Crypto market data
+    if crypto:
+        dashboard["crypto"] = crypto
+
+    # Influencer data
+    if influencers:
+        dashboard["influencers"] = influencers
 
     output_path = OUTPUT_DIR / "dashboard.json"
     with open(output_path, "w") as f:

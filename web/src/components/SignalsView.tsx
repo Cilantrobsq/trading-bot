@@ -40,13 +40,13 @@ export function SignalsView({ data }: { data?: SignalsData }) {
               </TableHeader>
               <TableBody>
                 {signals.map((s, i) => {
-                  const isAlert = s.value !== null && s.threshold !== null && s.value >= s.threshold
+                  const isAlert = s.value != null && s.threshold != null && s.value >= s.threshold
                   return (
                     <TableRow key={i} className={isAlert ? 'bg-destructive/10' : ''}>
                       <TableCell className="font-medium">{s.name}</TableCell>
                       <TableCell className="text-muted-foreground font-mono text-xs">{s.ticker}</TableCell>
                       <TableCell className={isAlert ? 'text-red-400 font-bold' : ''}>
-                        {s.value !== null ? s.value.toFixed(2) : '-'}
+                        {s.value != null ? s.value.toFixed(2) : '-'}
                       </TableCell>
                       <TableCell className="text-muted-foreground">
                         {s.threshold !== null ? s.threshold : '-'}

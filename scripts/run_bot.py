@@ -37,6 +37,8 @@ from src.signals.cross_correlation import CrossCorrelationEngine
 from src.reasoning.thesis import ThesisManager
 from src.reasoning.overrides import OverrideManager
 from src.reasoning.trade_proposals import TradeProposalGenerator
+from src.signals.crypto_scanner import CryptoScanner
+from src.signals.influencer_tracker import InfluencerTracker
 
 
 def _log(msg: str) -> None:
@@ -172,6 +174,71 @@ def run():
         _log(f"  Correlations: {anomaly_count} anomalies, systemic risk={systemic}")
     except Exception as e:
         _log(f"  Correlation analysis failed: {e}")
+
+    # Step 1g: Crypto market scan
+    _log("Step 1g: Running crypto market scan...")
+    crypto_data = {}
+    try:
+        crypto_scanner = CryptoScanner()
+        crypto_data = crypto_scanner.full_scan()
+        _log(f"  Crypto: {crypto_data.get('coin_count', 0)} coins, "
+             f"{crypto_data.get('signal_count', 0)} signals, "
+             f"{crypto_data.get('anomaly_count', 0)} anomalies")
+
+        fg = crypto_data.get("fear_greed", {})
+        overview = crypto_data.get("overview", {})
+        _log(f"  Fear/Greed: {fg.get('value', '?')} ({fg.get('classification', '?')}), "
+             f"BTC dom: {overview.get('btc_dominance', '?')}%, "
+             f"Market cap: ${overview.get('total_market_cap_usd', 0)/1e12:.2f}T")
+
+        decision_log.log_decision(
+            decision_type="signal_eval",
+            input_data={"crypto_coins": crypto_data.get("coin_count", 0)},
+            output_data={
+                "fear_greed": fg.get("value"),
+                "btc_dominance": overview.get("btc_dominance"),
+                "signals": crypto_data.get("signal_count", 0),
+                "anomalies": crypto_data.get("anomaly_count", 0),
+            },
+            reasoning=f"Crypto scan: {crypto_data.get('coin_count', 0)} coins, F&G={fg.get('value', '?')}",
+            confidence=75,
+            action_taken="crypto_scan_updated",
+        )
+    except Exception as e:
+        _log(f"  Crypto scan failed: {e}")
+        import traceback
+        traceback.print_exc()
+
+    # Step 1h: Influencer and key figure tracking
+    _log("Step 1h: Scanning influencer feeds...")
+    influencer_data = {}
+    try:
+        influencer_tracker = InfluencerTracker()
+        influencer_data = influencer_tracker.full_scan()
+        _log(f"  Influencers: {influencer_data.get('mention_count', 0)} mentions, "
+             f"{influencer_data.get('signal_count', 0)} signals")
+
+        summary = influencer_data.get("summary", {})
+        sb = summary.get("sentiment_balance", {})
+        _log(f"  Sentiment: {sb.get('bullish', 0)} bullish, {sb.get('bearish', 0)} bearish, "
+             f"ratio: {sb.get('ratio', 0)}")
+
+        decision_log.log_decision(
+            decision_type="signal_eval",
+            input_data={"influencer_feeds": influencer_data.get("feeds_scanned", 0)},
+            output_data={
+                "mentions": influencer_data.get("mention_count", 0),
+                "signals": influencer_data.get("signal_count", 0),
+                "sentiment_balance": sb,
+            },
+            reasoning=f"Influencer scan: {influencer_data.get('mention_count', 0)} mentions from key figures",
+            confidence=65,
+            action_taken="influencer_scan_updated",
+        )
+    except Exception as e:
+        _log(f"  Influencer scan failed: {e}")
+        import traceback
+        traceback.print_exc()
 
     # Step 2: Fetch news
     _log("Step 2: Fetching news feeds...")
@@ -323,6 +390,8 @@ def run():
             corr_data=correlation_data if correlation_data else None,
             brain_data=state,
             theses=active_theses,
+            crypto_data=crypto_data if crypto_data else None,
+            influencer_data=influencer_data if influencer_data else None,
         )
         _log(f"  Proposals: {len(proposals)} active")
 

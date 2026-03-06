@@ -155,10 +155,16 @@ class Config:
                 threshold_alert=ind.get("threshold_alert"),
             ))
 
-        # Data sources
+        # Data sources (filter out __comment__ entries used for readability)
         ds = s.get("data_sources", {})
-        self.yfinance_tickers: List[str] = ds.get("yfinance_tickers", [])
-        self.news_feeds: List[str] = ds.get("news_feeds", [])
+        self.yfinance_tickers: List[str] = [
+            t for t in ds.get("yfinance_tickers", [])
+            if not t.startswith("__comment")
+        ]
+        self.news_feeds: List[str] = [
+            f for f in ds.get("news_feeds", [])
+            if not f.startswith("__comment")
+        ]
 
     def _load_themes(self) -> None:
         self._raw_themes = self._load_json("themes.json")

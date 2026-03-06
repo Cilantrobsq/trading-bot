@@ -32,6 +32,10 @@ export interface Signal {
   signal: string
   source: string
   error: string | null
+  value?: number | null
+  status?: string
+  direction?: string
+  theme?: string
 }
 
 export interface SignalsData {
@@ -466,4 +470,6 @@ export interface DashboardData {
   timezone_arb?: TimezoneArbData
   cross_correlations?: CrossCorrelationData
   proposals?: TradeProposal[]
+  crypto?: any
+  influencers?: any
 }
