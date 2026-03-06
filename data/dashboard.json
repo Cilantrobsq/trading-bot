@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-06T14:29:20.206737+00:00",
+  "exported_at": "2026-03-06T15:04:05.846542+00:00",
   "portfolio": {
     "balance": 10000,
     "initial_balance": 10000,
@@ -14,9 +14,9 @@
       {
         "ticker": "AMT",
         "name": "AMT",
-        "price": 187.64,
-        "prev_close": 187.0,
-        "change_pct": 0.34,
+        "price": 187.83,
+        "prev_close": 188.2,
+        "change_pct": -0.2,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -26,9 +26,9 @@
       {
         "ticker": "CLNX.MC",
         "name": "Cellnex Telecom",
-        "price": 28.94,
+        "price": 28.93,
         "prev_close": 30.06,
-        "change_pct": -3.73,
+        "change_pct": -3.76,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -38,9 +38,9 @@
       {
         "ticker": "COL.MC",
         "name": "COL.MC",
-        "price": 5.31,
+        "price": 5.285,
         "prev_close": 5.29,
-        "change_pct": 0.38,
+        "change_pct": -0.09,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -50,21 +50,21 @@
       {
         "ticker": "DHI",
         "name": "DHI",
-        "price": 149.88,
-        "prev_close": 149.89,
-        "change_pct": -0.01,
+        "price": 145.87,
+        "prev_close": 150.5,
+        "change_pct": -3.08,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "EURGBP=X",
         "name": "EURGBP=X",
-        "price": 0.8663,
+        "price": 0.867,
         "prev_close": 0.869,
-        "change_pct": -0.31,
+        "change_pct": -0.23,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -74,9 +74,9 @@
       {
         "ticker": "EURUSD=X",
         "name": "EURUSD=X",
-        "price": 1.1561,
+        "price": 1.1592,
         "prev_close": 1.1612,
-        "change_pct": -0.44,
+        "change_pct": -0.17,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -86,9 +86,9 @@
       {
         "ticker": "IAG.L",
         "name": "IAG.L",
-        "price": 365.5,
+        "price": 360.2,
         "prev_close": 371.15,
-        "change_pct": -1.52,
+        "change_pct": -2.95,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -98,9 +98,9 @@
       {
         "ticker": "ITA",
         "name": "ITA",
-        "price": 240.04,
-        "prev_close": 240.7453,
-        "change_pct": -0.29,
+        "price": 239.175,
+        "prev_close": 240.9,
+        "change_pct": -0.72,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -110,21 +110,21 @@
       {
         "ticker": "ITB",
         "name": "ITB",
-        "price": 100.58,
-        "prev_close": 101.01,
-        "change_pct": -0.43,
+        "price": 97.67,
+        "prev_close": 101.0733,
+        "change_pct": -3.37,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "KGX.DE",
         "name": "Knorr-Bremse (indirect German wealth proxy)",
-        "price": 51.2,
+        "price": 50.7,
         "prev_close": 52.05,
-        "change_pct": -1.63,
+        "change_pct": -2.59,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -134,21 +134,21 @@
       {
         "ticker": "LEN",
         "name": "LEN",
-        "price": 104.3,
-        "prev_close": 104.76,
-        "change_pct": -0.44,
+        "price": 101.28,
+        "prev_close": 104.9,
+        "change_pct": -3.45,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "LMT",
         "name": "LMT",
-        "price": 655.0,
-        "prev_close": 655.04,
-        "change_pct": -0.01,
+        "price": 658.66,
+        "prev_close": 654.51,
+        "change_pct": 0.63,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -158,9 +158,9 @@
       {
         "ticker": "MBB",
         "name": "MBB",
-        "price": 95.62,
-        "prev_close": 95.95,
-        "change_pct": -0.34,
+        "price": 95.42,
+        "prev_close": 95.62,
+        "change_pct": -0.21,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -170,9 +170,9 @@
       {
         "ticker": "MEL.MC",
         "name": "MEL.MC",
-        "price": 7.995,
+        "price": 7.95,
         "prev_close": 8.025,
-        "change_pct": -0.37,
+        "change_pct": -0.93,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -194,9 +194,9 @@
       {
         "ticker": "MRL.MC",
         "name": "MRL.MC",
-        "price": 14.26,
+        "price": 14.17,
         "prev_close": 14.51,
-        "change_pct": -1.72,
+        "change_pct": -2.34,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -206,9 +206,9 @@
       {
         "ticker": "O",
         "name": "O",
-        "price": 64.8,
-        "prev_close": 64.6,
-        "change_pct": 0.31,
+        "price": 64.6,
+        "prev_close": 64.72,
+        "change_pct": -0.19,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -218,21 +218,21 @@
       {
         "ticker": "PHM",
         "name": "PHM",
-        "price": 129.65,
-        "prev_close": 129.92,
-        "change_pct": -0.21,
+        "price": 125.63,
+        "prev_close": 129.65,
+        "change_pct": -3.1,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "RTX",
         "name": "RTX",
-        "price": 203.86,
-        "prev_close": 204.25,
-        "change_pct": -0.19,
+        "price": 205.38,
+        "prev_close": 204.51,
+        "change_pct": 0.43,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -242,21 +242,21 @@
       {
         "ticker": "TOL",
         "name": "TOL",
-        "price": 149.64,
-        "prev_close": 150.0,
-        "change_pct": -0.24,
+        "price": 145.33,
+        "prev_close": 149.99,
+        "change_pct": -3.11,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "TUI1.DE",
         "name": "TUI1.DE",
-        "price": 7.276,
+        "price": 7.232,
         "prev_close": 7.314,
-        "change_pct": -0.52,
+        "change_pct": -1.12,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -266,9 +266,9 @@
       {
         "ticker": "VMBS",
         "name": "VMBS",
-        "price": 47.24,
-        "prev_close": 47.36,
-        "change_pct": -0.25,
+        "price": 47.14,
+        "prev_close": 47.24,
+        "change_pct": -0.21,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -278,45 +278,45 @@
       {
         "ticker": "VNQ",
         "name": "VNQ",
-        "price": 94.58,
-        "prev_close": 94.79,
-        "change_pct": -0.22,
+        "price": 93.21,
+        "prev_close": 94.7,
+        "change_pct": -1.57,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "XHB",
         "name": "XHB",
-        "price": 108.28,
-        "prev_close": 108.45,
-        "change_pct": -0.16,
+        "price": 104.76,
+        "prev_close": 108.5,
+        "change_pct": -3.45,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "XLRE",
         "name": "XLRE",
-        "price": 43.34,
-        "prev_close": 43.393,
-        "change_pct": -0.12,
+        "price": 42.72,
+        "prev_close": 43.4,
+        "change_pct": -1.57,
         "threshold": null,
         "threshold_breached": false,
-        "signal": "neutral",
+        "signal": "bearish",
         "source": "yfinance",
         "error": null
       },
       {
         "ticker": "^TNX",
         "name": "^TNX",
-        "price": 4.125,
+        "price": 4.177,
         "prev_close": 4.146,
-        "change_pct": -0.51,
+        "change_pct": 0.75,
         "threshold": 4.5,
         "threshold_breached": false,
         "signal": "neutral",
@@ -326,9 +326,9 @@
       {
         "ticker": "^TYX",
         "name": "^TYX",
-        "price": 4.744,
+        "price": 4.798,
         "prev_close": 4.752,
-        "change_pct": -0.17,
+        "change_pct": 0.97,
         "threshold": 5.0,
         "threshold_breached": false,
         "signal": "neutral",
@@ -338,9 +338,9 @@
       {
         "ticker": "^VIX",
         "name": "^VIX",
-        "price": 26.53,
+        "price": 28.35,
         "prev_close": 23.75,
-        "change_pct": 11.71,
+        "change_pct": 19.37,
         "threshold": 25,
         "threshold_breached": true,
         "signal": "bullish",
@@ -348,7 +348,7 @@
         "error": null
       }
     ],
-    "fetched_at": "2026-03-06T14:00:11.717813+00:00"
+    "fetched_at": "2026-03-06T15:03:37.198568+00:00"
   },
   "opportunities": {
     "opportunities": [],
@@ -912,268 +912,1335 @@
       }
     }
   },
-  "brain": {
-    "market_regime": "neutral",
-    "regime_confidence": 60,
-    "overall_sentiment": 0.0,
-    "active_themes": [
+  "global_markets": {
+    "indices": {
+      "asia": [
+        {
+          "ticker": "^N225",
+          "name": "Nikkei 225",
+          "region": "asia",
+          "price": 55620.8398,
+          "prev_close": 55278.0586,
+          "change_pct": 0.62,
+          "week_change_pct": -5.49,
+          "month_change_pct": 5.63,
+          "volume": 0.0,
+          "avg_volume": 174290000.0,
+          "volume_ratio": null,
+          "high_52w": 58850.2695,
+          "low_52w": 31136.5801,
+          "pct_from_52w_high": -5.49,
+          "ma_50d": 54145.9066,
+          "ma_200d": 46444.6319,
+          "above_50d": true,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "JPY",
+            "country": "JP"
+          }
+        },
+        {
+          "ticker": "^HSI",
+          "name": "Hang Seng",
+          "region": "asia",
+          "price": 25757.2891,
+          "prev_close": 25321.3398,
+          "change_pct": 1.72,
+          "week_change_pct": -3.28,
+          "month_change_pct": -5.95,
+          "volume": 0.0,
+          "avg_volume": 2927425000.0,
+          "volume_ratio": null,
+          "high_52w": 27968.0898,
+          "low_52w": 19828.3008,
+          "pct_from_52w_high": -7.9,
+          "ma_50d": 26529.2369,
+          "ma_200d": 25583.7556,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "HKD",
+            "country": "HK"
+          }
+        },
+        {
+          "ticker": "000001.SS",
+          "name": "Shanghai Composite",
+          "region": "asia",
+          "price": 4124.1938,
+          "prev_close": 4108.5669,
+          "change_pct": 0.38,
+          "week_change_pct": -0.93,
+          "month_change_pct": -0.38,
+          "volume": 252066560.0,
+          "avg_volume": 669955.0,
+          "volume_ratio": 376.24,
+          "high_52w": 4182.5908,
+          "low_52w": 3096.5759,
+          "pct_from_52w_high": -1.4,
+          "ma_50d": 4074.0644,
+          "ma_200d": 3791.5126,
+          "above_50d": true,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "CNY",
+            "country": "CN"
+          }
+        },
+        {
+          "ticker": "^KS11",
+          "name": "KOSPI",
+          "region": "asia",
+          "price": 5584.8701,
+          "prev_close": 5583.8999,
+          "change_pct": 0.02,
+          "week_change_pct": -11.45,
+          "month_change_pct": 6.96,
+          "volume": 1223020.0,
+          "avg_volume": 1117460.0,
+          "volume_ratio": 1.09,
+          "high_52w": 6307.27,
+          "low_52w": 2293.7,
+          "pct_from_52w_high": -11.45,
+          "ma_50d": 5014.0478,
+          "ma_200d": 3791.3902,
+          "above_50d": true,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "KRW",
+            "country": "KR"
+          }
+        },
+        {
+          "ticker": "^AXJO",
+          "name": "ASX 200",
+          "region": "asia",
+          "price": 8851.0,
+          "prev_close": 8940.2998,
+          "change_pct": -1.0,
+          "week_change_pct": -3.78,
+          "month_change_pct": -0.86,
+          "volume": 0.0,
+          "avg_volume": 685875.0,
+          "volume_ratio": null,
+          "high_52w": 9198.5996,
+          "low_52w": 7343.2998,
+          "pct_from_52w_high": -3.78,
+          "ma_50d": 8891.4519,
+          "ma_200d": 8771.11,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "AUD",
+            "country": "AU"
+          }
+        },
+        {
+          "ticker": "^BSESN",
+          "name": "BSE Sensex",
+          "region": "asia",
+          "price": 78918.8984,
+          "prev_close": 80015.8984,
+          "change_pct": -1.37,
+          "week_change_pct": -4.05,
+          "month_change_pct": -5.76,
+          "volume": 0.0,
+          "avg_volume": 28285.0,
+          "volume_ratio": null,
+          "high_52w": 85762.0078,
+          "low_52w": 73137.8984,
+          "pct_from_52w_high": -7.98,
+          "ma_50d": 83196.1361,
+          "ma_200d": 82773.4029,
+          "above_50d": false,
+          "above_200d": false,
+          "error": null,
+          "extra": {
+            "currency": "INR",
+            "country": "IN"
+          }
+        },
+        {
+          "ticker": "^TWII",
+          "name": "TWSE",
+          "region": "asia",
+          "price": 33599.5391,
+          "prev_close": 33672.9414,
+          "change_pct": -0.22,
+          "week_change_pct": -5.12,
+          "month_change_pct": 5.13,
+          "volume": 0.0,
+          "avg_volume": 6762820.0,
+          "volume_ratio": null,
+          "high_52w": 35414.4883,
+          "low_52w": 17391.7598,
+          "pct_from_52w_high": -5.12,
+          "ma_50d": 31225.0605,
+          "ma_200d": 26323.8147,
+          "above_50d": true,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "TWD",
+            "country": "TW"
+          }
+        },
+        {
+          "ticker": "^STI",
+          "name": "Straits Times",
+          "region": "asia",
+          "price": 4848.25,
+          "prev_close": 4846.5601,
+          "change_pct": 0.03,
+          "week_change_pct": -2.94,
+          "month_change_pct": -0.9,
+          "volume": 0.0,
+          "avg_volume": 346081565.0,
+          "volume_ratio": null,
+          "high_52w": 5041.3301,
+          "low_52w": 3393.6899,
+          "pct_from_52w_high": -3.83,
+          "ma_50d": 4856.4584,
+          "ma_200d": 4415.5526,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "SGD",
+            "country": "SG"
+          }
+        }
+      ],
+      "europe": [
+        {
+          "ticker": "^FTSE",
+          "name": "FTSE 100",
+          "region": "europe",
+          "price": 10243.5898,
+          "prev_close": 10413.9004,
+          "change_pct": -1.64,
+          "week_change_pct": -6.11,
+          "month_change_pct": -1.53,
+          "volume": 0.0,
+          "avg_volume": 1027484520.0,
+          "volume_ratio": null,
+          "high_52w": 10910.5996,
+          "low_52w": 7679.5,
+          "pct_from_52w_high": -6.11,
+          "ma_50d": 10314.9778,
+          "ma_200d": 9535.708,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "GBP",
+            "country": "GB"
+          }
+        },
+        {
+          "ticker": "^GDAXI",
+          "name": "DAX 40",
+          "region": "europe",
+          "price": 23398.7109,
+          "prev_close": 23815.75,
+          "change_pct": -1.75,
+          "week_change_pct": -7.46,
+          "month_change_pct": -4.9,
+          "volume": 0.0,
+          "avg_volume": 68572000.0,
+          "volume_ratio": null,
+          "high_52w": 25420.6602,
+          "low_52w": 19670.8809,
+          "pct_from_52w_high": -7.95,
+          "ma_50d": 24809.9167,
+          "ma_200d": 24173.4285,
+          "above_50d": false,
+          "above_200d": false,
+          "error": null,
+          "extra": {
+            "currency": "EUR",
+            "country": "DE"
+          }
+        },
+        {
+          "ticker": "^FCHI",
+          "name": "CAC 40",
+          "region": "europe",
+          "price": 7921.8799,
+          "prev_close": 8045.7998,
+          "change_pct": -1.54,
+          "week_change_pct": -7.68,
+          "month_change_pct": -4.12,
+          "volume": 0.0,
+          "avg_volume": 77045370.0,
+          "volume_ratio": null,
+          "high_52w": 8620.9297,
+          "low_52w": 6863.02,
+          "pct_from_52w_high": -8.11,
+          "ma_50d": 8257.8722,
+          "ma_200d": 7987.1375,
+          "above_50d": false,
+          "above_200d": false,
+          "error": null,
+          "extra": {
+            "currency": "EUR",
+            "country": "FR"
+          }
+        },
+        {
+          "ticker": "^STOXX",
+          "name": "STOXX 600",
+          "region": "europe",
+          "price": 594.4,
+          "prev_close": 604.83,
+          "change_pct": -1.72,
+          "week_change_pct": -6.22,
+          "month_change_pct": -3.84,
+          "volume": 0.0,
+          "avg_volume": 241738460.0,
+          "volume_ratio": null,
+          "high_52w": 633.85,
+          "low_52w": 469.89,
+          "pct_from_52w_high": -6.22,
+          "ma_50d": 612.311,
+          "ma_200d": 571.619,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "EUR",
+            "country": "EU"
+          }
+        },
+        {
+          "ticker": "^IBEX",
+          "name": "IBEX 35",
+          "region": "europe",
+          "price": 16889.8008,
+          "prev_close": 17245.1992,
+          "change_pct": -2.06,
+          "week_change_pct": -8.01,
+          "month_change_pct": -6.7,
+          "volume": 107858866.0,
+          "avg_volume": 0.0,
+          "volume_ratio": null,
+          "high_52w": 18496.5996,
+          "low_52w": 11785.7998,
+          "pct_from_52w_high": -8.69,
+          "ma_50d": 17758.4461,
+          "ma_200d": 15838.4035,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "EUR",
+            "country": "ES"
+          }
+        },
+        {
+          "ticker": "FTSEMIB.MI",
+          "name": "FTSE MIB",
+          "region": "europe",
+          "price": 43742.6211,
+          "prev_close": 44609.0,
+          "change_pct": -1.94,
+          "week_change_pct": -7.34,
+          "month_change_pct": -6.2,
+          "volume": 0.0,
+          "avg_volume": 544281515.0,
+          "volume_ratio": null,
+          "high_52w": 47426.0,
+          "low_52w": 32731.0,
+          "pct_from_52w_high": -7.77,
+          "ma_50d": 45669.3324,
+          "ma_200d": 42812.8681,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "EUR",
+            "country": "IT"
+          }
+        },
+        {
+          "ticker": "^SSMI",
+          "name": "Swiss Market Index",
+          "region": "europe",
+          "price": 13022.6396,
+          "prev_close": 13298.2998,
+          "change_pct": -2.07,
+          "week_change_pct": -7.08,
+          "month_change_pct": -3.59,
+          "volume": 0.0,
+          "avg_volume": 25268570.0,
+          "volume_ratio": null,
+          "high_52w": 14014.2998,
+          "low_52w": 10887.7305,
+          "pct_from_52w_high": -7.08,
+          "ma_50d": 13444.339,
+          "ma_200d": 12580.0579,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "CHF",
+            "country": "CH"
+          }
+        },
+        {
+          "ticker": "^AEX",
+          "name": "AEX",
+          "region": "europe",
+          "price": 973.77,
+          "prev_close": 995.52,
+          "change_pct": -2.18,
+          "week_change_pct": -5.18,
+          "month_change_pct": -1.67,
+          "volume": 0.0,
+          "avg_volume": 72204420.0,
+          "volume_ratio": null,
+          "high_52w": 1030.0601,
+          "low_52w": 796.45,
+          "pct_from_52w_high": -5.46,
+          "ma_50d": 994.6878,
+          "ma_200d": 945.3625,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "EUR",
+            "country": "NL"
+          }
+        }
+      ],
+      "americas": [
+        {
+          "ticker": "^GSPC",
+          "name": "S&P 500",
+          "region": "americas",
+          "price": 6736.7002,
+          "prev_close": 6830.71,
+          "change_pct": -1.38,
+          "week_change_pct": -2.07,
+          "month_change_pct": -2.62,
+          "volume": 465031231.0,
+          "avg_volume": 5859136500.0,
+          "volume_ratio": 0.08,
+          "high_52w": 6978.6001,
+          "low_52w": 4982.77,
+          "pct_from_52w_high": -3.47,
+          "ma_50d": 6902.3836,
+          "ma_200d": 6582.5119,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "USD",
+            "country": "US"
+          }
+        },
+        {
+          "ticker": "^IXIC",
+          "name": "Nasdaq Composite",
+          "region": "americas",
+          "price": 22488.9141,
+          "prev_close": 22748.9902,
+          "change_pct": -1.14,
+          "week_change_pct": -0.79,
+          "month_change_pct": -3.3,
+          "volume": 1588729000.0,
+          "avg_volume": 8806865500.0,
+          "volume_ratio": 0.18,
+          "high_52w": 23958.4707,
+          "low_52w": 15267.9102,
+          "pct_from_52w_high": -6.13,
+          "ma_50d": 23191.8919,
+          "ma_200d": 22087.6515,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "USD",
+            "country": "US"
+          }
+        },
+        {
+          "ticker": "^DJI",
+          "name": "Dow Jones",
+          "region": "americas",
+          "price": 47181.5312,
+          "prev_close": 47954.7383,
+          "change_pct": -1.61,
+          "week_change_pct": -3.67,
+          "month_change_pct": -4.18,
+          "volume": 84804468.0,
+          "avg_volume": 599998500.0,
+          "volume_ratio": 0.14,
+          "high_52w": 50188.1406,
+          "low_52w": 37645.5898,
+          "pct_from_52w_high": -5.99,
+          "ma_50d": 49111.0298,
+          "ma_200d": 46330.6819,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "USD",
+            "country": "US"
+          }
+        },
+        {
+          "ticker": "^RUT",
+          "name": "Russell 2000",
+          "region": "americas",
+          "price": 2525.2441,
+          "prev_close": 2585.5701,
+          "change_pct": -2.33,
+          "week_change_pct": -4.07,
+          "month_change_pct": -4.65,
+          "volume": 0.0,
+          "avg_volume": 5859136500.0,
+          "volume_ratio": null,
+          "high_52w": 2718.77,
+          "low_52w": 1760.71,
+          "pct_from_52w_high": -7.12,
+          "ma_50d": 2623.4943,
+          "ma_200d": 2407.2642,
+          "above_50d": false,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "USD",
+            "country": "US"
+          }
+        },
+        {
+          "ticker": "^GSPTSE",
+          "name": "TSX Composite",
+          "region": "americas",
+          "price": 33003.6719,
+          "prev_close": 33610.0,
+          "change_pct": -1.8,
+          "week_change_pct": -3.89,
+          "month_change_pct": 1.9,
+          "volume": 52154782.0,
+          "avg_volume": 318720345.0,
+          "volume_ratio": 0.16,
+          "high_52w": 34541.3008,
+          "low_52w": 22506.9004,
+          "pct_from_52w_high": -4.45,
+          "ma_50d": 32940.5874,
+          "ma_200d": 29823.4444,
+          "above_50d": true,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "CAD",
+            "country": "CA"
+          }
+        },
+        {
+          "ticker": "^BVSP",
+          "name": "Bovespa",
+          "region": "americas",
+          "price": 179007.4062,
+          "prev_close": 180464.0,
+          "change_pct": -0.81,
+          "week_change_pct": -5.18,
+          "month_change_pct": -2.07,
+          "volume": 0.0,
+          "avg_volume": 10266105.0,
+          "volume_ratio": null,
+          "high_52w": 191490.0,
+          "low_52w": 123358.0,
+          "pct_from_52w_high": -6.52,
+          "ma_50d": 176137.2681,
+          "ma_200d": 151627.977,
+          "above_50d": true,
+          "above_200d": true,
+          "error": null,
+          "extra": {
+            "currency": "BRL",
+            "country": "BR"
+          }
+        }
+      ]
+    },
+    "forex": [
       {
-        "theme_id": "theme-housing-bonds-war",
-        "theme_name": "Housing Market / Bond Yields / Geopolitical War Pressure",
-        "conviction": 1.0,
-        "signals_supporting": [
-          "30Y Fixed Mortgage Rate"
-        ],
-        "signals_against": []
+        "ticker": "EURUSD=X",
+        "name": "EUR/USD",
+        "region": "forex",
+        "price": 1.1592,
+        "prev_close": 1.1636,
+        "change_pct": -0.38,
+        "week_change_pct": -1.79,
+        "month_change_pct": -1.9,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 1.2018,
+        "low_52w": 1.1592,
+        "pct_from_52w_high": -3.55,
+        "ma_50d": 1.1769,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "EUR",
+          "quote": "USD"
+        }
       },
       {
-        "theme_id": "theme-mallorca",
-        "theme_name": "Mallorca / Balearic Islands Opportunity Strategy",
-        "conviction": 0.0,
-        "signals_supporting": [],
-        "signals_against": []
+        "ticker": "GBPUSD=X",
+        "name": "GBP/USD",
+        "region": "forex",
+        "price": 1.3365,
+        "prev_close": 1.337,
+        "change_pct": -0.03,
+        "week_change_pct": -0.93,
+        "month_change_pct": -2.42,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 1.3825,
+        "low_52w": 1.3304,
+        "pct_from_52w_high": -3.33,
+        "ma_50d": 1.3532,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "GBP",
+          "quote": "USD"
+        }
+      },
+      {
+        "ticker": "USDJPY=X",
+        "name": "USD/JPY",
+        "region": "forex",
+        "price": 157.543,
+        "prev_close": 156.983,
+        "change_pct": 0.36,
+        "week_change_pct": 1.08,
+        "month_change_pct": 1.12,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 159.179,
+        "low_52w": 152.453,
+        "pct_from_52w_high": -1.03,
+        "ma_50d": 156.0711,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "USD",
+          "quote": "JPY"
+        }
+      },
+      {
+        "ticker": "USDCNH=X",
+        "name": "USD/CNH",
+        "region": "forex",
+        "price": null,
+        "prev_close": null,
+        "change_pct": null,
+        "week_change_pct": null,
+        "month_change_pct": null,
+        "volume": null,
+        "avg_volume": null,
+        "volume_ratio": null,
+        "high_52w": null,
+        "low_52w": null,
+        "pct_from_52w_high": null,
+        "ma_50d": null,
+        "ma_200d": null,
+        "above_50d": null,
+        "above_200d": null,
+        "error": "no data",
+        "extra": {
+          "base": "USD",
+          "quote": "CNH"
+        }
+      },
+      {
+        "ticker": "AUDUSD=X",
+        "name": "AUD/USD",
+        "region": "forex",
+        "price": 0.7013,
+        "prev_close": 0.7076,
+        "change_pct": -0.9,
+        "week_change_pct": -1.26,
+        "month_change_pct": -0.14,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 0.7125,
+        "low_52w": 0.6602,
+        "pct_from_52w_high": -1.58,
+        "ma_50d": 0.6909,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "AUD",
+          "quote": "USD"
+        }
+      },
+      {
+        "ticker": "USDCHF=X",
+        "name": "USD/CHF",
+        "region": "forex",
+        "price": 0.7783,
+        "prev_close": 0.7792,
+        "change_pct": -0.1,
+        "week_change_pct": 0.66,
+        "month_change_pct": 0.33,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 0.8066,
+        "low_52w": 0.7632,
+        "pct_from_52w_high": -3.51,
+        "ma_50d": 0.7819,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "USD",
+          "quote": "CHF"
+        }
+      },
+      {
+        "ticker": "EURJPY=X",
+        "name": "EUR/JPY",
+        "region": "forex",
+        "price": 182.55,
+        "prev_close": 182.641,
+        "change_pct": -0.05,
+        "week_change_pct": -0.76,
+        "month_change_pct": -0.83,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 186.29,
+        "low_52w": 180.814,
+        "pct_from_52w_high": -2.01,
+        "ma_50d": 183.6502,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "EUR",
+          "quote": "JPY"
+        }
+      },
+      {
+        "ticker": "EURGBP=X",
+        "name": "EUR/GBP",
+        "region": "forex",
+        "price": 0.8669,
+        "prev_close": 0.8702,
+        "change_pct": -0.39,
+        "week_change_pct": -0.9,
+        "month_change_pct": 0.5,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 0.8784,
+        "low_52w": 0.8626,
+        "pct_from_52w_high": -1.32,
+        "ma_50d": 0.8697,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "EUR",
+          "quote": "GBP"
+        }
+      },
+      {
+        "ticker": "DX-Y.NYB",
+        "name": "US Dollar Index",
+        "region": "forex",
+        "price": 99.235,
+        "prev_close": 99.32,
+        "change_pct": -0.09,
+        "week_change_pct": 1.66,
+        "month_change_pct": 1.84,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 99.39,
+        "low_52w": 96.22,
+        "pct_from_52w_high": -0.16,
+        "ma_50d": 97.9817,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "base": "USD",
+          "quote": "basket"
+        }
       }
     ],
-    "planned_actions": [],
-    "risk_state": {
-      "daily_pnl": 0,
-      "daily_pnl_pct": 0.0,
-      "max_daily_loss_pct": -5.0,
-      "circuit_breaker_active": false,
-      "exposure_pct": 0.0,
-      "max_exposure_pct": 80.0,
-      "correlation_warning": false,
-      "correlation_details": ""
+    "commodities": [
+      {
+        "ticker": "GC=F",
+        "name": "Gold Futures",
+        "region": "commodities",
+        "price": 5110.6001,
+        "prev_close": 5065.2998,
+        "change_pct": 0.89,
+        "week_change_pct": -2.29,
+        "month_change_pct": 4.22,
+        "volume": 82110.0,
+        "avg_volume": 750.05,
+        "volume_ratio": 109.47,
+        "high_52w": 5318.3999,
+        "low_52w": 4187.2002,
+        "pct_from_52w_high": -3.91,
+        "ma_50d": 4840.762,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "unit": "USD/oz"
+        }
+      },
+      {
+        "ticker": "CL=F",
+        "name": "WTI Crude Oil",
+        "region": "commodities",
+        "price": 88.74,
+        "prev_close": 81.01,
+        "change_pct": 9.54,
+        "week_change_pct": 32.41,
+        "month_change_pct": 40.39,
+        "volume": 481060.0,
+        "avg_volume": 411936.45,
+        "volume_ratio": 1.17,
+        "high_52w": 88.74,
+        "low_52w": 55.27,
+        "pct_from_52w_high": 0.0,
+        "ma_50d": 63.365,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "unit": "USD/bbl"
+        }
+      },
+      {
+        "ticker": "BZ=F",
+        "name": "Brent Crude",
+        "region": "commodities",
+        "price": 91.39,
+        "prev_close": 85.41,
+        "change_pct": 7.0,
+        "week_change_pct": 26.09,
+        "month_change_pct": 35.73,
+        "volume": 106448.0,
+        "avg_volume": 74335.85,
+        "volume_ratio": 1.43,
+        "high_52w": 91.39,
+        "low_52w": 58.92,
+        "pct_from_52w_high": 0.0,
+        "ma_50d": 68.027,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "unit": "USD/bbl"
+        }
+      },
+      {
+        "ticker": "HG=F",
+        "name": "Copper Futures",
+        "region": "commodities",
+        "price": 5.8035,
+        "prev_close": 5.753,
+        "change_pct": 0.88,
+        "week_change_pct": -3.35,
+        "month_change_pct": -4.27,
+        "volume": 22367.0,
+        "avg_volume": 2789.25,
+        "volume_ratio": 8.02,
+        "high_52w": 6.1755,
+        "low_52w": 5.2405,
+        "pct_from_52w_high": -6.02,
+        "ma_50d": 5.8322,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "unit": "USD/lb"
+        }
+      },
+      {
+        "ticker": "SI=F",
+        "name": "Silver Futures",
+        "region": "commodities",
+        "price": 82.905,
+        "prev_close": 81.687,
+        "change_pct": 1.49,
+        "week_change_pct": -10.55,
+        "month_change_pct": -0.16,
+        "volume": 25744.0,
+        "avg_volume": 2486.55,
+        "volume_ratio": 10.35,
+        "high_52w": 115.08,
+        "low_52w": 57.779,
+        "pct_from_52w_high": -27.96,
+        "ma_50d": 84.291,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "unit": "USD/oz"
+        }
+      },
+      {
+        "ticker": "NG=F",
+        "name": "Natural Gas",
+        "region": "commodities",
+        "price": 3.087,
+        "prev_close": 3.003,
+        "change_pct": 2.8,
+        "week_change_pct": 7.97,
+        "month_change_pct": -6.77,
+        "volume": 64314.0,
+        "avg_volume": 154195.1,
+        "volume_ratio": 0.42,
+        "high_52w": 7.46,
+        "low_52w": 2.827,
+        "pct_from_52w_high": -58.62,
+        "ma_50d": 3.7039,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "unit": "USD/MMBtu"
+        }
+      }
+    ],
+    "crypto": [
+      {
+        "ticker": "BTC-USD",
+        "name": "Bitcoin",
+        "region": "crypto",
+        "price": 68513.8203,
+        "prev_close": 70841.125,
+        "change_pct": -3.29,
+        "week_change_pct": 4.22,
+        "month_change_pct": 3.46,
+        "volume": 47160537088.0,
+        "avg_volume": 41770295441.95,
+        "volume_ratio": 1.13,
+        "high_52w": 96929.3281,
+        "low_52w": 62702.0977,
+        "pct_from_52w_high": -29.32,
+        "ma_50d": 75298.5793,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null
+      },
+      {
+        "ticker": "ETH-USD",
+        "name": "Ethereum",
+        "region": "crypto",
+        "price": 1981.8937,
+        "prev_close": 2071.6055,
+        "change_pct": -4.33,
+        "week_change_pct": 2.21,
+        "month_change_pct": 1.8,
+        "volume": 21426100224.0,
+        "avg_volume": 21722444865.65,
+        "volume_ratio": 0.99,
+        "high_52w": 3354.7227,
+        "low_52w": 1821.6831,
+        "pct_from_52w_high": -40.92,
+        "ma_50d": 2326.8356,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null
+      }
+    ],
+    "bonds": [
+      {
+        "ticker": "^TNX",
+        "name": "US 10Y Yield",
+        "region": "bonds",
+        "price": 4.177,
+        "prev_close": 4.146,
+        "change_pct": 0.75,
+        "week_change_pct": 5.43,
+        "month_change_pct": -2.27,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 4.295,
+        "low_52w": 3.962,
+        "pct_from_52w_high": -2.75,
+        "ma_50d": 4.1552,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "country": "US"
+        }
+      },
+      {
+        "ticker": "^TYX",
+        "name": "US 30Y Yield",
+        "region": "bonds",
+        "price": 4.798,
+        "prev_close": 4.752,
+        "change_pct": 0.97,
+        "week_change_pct": 3.56,
+        "month_change_pct": -2.2,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 4.92,
+        "low_52w": 4.633,
+        "pct_from_52w_high": -2.48,
+        "ma_50d": 4.7992,
+        "ma_200d": null,
+        "above_50d": false,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "country": "US"
+        }
+      },
+      {
+        "ticker": "^IRX",
+        "name": "US 3M T-Bill",
+        "region": "bonds",
+        "price": 3.578,
+        "prev_close": 3.588,
+        "change_pct": -0.28,
+        "week_change_pct": -0.0,
+        "month_change_pct": -0.33,
+        "volume": 0.0,
+        "avg_volume": 0.0,
+        "volume_ratio": null,
+        "high_52w": 3.632,
+        "low_52w": 3.507,
+        "pct_from_52w_high": -1.49,
+        "ma_50d": 3.5705,
+        "ma_200d": null,
+        "above_50d": true,
+        "above_200d": null,
+        "error": null,
+        "extra": {
+          "country": "US"
+        }
+      },
+      {
+        "ticker": "DE10Y=X",
+        "name": "Germany 10Y Yield",
+        "region": "bonds",
+        "price": null,
+        "prev_close": null,
+        "change_pct": null,
+        "week_change_pct": null,
+        "month_change_pct": null,
+        "volume": null,
+        "avg_volume": null,
+        "volume_ratio": null,
+        "high_52w": null,
+        "low_52w": null,
+        "pct_from_52w_high": null,
+        "ma_50d": null,
+        "ma_200d": null,
+        "above_50d": null,
+        "above_200d": null,
+        "error": "no data",
+        "extra": {
+          "country": "DE"
+        }
+      },
+      {
+        "ticker": "GB10Y=X",
+        "name": "UK 10Y Gilt Yield",
+        "region": "bonds",
+        "price": null,
+        "prev_close": null,
+        "change_pct": null,
+        "week_change_pct": null,
+        "month_change_pct": null,
+        "volume": null,
+        "avg_volume": null,
+        "volume_ratio": null,
+        "high_52w": null,
+        "low_52w": null,
+        "pct_from_52w_high": null,
+        "ma_50d": null,
+        "ma_200d": null,
+        "above_50d": null,
+        "above_200d": null,
+        "error": "no data",
+        "extra": {
+          "country": "GB"
+        }
+      },
+      {
+        "ticker": "JP10Y=X",
+        "name": "Japan 10Y JGB Yield",
+        "region": "bonds",
+        "price": null,
+        "prev_close": null,
+        "change_pct": null,
+        "week_change_pct": null,
+        "month_change_pct": null,
+        "volume": null,
+        "avg_volume": null,
+        "volume_ratio": null,
+        "high_52w": null,
+        "low_52w": null,
+        "pct_from_52w_high": null,
+        "ma_50d": null,
+        "ma_200d": null,
+        "above_50d": null,
+        "above_200d": null,
+        "error": "no data",
+        "extra": {
+          "country": "JP"
+        }
+      }
+    ],
+    "sessions": {
+      "asia": {
+        "session": "asia",
+        "label": "Asia-Pacific",
+        "markets_up": 3,
+        "markets_down": 3,
+        "markets_flat": 2,
+        "avg_change_pct": 0.02,
+        "strongest": "Hang Seng",
+        "strongest_pct": 1.72,
+        "weakest": "BSE Sensex",
+        "weakest_pct": -1.37,
+        "breadth": 37.5
+      },
+      "europe": {
+        "session": "europe",
+        "label": "Europe",
+        "markets_up": 0,
+        "markets_down": 8,
+        "markets_flat": 0,
+        "avg_change_pct": -1.86,
+        "strongest": "CAC 40",
+        "strongest_pct": -1.54,
+        "weakest": "AEX",
+        "weakest_pct": -2.18,
+        "breadth": 0.0
+      },
+      "americas": {
+        "session": "americas",
+        "label": "Americas",
+        "markets_up": 0,
+        "markets_down": 6,
+        "markets_flat": 0,
+        "avg_change_pct": -1.51,
+        "strongest": "Bovespa",
+        "strongest_pct": -0.81,
+        "weakest": "Russell 2000",
+        "weakest_pct": -2.33,
+        "breadth": 0.0
+      }
     },
-    "last_updated": "2026-03-06T14:00:13.915426+00:00"
+    "gaps": [
+      {
+        "from_session": "asia",
+        "to_session": "europe",
+        "from_avg_change": 0.02,
+        "to_avg_change": -1.86,
+        "gap_magnitude": 1.88,
+        "divergent": false,
+        "description": "Asia-Pacific (+0.02%) -> Europe (-1.86%): mixed continuation, 1.88pp gap"
+      },
+      {
+        "from_session": "europe",
+        "to_session": "americas",
+        "from_avg_change": -1.86,
+        "to_avg_change": -1.51,
+        "gap_magnitude": 0.35,
+        "divergent": false,
+        "description": "Europe (-1.86%) -> Americas (-1.51%): bearish continuation, 0.35pp gap"
+      },
+      {
+        "from_session": "asia",
+        "to_session": "americas",
+        "from_avg_change": 0.02,
+        "to_avg_change": -1.51,
+        "gap_magnitude": 1.53,
+        "divergent": false,
+        "description": "Asia-Pacific (+0.02%) -> Americas (-1.51%): mixed continuation, 1.53pp gap"
+      }
+    ],
+    "global_breadth": 22.7,
+    "total_markets": 22,
+    "fetched_at": "2026-03-06T15:03:48.903906+00:00"
   },
-  "decisions": [
-    {
-      "id": "03453f39",
-      "timestamp": "2026-03-06T14:00:13.915197+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "signals_count": 27
-      },
-      "output_data": {
-        "regime": "neutral",
-        "confidence": 60,
-        "sentiment": 0.0
-      },
-      "reasoning": "Market regime assessed as neutral",
-      "confidence": 60,
-      "action_taken": "regime_assessed"
-    },
-    {
-      "id": "603e408b",
-      "timestamp": "2026-03-06T14:00:11.718174+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "ticker_count": 28
-      },
-      "output_data": {
-        "ok": 27,
-        "errors": 1,
-        "bullish": 1,
-        "bearish": 4
-      },
-      "reasoning": "Fetched 28 macro signals via yfinance",
-      "confidence": 80,
-      "action_taken": "signals_updated"
-    },
-    {
-      "id": "220172dc",
-      "timestamp": "2026-03-06T13:30:15.699175+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "signals_count": 27
-      },
-      "output_data": {
-        "regime": "neutral",
-        "confidence": 60,
-        "sentiment": 0.0
-      },
-      "reasoning": "Market regime assessed as neutral",
-      "confidence": 60,
-      "action_taken": "regime_assessed"
-    },
-    {
-      "id": "4b82ead3",
-      "timestamp": "2026-03-06T13:30:13.433246+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "ticker_count": 28
-      },
-      "output_data": {
-        "ok": 27,
-        "errors": 1,
-        "bullish": 2,
-        "bearish": 1
-      },
-      "reasoning": "Fetched 28 macro signals via yfinance",
-      "confidence": 80,
-      "action_taken": "signals_updated"
-    },
-    {
-      "id": "301f1c3f",
-      "timestamp": "2026-03-06T13:10:17.177423+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "signals_count": 27
-      },
-      "output_data": {
-        "regime": "neutral",
-        "confidence": 60,
-        "sentiment": 0.0
-      },
-      "reasoning": "Market regime assessed as neutral",
-      "confidence": 60,
-      "action_taken": "regime_assessed"
-    },
-    {
-      "id": "286aecbb",
-      "timestamp": "2026-03-06T13:10:14.625714+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "ticker_count": 28
-      },
-      "output_data": {
-        "ok": 27,
-        "errors": 1,
-        "bullish": 2,
-        "bearish": 4
-      },
-      "reasoning": "Fetched 28 macro signals via yfinance",
-      "confidence": 80,
-      "action_taken": "signals_updated"
-    },
-    {
-      "id": "28506952",
-      "timestamp": "2026-03-06T13:04:30.944348+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "signals_count": 27
-      },
-      "output_data": {
-        "regime": "neutral",
-        "confidence": 60,
-        "sentiment": 0.0
-      },
-      "reasoning": "Market regime assessed as neutral",
-      "confidence": 60,
-      "action_taken": "regime_assessed"
-    },
-    {
-      "id": "ffd07371",
-      "timestamp": "2026-03-06T13:04:28.866229+00:00",
-      "decision_type": "signal_eval",
-      "input_data": {
-        "ticker_count": 28
-      },
-      "output_data": {
-        "ok": 27,
-        "errors": 1,
-        "bullish": 2,
-        "bearish": 4
-      },
-      "reasoning": "Fetched 28 macro signals via yfinance",
-      "confidence": 80,
-      "action_taken": "signals_updated"
-    }
-  ],
-  "theses": [],
-  "overrides": [],
-  "kill_switch": {
-    "active": false,
-    "reason": null,
-    "activated_at": null
-  },
-  "regime": {
-    "regime": "unknown",
-    "risk_multiplier": 1.0,
-    "details": {},
-    "last_updated": null
-  },
-  "circuit_breaker": {
-    "active": false,
-    "daily_pnl": 0,
-    "hourly_pnl": 0,
-    "trades_this_hour": 0,
-    "last_trigger": null,
-    "reason": null
-  },
-  "correlations": {
-    "diversification_score": 100,
-    "high_correlations": [],
-    "warnings": [],
-    "suggested_hedges": []
-  },
-  "niche_markets": [],
-  "fred": {
+  "global_macro": {
     "signals": [
       {
         "series_id": "BAMLH0A0HYM2",
         "name": "HY Credit Spread",
-        "value": 2.97,
-        "prev_value": 2.81,
-        "change_pct": 5.69,
+        "country": "US",
+        "category": "credit",
+        "value": 3.0,
+        "prev_value": 2.85,
+        "change_pct": 5.26,
         "threshold": 5.0,
         "breached": false,
         "direction": "rising",
-        "last_updated": "2026-03-04 00:00:00",
+        "last_updated": "2026-03-05 00:00:00",
         "error": null
       },
       {
-        "series_id": "CPIAUCSL",
-        "name": "CPI All Urban Consumers",
-        "value": 326.588,
-        "prev_value": 326.031,
-        "change_pct": 0.17,
+        "series_id": "BOPGSTB",
+        "name": "US Trade Balance",
+        "country": "US",
+        "category": "trade",
+        "value": -70311.0,
+        "prev_value": -53044.0,
+        "change_pct": -32.55,
+        "threshold": null,
+        "breached": false,
+        "direction": "falling",
+        "last_updated": "2025-12-01 00:00:00",
+        "error": null
+      },
+      {
+        "series_id": "CP0000EZ19M086NEST",
+        "name": "Eurozone HICP YoY",
+        "country": "EU",
+        "category": "inflation",
+        "value": 129.49,
+        "prev_value": 129.25,
+        "change_pct": 0.19,
+        "threshold": 3.0,
+        "breached": true,
+        "direction": "rising",
+        "last_updated": "2025-12-01 00:00:00",
+        "error": null
+      },
+      {
+        "series_id": "CPALTT01CNM659N",
+        "name": "China CPI YoY",
+        "country": "CN",
+        "category": "inflation",
+        "value": null,
+        "prev_value": null,
+        "change_pct": null,
         "threshold": null,
         "breached": false,
         "direction": "rising",
-        "last_updated": "2026-01-01 00:00:00",
+        "last_updated": "2026-03-06T15:03:49.881752+00:00",
+        "error": "no data"
+      },
+      {
+        "series_id": "CPALTT01GBM659N",
+        "name": "UK CPI YoY",
+        "country": "GB",
+        "category": "inflation",
+        "value": null,
+        "prev_value": null,
+        "change_pct": null,
+        "threshold": null,
+        "breached": false,
+        "direction": "rising",
+        "last_updated": "2026-03-06T15:03:50.148847+00:00",
+        "error": "no data"
+      },
+      {
+        "series_id": "CPALTT01JPM659N",
+        "name": "Japan CPI YoY",
+        "country": "JP",
+        "category": "inflation",
+        "value": null,
+        "prev_value": null,
+        "change_pct": null,
+        "threshold": null,
+        "breached": false,
+        "direction": "rising",
+        "last_updated": "2026-03-06T15:03:50.556992+00:00",
+        "error": "no data"
+      },
+      {
+        "series_id": "CPALTT01USM657N",
+        "name": "US CPI YoY",
+        "country": "US",
+        "category": "inflation",
+        "value": null,
+        "prev_value": null,
+        "change_pct": null,
+        "threshold": null,
+        "breached": false,
+        "direction": "rising",
+        "last_updated": "2026-03-06T15:03:51.017060+00:00",
+        "error": "no data"
+      },
+      {
+        "series_id": "DCOILBRENTEU",
+        "name": "Brent Crude (Global)",
+        "country": "GL",
+        "category": "commodities",
+        "value": 77.24,
+        "prev_value": 72.25,
+        "change_pct": 6.91,
+        "threshold": 90,
+        "breached": false,
+        "direction": "rising",
+        "last_updated": "2026-03-02 00:00:00",
         "error": null
       },
       {
-        "series_id": "DGS10",
-        "name": "10Y Treasury Yield",
-        "value": 4.09,
-        "prev_value": 4.29,
-        "change_pct": -4.66,
-        "threshold": 4.5,
+        "series_id": "ECBDFR",
+        "name": "ECB Deposit Rate",
+        "country": "EU",
+        "category": "rates",
+        "value": 2.0,
+        "prev_value": 2.0,
+        "change_pct": 0.0,
+        "threshold": 4.0,
         "breached": false,
         "direction": "rising",
-        "last_updated": "2026-03-04 00:00:00",
-        "error": null
-      },
-      {
-        "series_id": "DGS30",
-        "name": "30Y Treasury Yield",
-        "value": 4.72,
-        "prev_value": 4.9,
-        "change_pct": -3.67,
-        "threshold": 5.0,
-        "breached": false,
-        "direction": "rising",
-        "last_updated": "2026-03-04 00:00:00",
-        "error": null
-      },
-      {
-        "series_id": "DTWEXBGS",
-        "name": "Trade-Weighted USD Index",
-        "value": 117.8223,
-        "prev_value": 117.5117,
-        "change_pct": 0.26,
-        "threshold": 130.0,
-        "breached": false,
-        "direction": "rising",
-        "last_updated": "2026-02-27 00:00:00",
+        "last_updated": "2026-03-06 00:00:00",
         "error": null
       },
       {
         "series_id": "FEDFUNDS",
-        "name": "Federal Funds Rate",
+        "name": "Fed Funds Rate",
+        "country": "US",
+        "category": "rates",
         "value": 3.64,
         "prev_value": 3.64,
         "change_pct": 0.0,
@@ -1184,32 +2251,80 @@
         "error": null
       },
       {
-        "series_id": "GDP",
-        "name": "Gross Domestic Product",
-        "value": 31490.07,
+        "series_id": "INDPRO",
+        "name": "US Industrial Production",
+        "country": "US",
+        "category": "production",
+        "value": 102.3412,
+        "prev_value": 101.6296,
+        "change_pct": 0.7,
+        "threshold": null,
+        "breached": false,
+        "direction": "falling",
+        "last_updated": "2026-01-01 00:00:00",
+        "error": null
+      },
+      {
+        "series_id": "IRSTCB01JPM156N",
+        "name": "BOJ Policy Rate",
+        "country": "JP",
+        "category": "rates",
+        "value": null,
         "prev_value": null,
         "change_pct": null,
         "threshold": null,
         "breached": false,
-        "direction": "falling",
-        "last_updated": "2025-10-01 00:00:00",
+        "direction": "rising",
+        "last_updated": "2026-03-06T15:03:53.056233+00:00",
+        "error": "no data"
+      },
+      {
+        "series_id": "IUDSOIA",
+        "name": "BOE Bank Rate",
+        "country": "GB",
+        "category": "rates",
+        "value": 3.7301,
+        "prev_value": 3.726,
+        "change_pct": 0.11,
+        "threshold": 5.0,
+        "breached": false,
+        "direction": "rising",
+        "last_updated": "2026-03-04 00:00:00",
         "error": null
       },
       {
-        "series_id": "ICSA",
-        "name": "Weekly Jobless Claims",
-        "value": 213000.0,
-        "prev_value": 209000.0,
-        "change_pct": 1.91,
-        "threshold": 300000,
+        "series_id": "LRHUTTTTEZM156S",
+        "name": "Eurozone Unemployment",
+        "country": "EU",
+        "category": "labor",
+        "value": null,
+        "prev_value": null,
+        "change_pct": null,
+        "threshold": null,
         "breached": false,
         "direction": "rising",
-        "last_updated": "2026-02-28 00:00:00",
+        "last_updated": "2026-03-06T15:03:53.630605+00:00",
+        "error": "no data"
+      },
+      {
+        "series_id": "LRHUTTTTJPM156S",
+        "name": "Japan Unemployment",
+        "country": "JP",
+        "category": "labor",
+        "value": 2.6,
+        "prev_value": 2.6,
+        "change_pct": 0.0,
+        "threshold": 3.5,
+        "breached": false,
+        "direction": "rising",
+        "last_updated": "2025-12-01 00:00:00",
         "error": null
       },
       {
         "series_id": "M2SL",
-        "name": "M2 Money Supply",
+        "name": "US M2 Money Supply",
+        "country": "US",
+        "category": "money",
         "value": 22442.1,
         "prev_value": 22366.2,
         "change_pct": 0.34,
@@ -1220,20 +2335,52 @@
         "error": null
       },
       {
-        "series_id": "MORTGAGE30US",
-        "name": "30Y Mortgage Rate",
-        "value": 6.0,
-        "prev_value": 6.1,
-        "change_pct": -1.64,
-        "threshold": 7.5,
+        "series_id": "MANEMP",
+        "name": "US Manufacturing Employment",
+        "country": "US",
+        "category": "pmi_proxy",
+        "value": 12573.0,
+        "prev_value": 12585.0,
+        "change_pct": -0.1,
+        "threshold": null,
         "breached": false,
-        "direction": "rising",
-        "last_updated": "2026-03-05 00:00:00",
+        "direction": "falling",
+        "last_updated": "2026-02-01 00:00:00",
+        "error": null
+      },
+      {
+        "series_id": "MANMM101EZM189S",
+        "name": "Eurozone M1",
+        "country": "EU",
+        "category": "money",
+        "value": null,
+        "prev_value": null,
+        "change_pct": null,
+        "threshold": null,
+        "breached": false,
+        "direction": "falling",
+        "last_updated": "2026-03-06T15:03:55.009427+00:00",
+        "error": "no data"
+      },
+      {
+        "series_id": "PCOPPUSDM",
+        "name": "Copper Price (Global)",
+        "country": "GL",
+        "category": "commodities",
+        "value": 12986.6068,
+        "prev_value": 11790.9641,
+        "change_pct": 10.14,
+        "threshold": null,
+        "breached": false,
+        "direction": "falling",
+        "last_updated": "2026-01-01 00:00:00",
         "error": null
       },
       {
         "series_id": "STLFSI4",
         "name": "Financial Stress Index",
+        "country": "US",
+        "category": "stress",
         "value": -0.4436,
         "prev_value": -0.7107,
         "change_pct": 37.58,
@@ -1245,7 +2392,9 @@
       },
       {
         "series_id": "T10Y2Y",
-        "name": "10Y-2Y Yield Curve",
+        "name": "US 10Y-2Y Spread",
+        "country": "US",
+        "category": "yields",
         "value": 0.56,
         "prev_value": 0.71,
         "change_pct": -21.13,
@@ -1257,7 +2406,9 @@
       },
       {
         "series_id": "T10Y3M",
-        "name": "10Y-3M Yield Curve",
+        "name": "US 10Y-3M Spread",
+        "country": "US",
+        "category": "yields",
         "value": 0.43,
         "prev_value": 0.59,
         "change_pct": -27.12,
@@ -1268,20 +2419,10 @@
         "error": null
       },
       {
-        "series_id": "UMCSENT",
-        "name": "Consumer Sentiment",
-        "value": 56.4,
-        "prev_value": 52.9,
-        "change_pct": 6.62,
-        "threshold": 60.0,
-        "breached": true,
-        "direction": "falling",
-        "last_updated": "2026-01-01 00:00:00",
-        "error": null
-      },
-      {
         "series_id": "UNRATE",
-        "name": "Unemployment Rate",
+        "name": "US Unemployment",
+        "country": "US",
+        "category": "labor",
         "value": 4.4,
         "prev_value": 4.3,
         "change_pct": 2.33,
@@ -1292,865 +2433,2079 @@
         "error": null
       },
       {
-        "series_id": "VIXCLS",
-        "name": "VIX Close",
-        "value": 21.15,
-        "prev_value": 16.34,
-        "change_pct": 29.44,
-        "threshold": 25.0,
+        "series_id": "XTIMVA01CNM667S",
+        "name": "China Exports",
+        "country": "CN",
+        "category": "trade",
+        "value": 222466600000.0,
+        "prev_value": 222364600000.0,
+        "change_pct": 0.05,
+        "threshold": null,
         "breached": false,
-        "direction": "rising",
-        "last_updated": "2026-03-04 00:00:00",
+        "direction": "falling",
+        "last_updated": "2025-12-01 00:00:00",
         "error": null
       }
     ],
-    "fetched_at": "2026-03-06T14:18:04Z"
+    "by_category": {
+      "credit": [
+        {
+          "series_id": "BAMLH0A0HYM2",
+          "name": "HY Credit Spread",
+          "country": "US",
+          "category": "credit",
+          "value": 3.0,
+          "prev_value": 2.85,
+          "change_pct": 5.26,
+          "threshold": 5.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-05 00:00:00",
+          "error": null
+        }
+      ],
+      "trade": [
+        {
+          "series_id": "BOPGSTB",
+          "name": "US Trade Balance",
+          "country": "US",
+          "category": "trade",
+          "value": -70311.0,
+          "prev_value": -53044.0,
+          "change_pct": -32.55,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "XTIMVA01CNM667S",
+          "name": "China Exports",
+          "country": "CN",
+          "category": "trade",
+          "value": 222466600000.0,
+          "prev_value": 222364600000.0,
+          "change_pct": 0.05,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        }
+      ],
+      "inflation": [
+        {
+          "series_id": "CP0000EZ19M086NEST",
+          "name": "Eurozone HICP YoY",
+          "country": "EU",
+          "category": "inflation",
+          "value": 129.49,
+          "prev_value": 129.25,
+          "change_pct": 0.19,
+          "threshold": 3.0,
+          "breached": true,
+          "direction": "rising",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "CPALTT01CNM659N",
+          "name": "China CPI YoY",
+          "country": "CN",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:49.881752+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "CPALTT01GBM659N",
+          "name": "UK CPI YoY",
+          "country": "GB",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:50.148847+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "CPALTT01JPM659N",
+          "name": "Japan CPI YoY",
+          "country": "JP",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:50.556992+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "CPALTT01USM657N",
+          "name": "US CPI YoY",
+          "country": "US",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:51.017060+00:00",
+          "error": "no data"
+        }
+      ],
+      "commodities": [
+        {
+          "series_id": "DCOILBRENTEU",
+          "name": "Brent Crude (Global)",
+          "country": "GL",
+          "category": "commodities",
+          "value": 77.24,
+          "prev_value": 72.25,
+          "change_pct": 6.91,
+          "threshold": 90,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-02 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "PCOPPUSDM",
+          "name": "Copper Price (Global)",
+          "country": "GL",
+          "category": "commodities",
+          "value": 12986.6068,
+          "prev_value": 11790.9641,
+          "change_pct": 10.14,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-01-01 00:00:00",
+          "error": null
+        }
+      ],
+      "rates": [
+        {
+          "series_id": "ECBDFR",
+          "name": "ECB Deposit Rate",
+          "country": "EU",
+          "category": "rates",
+          "value": 2.0,
+          "prev_value": 2.0,
+          "change_pct": 0.0,
+          "threshold": 4.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "FEDFUNDS",
+          "name": "Fed Funds Rate",
+          "country": "US",
+          "category": "rates",
+          "value": 3.64,
+          "prev_value": 3.64,
+          "change_pct": 0.0,
+          "threshold": 5.5,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-02-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "IRSTCB01JPM156N",
+          "name": "BOJ Policy Rate",
+          "country": "JP",
+          "category": "rates",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:53.056233+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "IUDSOIA",
+          "name": "BOE Bank Rate",
+          "country": "GB",
+          "category": "rates",
+          "value": 3.7301,
+          "prev_value": 3.726,
+          "change_pct": 0.11,
+          "threshold": 5.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-04 00:00:00",
+          "error": null
+        }
+      ],
+      "production": [
+        {
+          "series_id": "INDPRO",
+          "name": "US Industrial Production",
+          "country": "US",
+          "category": "production",
+          "value": 102.3412,
+          "prev_value": 101.6296,
+          "change_pct": 0.7,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-01-01 00:00:00",
+          "error": null
+        }
+      ],
+      "labor": [
+        {
+          "series_id": "LRHUTTTTEZM156S",
+          "name": "Eurozone Unemployment",
+          "country": "EU",
+          "category": "labor",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:53.630605+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "LRHUTTTTJPM156S",
+          "name": "Japan Unemployment",
+          "country": "JP",
+          "category": "labor",
+          "value": 2.6,
+          "prev_value": 2.6,
+          "change_pct": 0.0,
+          "threshold": 3.5,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "UNRATE",
+          "name": "US Unemployment",
+          "country": "US",
+          "category": "labor",
+          "value": 4.4,
+          "prev_value": 4.3,
+          "change_pct": 2.33,
+          "threshold": 5.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-02-01 00:00:00",
+          "error": null
+        }
+      ],
+      "money": [
+        {
+          "series_id": "M2SL",
+          "name": "US M2 Money Supply",
+          "country": "US",
+          "category": "money",
+          "value": 22442.1,
+          "prev_value": 22366.2,
+          "change_pct": 0.34,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-01-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "MANMM101EZM189S",
+          "name": "Eurozone M1",
+          "country": "EU",
+          "category": "money",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-03-06T15:03:55.009427+00:00",
+          "error": "no data"
+        }
+      ],
+      "pmi_proxy": [
+        {
+          "series_id": "MANEMP",
+          "name": "US Manufacturing Employment",
+          "country": "US",
+          "category": "pmi_proxy",
+          "value": 12573.0,
+          "prev_value": 12585.0,
+          "change_pct": -0.1,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-02-01 00:00:00",
+          "error": null
+        }
+      ],
+      "stress": [
+        {
+          "series_id": "STLFSI4",
+          "name": "Financial Stress Index",
+          "country": "US",
+          "category": "stress",
+          "value": -0.4436,
+          "prev_value": -0.7107,
+          "change_pct": 37.58,
+          "threshold": 1.5,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-02-27 00:00:00",
+          "error": null
+        }
+      ],
+      "yields": [
+        {
+          "series_id": "T10Y2Y",
+          "name": "US 10Y-2Y Spread",
+          "country": "US",
+          "category": "yields",
+          "value": 0.56,
+          "prev_value": 0.71,
+          "change_pct": -21.13,
+          "threshold": -0.2,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-03-05 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "T10Y3M",
+          "name": "US 10Y-3M Spread",
+          "country": "US",
+          "category": "yields",
+          "value": 0.43,
+          "prev_value": 0.59,
+          "change_pct": -27.12,
+          "threshold": -0.5,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-03-05 00:00:00",
+          "error": null
+        }
+      ]
+    },
+    "by_country": {
+      "US": [
+        {
+          "series_id": "BAMLH0A0HYM2",
+          "name": "HY Credit Spread",
+          "country": "US",
+          "category": "credit",
+          "value": 3.0,
+          "prev_value": 2.85,
+          "change_pct": 5.26,
+          "threshold": 5.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-05 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "BOPGSTB",
+          "name": "US Trade Balance",
+          "country": "US",
+          "category": "trade",
+          "value": -70311.0,
+          "prev_value": -53044.0,
+          "change_pct": -32.55,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "CPALTT01USM657N",
+          "name": "US CPI YoY",
+          "country": "US",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:51.017060+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "FEDFUNDS",
+          "name": "Fed Funds Rate",
+          "country": "US",
+          "category": "rates",
+          "value": 3.64,
+          "prev_value": 3.64,
+          "change_pct": 0.0,
+          "threshold": 5.5,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-02-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "INDPRO",
+          "name": "US Industrial Production",
+          "country": "US",
+          "category": "production",
+          "value": 102.3412,
+          "prev_value": 101.6296,
+          "change_pct": 0.7,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-01-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "M2SL",
+          "name": "US M2 Money Supply",
+          "country": "US",
+          "category": "money",
+          "value": 22442.1,
+          "prev_value": 22366.2,
+          "change_pct": 0.34,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-01-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "MANEMP",
+          "name": "US Manufacturing Employment",
+          "country": "US",
+          "category": "pmi_proxy",
+          "value": 12573.0,
+          "prev_value": 12585.0,
+          "change_pct": -0.1,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-02-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "STLFSI4",
+          "name": "Financial Stress Index",
+          "country": "US",
+          "category": "stress",
+          "value": -0.4436,
+          "prev_value": -0.7107,
+          "change_pct": 37.58,
+          "threshold": 1.5,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-02-27 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "T10Y2Y",
+          "name": "US 10Y-2Y Spread",
+          "country": "US",
+          "category": "yields",
+          "value": 0.56,
+          "prev_value": 0.71,
+          "change_pct": -21.13,
+          "threshold": -0.2,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-03-05 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "T10Y3M",
+          "name": "US 10Y-3M Spread",
+          "country": "US",
+          "category": "yields",
+          "value": 0.43,
+          "prev_value": 0.59,
+          "change_pct": -27.12,
+          "threshold": -0.5,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-03-05 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "UNRATE",
+          "name": "US Unemployment",
+          "country": "US",
+          "category": "labor",
+          "value": 4.4,
+          "prev_value": 4.3,
+          "change_pct": 2.33,
+          "threshold": 5.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-02-01 00:00:00",
+          "error": null
+        }
+      ],
+      "EU": [
+        {
+          "series_id": "CP0000EZ19M086NEST",
+          "name": "Eurozone HICP YoY",
+          "country": "EU",
+          "category": "inflation",
+          "value": 129.49,
+          "prev_value": 129.25,
+          "change_pct": 0.19,
+          "threshold": 3.0,
+          "breached": true,
+          "direction": "rising",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "ECBDFR",
+          "name": "ECB Deposit Rate",
+          "country": "EU",
+          "category": "rates",
+          "value": 2.0,
+          "prev_value": 2.0,
+          "change_pct": 0.0,
+          "threshold": 4.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "LRHUTTTTEZM156S",
+          "name": "Eurozone Unemployment",
+          "country": "EU",
+          "category": "labor",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:53.630605+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "MANMM101EZM189S",
+          "name": "Eurozone M1",
+          "country": "EU",
+          "category": "money",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-03-06T15:03:55.009427+00:00",
+          "error": "no data"
+        }
+      ],
+      "CN": [
+        {
+          "series_id": "CPALTT01CNM659N",
+          "name": "China CPI YoY",
+          "country": "CN",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:49.881752+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "XTIMVA01CNM667S",
+          "name": "China Exports",
+          "country": "CN",
+          "category": "trade",
+          "value": 222466600000.0,
+          "prev_value": 222364600000.0,
+          "change_pct": 0.05,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        }
+      ],
+      "GB": [
+        {
+          "series_id": "CPALTT01GBM659N",
+          "name": "UK CPI YoY",
+          "country": "GB",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:50.148847+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "IUDSOIA",
+          "name": "BOE Bank Rate",
+          "country": "GB",
+          "category": "rates",
+          "value": 3.7301,
+          "prev_value": 3.726,
+          "change_pct": 0.11,
+          "threshold": 5.0,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-04 00:00:00",
+          "error": null
+        }
+      ],
+      "JP": [
+        {
+          "series_id": "CPALTT01JPM659N",
+          "name": "Japan CPI YoY",
+          "country": "JP",
+          "category": "inflation",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:50.556992+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "IRSTCB01JPM156N",
+          "name": "BOJ Policy Rate",
+          "country": "JP",
+          "category": "rates",
+          "value": null,
+          "prev_value": null,
+          "change_pct": null,
+          "threshold": null,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-06T15:03:53.056233+00:00",
+          "error": "no data"
+        },
+        {
+          "series_id": "LRHUTTTTJPM156S",
+          "name": "Japan Unemployment",
+          "country": "JP",
+          "category": "labor",
+          "value": 2.6,
+          "prev_value": 2.6,
+          "change_pct": 0.0,
+          "threshold": 3.5,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2025-12-01 00:00:00",
+          "error": null
+        }
+      ],
+      "GL": [
+        {
+          "series_id": "DCOILBRENTEU",
+          "name": "Brent Crude (Global)",
+          "country": "GL",
+          "category": "commodities",
+          "value": 77.24,
+          "prev_value": 72.25,
+          "change_pct": 6.91,
+          "threshold": 90,
+          "breached": false,
+          "direction": "rising",
+          "last_updated": "2026-03-02 00:00:00",
+          "error": null
+        },
+        {
+          "series_id": "PCOPPUSDM",
+          "name": "Copper Price (Global)",
+          "country": "GL",
+          "category": "commodities",
+          "value": 12986.6068,
+          "prev_value": 11790.9641,
+          "change_pct": 10.14,
+          "threshold": null,
+          "breached": false,
+          "direction": "falling",
+          "last_updated": "2026-01-01 00:00:00",
+          "error": null
+        }
+      ]
+    },
+    "rate_differentials": [
+      {
+        "high_rate_country": "GB",
+        "low_rate_country": "EU",
+        "high_rate": 3.7301,
+        "low_rate": 2.0,
+        "differential": 1.73,
+        "direction": "carry_into_high",
+        "description": "GB rate (3.7301%) minus EU rate (2.0%) = 1.73pp differential"
+      },
+      {
+        "high_rate_country": "US",
+        "low_rate_country": "EU",
+        "high_rate": 3.64,
+        "low_rate": 2.0,
+        "differential": 1.64,
+        "direction": "carry_into_high",
+        "description": "US rate (3.64%) minus EU rate (2.0%) = 1.64pp differential"
+      },
+      {
+        "high_rate_country": "GB",
+        "low_rate_country": "US",
+        "high_rate": 3.7301,
+        "low_rate": 3.64,
+        "differential": 0.09,
+        "direction": "carry_unwinding",
+        "description": "GB rate (3.7301%) minus US rate (3.64%) = 0.09pp differential. Narrow spread reduces carry trade incentive"
+      }
+    ],
+    "breaches": [
+      {
+        "series_id": "CP0000EZ19M086NEST",
+        "name": "Eurozone HICP YoY",
+        "country": "EU",
+        "category": "inflation",
+        "value": 129.49,
+        "prev_value": 129.25,
+        "change_pct": 0.19,
+        "threshold": 3.0,
+        "breached": true,
+        "direction": "rising",
+        "last_updated": "2025-12-01 00:00:00",
+        "error": null
+      }
+    ],
+    "total_series": 24,
+    "fetched_ok": 17,
+    "total_breaches": 1,
+    "analyzed_at": "2026-03-06T15:03:57.208905+00:00"
   },
-  "news": [
-    {
-      "title": "The Treasury Yield Pivot: Geopolitical Chaos and Energy Shocks Paralyze the Bond Market - FinancialContent",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcWg2U3lZQ3FGamtzMnA1TWc4ZzJQUHVqMk5LYlRCdlFJZ0RRTkdzT0hlOXJqSG1RWm5zVVZmMTlNalh6djg1SUdpNGJ6ZWdPRFhDMUxBVHVZVG0tNlRWM3ZqaDRTMERoMjVQY3NKRl9VcnM0Qm1lTVZEc1luNUx1dGs4VjlvalhyZ2Q2Y0xtb3dRNWtrdTVhSGtaLTIwb3RiRktiZVhBaFZoazhsM2hoRnNncFF5UDhQSDZQNEhYSW01am5QZFBuNFhWWC1zY3dTd2NXYXpfYVdmdl9nY0EtSHNpV1V6UVpGNEdIVEp5QXhTZw?oc=5",
-      "published": "Thu, 05 Mar 2026 19:19:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "geopolitical",
-        "bond",
-        "market",
-        "yield",
-        "treasury"
-      ],
-      "relevance_score": 1.0,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Rising Oil and Treasury Yields Add Pressure Despite Stable Labor Market - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNHZlSDRHdlNfNTRuRF9PWl9OTW9fRXVIdnkyWWJuc3RMYkVUUkV5NzBYQmo4WjNLRzNNQ0JLZXlTX243UzA2MjBSY1A2eUhvSWg0ckhTTGpuVE5xZWVkUTV0eDNDUjNlbnpueDBHaWJlX09UaVdxSXczY0U4RjFWS3JocHR0ek1jd2h4MTZqaFE5R09NNlczRTM0SExKb01Qd1hFeG5GWDdaTEQwaWthSklxZnRiWTA?oc=5",
-      "published": "Thu, 05 Mar 2026 19:15:07 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "pressure",
-        "market",
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.8,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Mortgage Rates Dipped Below 6% in February Amid Treasury Rally - Eye On Housing",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR0lPU09JOXNnTkQ0RE9NOHAwR3JxQ2ZaRFdFNjV4UXRvMmM3eDdadkNVQWJ1TEhiMk1kSF9lRmdwOU1qZU1lVk10OUJHTk1vOXNfVEdqbE53XzFid01xdFpWZWFrUVJTOXg0YjZKUk9NcWk3M05NZG9DQ01SRlZfby05SExwX1NWX1ViWlRnN1g0QzVlVjN0Sm5nTQ?oc=5",
-      "published": "Wed, 04 Mar 2026 21:10:26 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "mortgage",
-        "housing",
-        "treasury"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "positive"
-    },
-    {
-      "title": "Iran war hits housing market as mortgage rates rise to 6% on inflation fears - CBS News",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZi1YQ1BwVFg5OEI0c2xRTjdnaDFEN1puRlFPbDdhUm1JcGRzb2xMX0RkVHg4bno1Mml1ek1WRGN5SGJWNFZhLW1HRExxZVc1ZUhhZ0VtSnVtVnVMWFNaZ3pESHNpSEFQTkk4QXpOMVJuZnF0bzZadDA2MkRELU4yWEVNOUrSAYoBQVVfeXFMT1RGQXBXR0hNcXlZM2ZFRmdGMGpQX3ktbFk4X2hhZmpIZFg5RVFaSWJVR3RLTkZZUThhTHR6WkpPVXFvdWFBQzRxckVMejJFdkMyTEo1VkplWFZDRVFjYUdXazQ1eEhkYkV2WHl0cUJmdkRJRTA0Q051RlFYY0VJSll0UFVVeXpCZWl3?oc=5",
-      "published": "Thu, 05 Mar 2026 21:49:02 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "mortgage",
-        "market",
-        "housing"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "U.S. Treasury yields reach weekly highs as inflation risk mounts - Canadian Mortgage Trends",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcUp1NWgxVjREdDBLc1JkMDgwNzNTUkxyWmltckQ5TlMzcHlPeFNhc2xxUFlQcWMtTkd1dXdrOFhVODJFOW91TlpEaTh3a2llUHhJcW1uWUVRYzZHVXBicEZxTDBCR3NJVzczRmJ6bkduOHR1a3czdUY4d0hTOU5xVGpjM1FKX2lpVFZoWXNQaXR4TllWd1hZRV9wcWpuZjVUM2F1NWVQZ0tYRTFIV19UbQ?oc=5",
-      "published": "Thu, 05 Mar 2026 15:09:49 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "mortgage",
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury yields rise after jobless claims signal improving labor market - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaVJpTkhjeGlwUi1mTkR2VkFtbkVNNG1kMzAyaGZWbGRnNFpDTlFDZWJjS1pkMHlVSXNpUUFrSVRIUFlINDFPU2pXUmlUYWMyZjZNcUU5T29HNmgxa2ctY3VYdzRVSndJSHp4TkNma25KeVRzcWp4dEF3OTFHSUFlTGNsM0NhYUk2TFUxbWFoeHhxeUtNakFmUDZyZ3ZGOTha0gGmAUFVX3lxTE9Ia3ZoTzlHNmliTHNQWUc5RWxDbzVBOHY3RXcxbTFMd1ZmcmVqRWtVWE1TcF9mUW5HdFA2ek1SeERmQ1ZPbXpqVVhyWWVTMkFUdENCZjlibkt6STBQemtWRUk3TFhGU3M1ckM1WW9hdmdJM3BOTkZDQ3NRWmI5bDhCOVVkcExyZ2xYRDhLclltdzBnYlFWb3I4TnlhR2dSeHNLZWg1bXc?oc=5",
-      "published": "Thu, 15 Jan 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "On Tuesday, gold falls over 4% as surging US Treasury yields pressure its safe-haven appeal - vtmarkets.com",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUGdZOGtNZG1qU2o1MHJkZnJUOGtpSDBER2V3NTV5QWM0WFdCMGh5ZWREdkZ1MGZPRjVRczlieERmUnp3WlpDeWFTam9IdnFfSGFnR2FGWk9fNGQ3ckozSWo5aDRud0ZfZm9ucjJMOXlKTVc0VGloRE1VX0xGWWs5dGJ1ajNucGVYWlJua0pYbC1iYWp0bkR3Rk5fWjhuRGd0a19GZ3lrUjlFT2NGdzJPSG9ONWtoZGxiWXZ3U0ZOR2ladWVyTnZtYg?oc=5",
-      "published": "Wed, 04 Mar 2026 01:44:57 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "pressure",
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "10-year Treasury yield declines on signs of weaker labor market - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdV9jeUtXVllZU01xUXNzNDR0b1JpZTEzZ1Q4Y0hVRzRnSzIzbGNTNHJoRXVnOFVUTHZnQUpMUzhoLWpjUG5PRDNLNkpmc3BwUDB0ZmtUTHJmSHRodFRNYVdLQW85UmJxVGRISHV0cFJzWDJoYTlzTzFJT0tDQ1dBWGh3dnJCaTDSAYwBQVVfeXFMUDhqdnlvdEtzakF3MjQ4Y3JoYVY2cmJZQnkyUDV0Q0FfeFlFSVZFdjZOc0dUcEV1czdwZ3NfNGRVbXVyVTFjajRPRVVzYkxnUU1EUERzY29IQS1mZUpCUkFCcVZybXBIRWpfV1Zvb0tVXzFHeWsxVXgyUTc0bGdvRS1kMnJESlU5dGhVZWI?oc=5",
-      "published": "Tue, 25 Nov 2025 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "yield",
-        "treasury"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "US mortgage rates rise to 6% after three-week slide as oil-driven bond yields climb - MSN",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdm1BMkdEVkFxZ21LbEJxbEo3MV9mVDU2Um92WDdNLWxObVp3MTlyRUxHWmRuSDliNXJadWFrTWJ6cjNtQ0g5Vmo1S3h2dldWNTFhemhGY1M3N2RoeXFZcXFDVmVPLXZrQW5LTVhNRUN6WFdqN3VxYlpSVlNEZ1dGX285V1VVbDhrNGplVWNkX0t5dlFQMkQtVkxtb3ZZX3ZROXExV3R0QUJaYm1sbkwtTmZKMGp5UW1iV0ZrS3ExMDl3NEZLYnRKOXVPdVlBWWM?oc=5",
-      "published": "Fri, 06 Mar 2026 06:29:46 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "mortgage",
-        "bond",
-        "yields"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury yields slide as Fed cuts rates, expands short term bond-buying - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbjZuMy1EX3Fnb2p2STJGSHRLTTl0UUJzZVV0WU1MZGJScmJNNFlkWlV2WThXUExmVXJSNVdGejNNMHJ2WnFhSXMzZERJV1dmdlhKeDRwN2ppbEFOSE1meENqcmZpUGNCaGZDQUh0bTd1LXVUeXBlM3hNYTdWenFwdTZvOWU4TGNmREdHb0JVU2k2Z252bkdScjExNNIBoAFBVV95cUxNNl80QmMtaEVHenAzXzVpTTBSVXc5STdNVzNxNVhnTmJZZy1COWE3Y3B6Tm9lQjFUdkY1bl9wLXhmWi05eEdUWUVPRXp4OUtfS2IxXzJqX0ZuaFl6Mno3dmo4ZF9vQVRSTXhWSkNldHA4azVKLUVSRkdYWVp2OFFqV3JIT1ZOOGl4Rk9aVkRZOF8tcktxSU9NSE9rY0hHclE3?oc=5",
-      "published": "Wed, 10 Dec 2025 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "bond",
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "\u2018Worse than 2008\u2019: Housing expert Melody Wright says the US real estate market could correct soon. Protect yourself now - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOW5nNXV6TzNtWTdfOVhpazUzUG1ZcHE4SU4xcDFVd0ppR0x1Um5rakFCWFVZa0NqUWFON19peU5GN2Z5M1ZlSXBJcUROSm5seno2cDVNZTVVQ3BUNmo1UVpYd2ZBbVFYWWdFclAyVXoxRE11OTZoWHl5S2tmLUNQZnVnRXk?oc=5",
-      "published": "Wed, 04 Mar 2026 17:37:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Real Estate Experts Predict The Biggest Housing Market Trends Coming In 2026 - Forbes",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV1RKdGt0UnRNaHFOcFc5aTh2OEs3Wkg3andKSDhOYmdVRHJmU01ELXBCLUVkR1NhLWdVbmFhNTVhQXI3SVl0NFBlVnZ0UHpTYURxMDVBOU9EdEZHdjY4RUxEcjJqUHJVcEs2dUlaQWlERVFqWEttdFFhMlRlSVpmLTFTZGlESVVJNk5waDlDNWJ2WEJ6c3BrUnR5a3lvZUlKbWdWS0V5RThoTHNUVl9IYngtRXdxU3JLUjdNV2J4Z1RCOEpWcnE4dm9n?oc=5",
-      "published": "Mon, 22 Dec 2025 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Will the Housing Market Crash in 2026? What Real Estate Experts Say - Better Homes & Gardens",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBzQ3pqSkJwYjlnU3p5RFhxWVhOMC1VZHhVcTd6T204WjEzMWJBRFJ1R19iYVE5NEtLeE14MjRmQVZucGM1U1NOMFpmQkoyUjE0WGF0clJiVlRvaXF0SEFoVTA1eUwtc0x0d3ZZ?oc=5",
-      "published": "Sat, 10 Jan 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Housing Market Predictions 2026: Is a Crash Coming or a Rebalance? - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQekl0aHFjY3l6dXFuNTA5ZnFBQ3B0Mll1MVZCVExhYnpTcUhOalJ2ZzhvZ21FMzdDdWU4OEVYTzhleG9ZOGFaNE9teGFXSFZRT1ROcUwxelZScGJzLXBkaW9NNklVZ1NMSGlBeC1JeU1Ic2M5dzQ2Y29xUnNFTHNJS1lWV2tNeHZYZ284c3VKdHRWLVJiVXB4dUM5eXFBeU1MS0otZlVR?oc=5",
-      "published": "Thu, 05 Mar 2026 14:05:56 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Real-time house price model shows U.S. housing market firming - Federal Reserve Bank of Dallas",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xOURNRjU3V3RUOHk5d1FxVlBTOFVNMVNCNFVEcmNkSjVfSlBselZ2VFoxYll5ZXM3UTZfLTlZdmZiWXBvT2FDM0JIWXU3YmdVMFFQTWJsN0RrS3JBeWFfZkpHZUY?oc=5",
-      "published": "Thu, 15 Jan 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Real estate agents say the housing market is starting to balance out - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaFAwSmRqUHkxR2pmM2RFMENWU3lxX3l4Skx4YlF3ZGV4UEZTcUpRU0JvZEtiTkVENEx2MkxLSE4yaFB3Znp3UDlHdTFJblhPbkNvUndaRjNESldFaENodFY5LUN2OE1TdGFGUkdjeHlYX2R2RjBmeEN2OGxSV05UUW5zak91aXIwYmfSAY8BQVVfeXFMUG04ZlZwdTBSS09ELWRkUnYxcW5BOHdDallhejc1T0ZqWHpPZHlKaVpZVE1ENE1IUjBGV3Jpd1VyNTU2QzhfaWlzYWd6NGxGM3hZd0Q0YXdTallpN0VxRldNVnU0UTdEYnJYbTJWNVkwVk9DYWpBYnpqLUFQak1xTk9ZQjNpd3ExdkVBSWRnNXc?oc=5",
-      "published": "Thu, 08 Jan 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Housing Market Predictions for the Next 4 Years: 2026-2029 - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9KVFBiUUNDcTN6N1BRSjh5VVpCM0xhYzVjdjQ2Zk1QOEZmak5Md0VFTDZnUEpMdUJ5NF9wOFB6Q1RQQUpDNWJDWDRpaGE1TmJrX0hnQ2JJZWI0SjZsN1hkanhUcks4a1Z6Um9XX3A3Vkk5a2UwdWdQSXRNOGs?oc=5",
-      "published": "Tue, 10 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Will 2026 Finally Shift the Housing Market to Buyers? - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX0dMLTRpd0tTVVB6UDl1bFg1SWJ1akFvQlVmcFR3YzZsaTlpbWdmWi16Zm03NTk5bElEZnBseUs4TU5YUHU1NmNxRWl4Wnhfc0g2WUFFeGNqWW4yT3RsUXhyeFpmVTNVTUtsSFBYUGx2YWp3YmpfNjdCeHBkTXpIX0pSYWJfSGY5cVc5aUVIT2FSa3MyREE?oc=5",
-      "published": "Wed, 11 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Buyers and sellers fear housing market crash in 2026 - National Mortgage News",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZVozMHQ2MWpOc3BnWkkyVDJfY1pBZzhEbjZzekUwMVBiMUVJMmtvUi10bFhTRFF3NnBXR01Qc3Y0cnUxZEJsUVVpUkZvSWQ3b2tfNGRRN2tfQU1HaUJlczNNWDhBb2JsSzNRUDJBZVZmT2xraTZVV2h6ZVNjT1U0TWF3OHcwaEdWRjYtZGx1WkhzYm1JTWQ4bVRn?oc=5",
-      "published": "Tue, 09 Dec 2025 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "mortgage",
-        "market",
-        "housing"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Home values drop in Denver, delistings climb, yet real estate experts stress housing market isn't crashing - 9News",
-      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOa1hNNXp4Q3d0cjJxd2w1VHo3OG1VRTdoNmk3dElJNXFDbVdWeHROcjBMVVlGWHpOVEtMRnI0Skc1ajJ3YXlGMjFPaE9LNGNPWWxTTGU1NXFvNHA4T2JKUjNEVWVlbTQ2LTBEaVRkMW12R3BMQ20yeUpYUl9LcUUtQTBHRzVvMkhXWUNwNG45X1NnRDBIRUd1REpOS095SDFRZk0wd3pxcWxCM2Y5NldocnZWQ09xOHQzVk5BQUJJSWJYdVVjaVlIU2pKNGNLck5HSl9SalpvWmFtbHRBeTlzZ0FaM3pEVUdncV9zXzFTeUpmVW5SUUdCa1VjV0R3ODJPWGpRUg?oc=5",
-      "published": "Tue, 16 Dec 2025 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "I\u2019m a Real Estate Agent: 6 Metro Areas at Huge Risk of a Housing Market Crash in 2025 - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1JQVJyVUVER1I4cGQyQTZRb2YzdzZ1aG5ROE41czJ5SVhMZTN6UDN1WG16V254eXpnaG9EaHIySlhvWVRDYVVoWjZwWXJkN0U4VmRoc2NZTzJkRTdmMkVwWTFSd3IxYmVMSXQ0SW1pVVVaZDZqaVE?oc=5",
-      "published": "Sat, 16 Aug 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Will the Canada Housing Market Crash or Stabilize in 2025? - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaEpwbkpQbmc3TElCdGZzUnlPRTNoY2tLNkhVMU90THNVaTUyYnBSV0dJbER1cU5SNm54R3ZaSUluNWRpaDN0YkRIeE9iM08zUDl6YnVWTFEyTFRabUR4QjFzWUU2YmFoUEJMM0NrX0dFbTdJc2d4Qm4xM0g4NVJNNDNjbnhZZGd2TWxtTnRlS2MwUWpMUHJRcHMzdTU?oc=5",
-      "published": "Fri, 10 Oct 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "2025-2030 Five-Year Housing Market Predictions - U.S. News Real Estate",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOGp4RXlmSE9HNnRDWVg4Sk9PSmdEZUdpSlFjMzhLLWpYNWEtSENScmJyUDAxX2FkNzVkZE1DWXM4TnN5UHQ0bWVXU3piN1I0aDRtQ2dFSGV4VDlyc0RyOFB5ZXNTaEJ5WkdpQ015NmdvNkwteHdlTDNKekg5SWktYmZjN0xPbGgwUEFoVWk5SHJzQU1mSUt0T2JCR2NQeGRpaGxRUFR5T1hERzdKOHg2UnpxSVlZQnJ0NWpv?oc=5",
-      "published": "Wed, 09 Jul 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Housing Market Predictions 2026: No Crash, No Boom, Just Rebalancing - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaWlqVVBLMkw2STJGZ2pwTkNJTzlQR1VCLXFCY1dlN2l1VzZLeUt5SWc1Z1pTODZxbGZsUDZuOHNWbE56a0tJREZOZ0JRZ2lhRkFsZE0zbEpuN0NBNlI0dU1tMWxNdWxnQy1UNmR1Qkp5a0hQQ0xZRFVNVFpuaW16b3hESGdOQk1Id1NCb29xYVVpRWVVOEpDMWFaZUtfRXg2NTJJY19KVQ?oc=5",
-      "published": "Sun, 28 Dec 2025 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Opinion: The Hidden Crisis Behind the Housing Market\u2019s Stalemate - Davis Vanguard",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSk01MV9pRjh1YkZnSThDOWxqNmt2cWxfeFdxeDQ3TUV6b0JBZ1k0MlNvdGNubTl4RW5sckxuLTk0eDVkQU94a3ZhQ2E3XzV2RDBEVGhKaDdtUEdSWWsxaWJ6VGV4Y2lUSEFhcTFsUnNFTDJZa3JzcWx3U0Q4OWtKQXBR?oc=5",
-      "published": "Tue, 24 Jun 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "vanguard"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Housing Market Crash 2008 Explained: Causes and Effects - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ONDdNOFdfc3JLWWlGNE1ZVmludlplQlVOZ3UxZnBsajl3LTdYUWtnbzdxckxhaVBGdVJsWFd5RWphY2hkdnNMcTA5Yk04cmx6WVMyZjBKc19GSGVvZXhiR3pFbk5wU1pYeFNwM3BwTndhdw?oc=5",
-      "published": "Sun, 20 Jul 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "California Housing Market Forecast 2026: Will it Crash or Recover? - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUDdWNHhmS2ZLTERCbm83aTJJSkpJYzN0dDJGSVN3dHhYYS00N3B5b3lfeXFrZWJtWmwwMTJ0WHlabzM0RF9YU2JWYnYyWnJ0Z21zTUwwVDlLTjVnS3kzNFVrdDNnMVFMZnozUE56d0F5cUt2dmVINkFYMTJCQnZTVWc4UzMyQ2hweFRkSVliLWJoX0tFWmNmcE9ydUIyd2pSTjQ2YXJ3?oc=5",
-      "published": "Wed, 01 Oct 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Why is Cape Coral Housing Market in Florida Doomed to Crash in 2025? - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZkZFSUFRWVYwM20wTTQzZ0E2WEhIQW5zaUEzckU4b0tEU2dyZk1hekxDU01uRVVub2RRWDhsRG41N0xfdEg3YUpLUkJJY1E3cDZqU1FrcTVtT01WMkdIcGo2SlBISWJmQzVTTER2cUFsWXg4dHJvU01BaWY2b3ZDQWdKUlY3UzRyN09qSlZ1VUpSdlN0Z0o0ZWx3a2RGTWJ3RUlJLTZMNkhpZw?oc=5",
-      "published": "Fri, 10 Oct 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Will the Austin Housing Market Crash or Stabilize in 2026? - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMElkd0lSTm9SU09TT28welpSX201dV9jSDRCWTdSWnN3Z1Jzbld3dEt4aGgwbUFLWjg2ZS1IbmFJZXdvN095U3BvNURUejZDcml6NzZjNlRVZXIzb2R5MDVTbVhyTHp1c0M1bjhMQ3JNTUtFNktRSGUwdHNkVjdubm1EWTBjT3BHUGYxMlhDTkdiZWVTb2FTZjIyZWw?oc=5",
-      "published": "Sun, 01 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Will the Housing Market Crash in the Next 10 Years? - Norada Real Estate Investments",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPY19sZUVBZmVQRG1MVmt1UzR0WGkxci1yNTczMC1kd3NLNWkxbmF0TGNNQWlQMHFrUkFveWdJeG5Ib3g5bEhZNjItQXM1Nk1yX0M4WXlLLXFXMHI1MEFBZWo3SlJFa2N4azBmYU1meU1WanRRSTUxaUMzcXhsWlFoY2JFTklGelh4dUI5SS1ncng5U0k?oc=5",
-      "published": "Mon, 26 Jan 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "market",
-        "housing",
-        "real"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "\u2018Help With Mortgage\u2019 Searches Are Highest Since Housing Market Crash - Newsweek",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYk45OThtTnhMcU1UR0Y2WnNnR3AxX0c5Rm56Q1poN2szYTZ0ekFmVWRhSlJzOXc1Nms3YWl0T2ZBNXFlWmxXSFNuUy1wWDZhNHY5X0pmc3E0U0M4R0o5UjBnTXZfREljN1JXQmV0WmNrTFpXQmJtZkttNjVxMWNWUlRZY3J4UTllLTlkeHByMVRkaHdaRU12bkJPcjVTSmJDQ2c?oc=5",
-      "published": "Fri, 03 Oct 2025 07:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=housing+market+crash",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "mortgage",
-        "market",
-        "housing"
-      ],
-      "relevance_score": 0.6,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Iran prediction market trades spark insider trading concerns - American Banker",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSy0wSFU0UkhJSGZfVDBQNF9KdlVYR3hsWkd3dU00dkhORGF2ejVtV09QNE90My1PX3NUUWlzTGozcWcwcDNIVkxnLVVHSGphRURoNmZZaUpxbjcxSFFRZjhJazVtWmlxOUxxc2YtdnFaZnpIZ1J1NEVLbTRwSU1xMnZVUTNVX2twUm41TDNBdUN1ODFyOURDcTJ2eHo?oc=5",
-      "published": "Wed, 04 Mar 2026 19:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=prediction+market",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "american",
-        "market"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "Treasury yields move higher as investors await key jobs data - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNWppTmdoSXV2cEpYMU16QTEtcG5ZWjc5cmZvNFR1SEFmcFlnZmF3S3VqRTlpOFJaYVVSN0FMUS1WQlRXTXVEc1ZYYldsbTZ5aW8zV0k0MGUxRjRuaVQteGI0ZTcyNHU2Qm0yM2Rmb2Y0N2VHdGl5UlJwVTZwWXh3bWxoSnlhZGhTYTdwWm12VdIBlAFBVV95cUxPcFhlekRRb2dERjdLcmxsWkNTd0RIWXJwdzNKV2gxaVdIV1ZGRGZNSXVwMVdHZFBLM2s5M1FXZGhXbE00am00cXl4dmRSb3AwTjgtWlJRb01lZTNSWWdyQXJpRFFtWE9RRU9TaWstOHFyaTZ3YnB1YnQ0bzNGd0dYYkw4a0NkV2dQbTIzRjhoY1lCVnVS?oc=5",
-      "published": "Fri, 06 Mar 2026 12:16:01 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "positive"
-    },
-    {
-      "title": "Treasury Yields Climb to Three-Week High as Inflation Fears Grow - Bloomberg",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZldyYlNPVmxWa3FMYTB5Zm94OEJ4TDhzQkhyQ1pSWXdlR1VLRWRxMEcwSWxFdGRjU2xtbFc4YmVzdDZfcTZ2RDZCaGkxbnV0REV4SzZfenlSaXZSY3pTYUNhY1FMa2QyZ1lMQlAwczFySi0zY3c3ZVBQay02V2NFNHFxWTBZU1ZFeVBJQUFZRlpVRjdFdVZKZXNEV1FlYTNTRnB0d09YS0N6U1Z6aVAxOFZkeUdudw?oc=5",
-      "published": "Thu, 05 Mar 2026 20:53:36 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Arthur Hayes Says Rising Treasury Yields Could Trigger A Money-Printing Bailout And 'Benefit' Bitcoin - Benzinga",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPazJUMEZQMXcwRW5vNm9sbmdUT0xWcnFka2tfcExDYXczUUI1ZlRMdk5mdFJ4d2JNLXZ0Uk9od0s2MTdMOEtwWjJVYjBra0lQOHFFSDhGNTE1THUwTjdRNXJCWE15cDl1akRweFo1alFMbDNrQ21RZmtrU2o1ZzZGb3d6ZWlzbkRkdEZhdFNLVUtxeHc3TVE5ZHNzMnM3V3BYc3BkSWQzUlZ6a3ZvYlNyWEpmQk1WNFVidGJGbVFSSGEycmY2cFhmbF9yY0xqenFpTm9jTHlnNXlpRzctNjZMOHNrTGNUVjVSeDI1cFE1SFVrTzg?oc=5",
-      "published": "Fri, 06 Mar 2026 05:14:35 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury yields move higher amid rising oil and labor costs - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZFJnRWoyT3dWMFpISTdFQVJpelZXczZscHJRWE0tQVpPNDlBY3I2RHJjT3MwRzBVVEJxX0lpMGNPUnVQUHFQQXJqbDhxOVpQUEx5clJpQmczcTN6SkFqMTk1MmVEZWpQTXdKZDh0aDJiTFUzRGw0bVJlLVVkLTdqUjc2OEpTNG1adV85b3Z3dkRXcjF10gGaAUFVX3lxTE5yeldCaGxMcHpEN0d2eklUS2NTSG9SdE9udVh6aFhtTzVxZ2NnbzZRMHZYYmVQUTlRaFpZaXBNeWlQOGo0eG5sWEE3bi15RHdoemQ3WHpmcDBFMlZPZnhjYXREUmpVTTdfZHlweWlod2hIa0dIbzkzdDJOSWtzX05QX19RTWd3NU1mMmRfU1dMazlSeGt0SmZNd1E?oc=5",
-      "published": "Thu, 05 Mar 2026 08:14:22 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "positive"
-    },
-    {
-      "title": "Treasury yields edge higher as investors monitor the latest on the U.S.-Iran war - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT3ktV01KQWlQQnc1UDBPTzRFTkdzWDZubUkyS0cwZG8yR29BcThmRWlITmx1SW1VYm5IRTRRcWttZml1YkRUSlZ1ZXdjX2FtT3V1bDkzVUdrXzhEZ1ljNjJPNVBoMHZIekhKZUx3REk3ZkFVZU1kUWtHV1VubmdRanFFRnVfME82TUJHRVNjazlQNjlQWUZmbF9ickU2WjJXaUHSAacBQVVfeXFMTlB0Rm1uS29wMHZPRW5TNmp4STJIY1RYQnZUOGVBZGJiWjhwNXNtLTc4X3A4RlNDemZoRXlUTDViYllwaGlDdXo4WGZTYWtkZ0ZEaUQyYm1FdEVxVXZLTzJySjhtdWszY3RVLXlYSjNyVzZkZS1XT1UxSkg5VkFZUFVvY3BzN05BYU5CWFM0VDBvUVhvTURGemt6Yzc5d1Z6TlBQTGd6dlk?oc=5",
-      "published": "Wed, 04 Mar 2026 11:51:25 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "10-year Treasury yield tops 4.06% as surging oil prices from Iran conflict raise inflation angst - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbnZhRXdhUkJKd3BWTXZBa2FoVXVKTzJ6VGRYOUdvN0diMllfcGphM25HUjZMelV0R2NnOGpYTDJrZXRabFp3SGVpZTVwYm9iUFdlY3E4T0tTckVGb0o0NGxVMjgtQVlwZnZXRF82TmxyQk5SQ0s4NDRZcUNxd0YyM0NEMGZBQU5yOUtJUHR5YXN4dlktdEHSAZsBQVVfeXFMT2dQVUFBVnQ2M3E3OEpCV0hicFI4R1FadkhTYUJFV2N2WEJidjFLMDZBQ1NZVkdGSTFNM28ta1VXbWhLZjVTbGxhb3F3LVNlVDBfcmVSdkdTVXFYRkw2bV9VYzlBZU0yUE5GOUpsRDRBeUJRWjJZWjZMSTJjVTlxUjB1dUVxblI5c1pZUWFqa25rSng3dFR4cFNXaEE?oc=5",
-      "published": "Tue, 03 Mar 2026 08:54:49 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "yield",
-        "treasury"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "10-year Treasury yield hits a three-month low \u2014 and it may have to do with AI, strategist says - MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi4ANBVV95cUxNUkdpaV95OVFnb01PRlN2SXZ3VHlhdTYxNmlTMDByai16NVV0d19LWHVjV0FHc2Q1TGpLQjdzRkZvWWVKNTMyNk5KdFd6OE9ra0FRRHNlU2VGNExTNk4yTDd1dnRVM2hYUW9nMl85Zm9selJwMUFUZEFqSHNxZFJSNmZQdURrNDdFOTRmMGRJMVRoelk3Vmo5V2xudXBtb0NFWHdWdm1fbHhTNGQzQlU3SGtXU0dQUkdwS0RwY0wzUW9qc09FWkNzd2JqOW1QNXozdHlERzFNX1gydjdOV2YySVA0aUdlWmRVc3JVazJtRTA4MDdKbmZwZVNpa19SdkdGUVFBOFZ1cHQ4S2lNU1lMRTlrRkRoZnNtZjd5Q04xenJwTHBDRTZWTnNlTmpqeDIyZi1yZEgtU2t6am9qYzBXdnljNHFaNlVGV2RoRkI5bGV2ZTlkbkRyRy0tWGh3ZGtsS0lJNHh1WjI2dFFvTk15dzAxSV9zOFZOc3pDYnl6OENVOFJ2UlNwQXk3UzVXVU5kdWdmWVpZQ2h3TkpTZDN2QjNSbVNCOFMyaGlLWUt3c29LWC1ObU51Sm1XTDhXRlYzWnk3b2dxbkpGUDBNMXdxYThlVUdZV0xJaFhqQi12OFE?oc=5",
-      "published": "Thu, 26 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "yield",
-        "treasury"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury Yields Soared on Tuesday. Why That Could Be a Big Problem - Investopedia",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX25GZzdvU0tpMy1NX0hNRHluaWlySzhESHktdEViYVVsakZDa2IyeFdsd2pQUU9FVG1PNzh2Ny1RU0V1VFo2blAyWnVCMUJIUUxaMzRyUW5tVlBQMWtpWVprV1JjNkxoVDM5aGhrc3ZSdFFBdjFoS05DSjVFRUd1V0l1eUlxdnpMOEwtNmpqUGUwUXZVdDVKQVZHZTNKaFNYM1V6T0Z4TEo?oc=5",
-      "published": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury yields fall as investors await more economic data - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLVdJWllkMmhTeG1zNmUxSGI1UXcwSDYtZ2FPdmgzNW5lZ2FkUXFsMGJKV1NaZEdsRm1Zak1rWjN2RVJ3ZDZVY1libTZfT3FSMDJRajJTcnYtWkdSX1FVNUhUdmh0M3FFdGFmZXFDYUlTNWpnWDN1czJ3b2N0YW16azhYMXpJdko3MU5oN2p3ZkhMV2JOS2fSAZsBQVVfeXFMUE1nUDN0NW5KMjNObTlTd3laUVBTM2M4am9uX3lNdFhuOW9VcEY1bmQ0bjZ4OW0tYmJOSEpxUi04Y3hxLU8wTlYzNmRudnRYVXlkVUtXNm5NQW5BSXA5ekFBZnF6dUtzX2N3UkJwQno3bU15VEYtNmpaSnhRdXVoYkxaYnd3dzhyTjVWRDgwbXcya21GV25MXzRpTEk?oc=5",
-      "published": "Thu, 26 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury yields edge higher in the wake of Trump's State of Union address - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdWszc0lmUE9GQU5WSkRRaGVqd3FGVG8wWGZ4SFVsQldlcVZLdndNSllxMC1IS0xyY2hOcVV3bDk1T0FFWVJENldWN25yX2pXVG9JSjU1eklKYnRxZk0zSFQ2YnRKMFNuYm9nQ1RNLWt1RklPUFlzSjNKYVRxTWU1bWpleW5JWVdhUmFYQ2Q1ZjhrRnR3Z09uNDNCSldzRTUtZkt30gGoAUFVX3lxTE9vYUZVWHNIS19oQjUwUXNYSDYydVN1RmFNakdURVhJS0VKcjhBbTZlQjdMTlV3SkdwdXdxVHdQb0lPN1RuWUptaWR2dS1QTWtSQ1d3QmNBLU9ZX19FakRhZDhTX1ZsTVhxc0Y2aHBWZkQ0STRkX0lZSG8tbXlheEZ5c3J6UFl2TldsQjNVd3RIWWV5VUtISFRrWHRhRzJGc1UxMEQ5UUp0Ug?oc=5",
-      "published": "Wed, 25 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "positive"
-    },
-    {
-      "title": "10-Year Treasury Yield Long-Term Perspective: February 2026 - Advisor Perspectives",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOakZQcnZkOEFEaEd3Z3JpbDZFM0JpUlNvMU03NWVKemxySlZWenJVSXVwejJhWUJoNW5rbFdQVTUxNFp0bjJUTnJYeVYwVjJZOWNFMk9KWno4YU5XY3ZYaDdTejBncERGNlc2aGF4SHBvaWtYT25jNTN5bWdGU2tVUFcxaTJtTVhLS0kyQWRXQW9pZGZDYlZoMEhaUS1KZWtXWUVCa0o4SkNRODlzNktGMUJ3S2FHQUZYQVoweA?oc=5",
-      "published": "Mon, 02 Mar 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "yield",
-        "treasury"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury Yields Snapshot: February 27, 2026 - Advisor Perspectives",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQTFuREVNMlFEelVzTlQ0UklWckY3R212a3lMV2RmTUxPUUZPMjdzeF9saWMxeHJwNTYyVmR1S2lhbmp0VVFmRmVEY0ZFT2ZBbV9LOEdhV09KVThWLWQ0NDQtQ1lka19LZkdjYnBBbzNKNU03eE1JWEdETFpWVjE2a1dHS3FBSzlEZEVQZEpocXQwNVFrdjltWEZ2SVhVQVBtZ2tqdHFB?oc=5",
-      "published": "Fri, 27 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "10-year Treasury yield rises back above 4% as U.S.-Israel strikes fail to spark safe-haven buying - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWHB1WEUyV3hiYXU2QXVjTndzT05Vc2E2Vno1UEtiVTgwX1pOU3JCY2NQNkhUWF9Ta0I4cE9Cakc5VlZGQjNXU3VoemVPOVJ1QVhEQS00ZjBvbTRuUGdGZTFHc1MybUNybG5zRzB0YzVZcFZRUk43WU5CNmM5QzVMN295dmZXVE5tWnJrTnRyT3EwR0pLRWZXVWpsTkFmd3RD0gGmAUFVX3lxTE01SU4yRWc1MlRtMmZwdTdQakF6dEU3UjdEa3U4MHZZbzFRV3UzQ0k4bTVBWjBkendRN1otNnBCam5uY2dadGp1bVlVdmd1OFJpYkNUdDVNa0lVckswdlVnNW1jNlc0elRkYXhtSk1pWGQzaUEzZmpCZkdrZTFleThya0RrdEQxYS1xTG1ubUdrUnRLZlRYMkJKQ216dUhheWNzRV93WHc?oc=5",
-      "published": "Mon, 02 Mar 2026 09:49:34 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "yield",
-        "treasury"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Treasury yields are little changed after data shows robust U.S. economy - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMGg4OEwyd0tlRDluYTZlaHBnbjczdHJtVXpzSkdXemJVNGlxMUhodkdmeWw1eU0zZDJlMzdaRXplZGpGajZWcG5TdDFBMGJJWlFKR0g5TXRxTXpxX3dqTENwLWNmYjI0dXRleXkyU0NoZl9IS1hrVlloQ1VacjFWQ1RxcDhIYnZESHZtZmoyb0JGLVNU0gGaAUFVX3lxTFBsd2VQckM2a055ZWktZjNFaWJFNXV4MjRCTnZjcDF6WnlCYml3QUNoR25fTTN3WUdHZDRROU9LQ2ptVmVWM3hrQWhTSEszSjRTb1g4SDlvTEp6ekZ5djRodHptVTdzc0Eza1B0U2RuQjdYV29zZjk0dU9kMkYyZkEtamZwRXFmSS1hY09WYU1Sc3R5emRUa1gwYmc?oc=5",
-      "published": "Thu, 19 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "negative"
-    },
-    {
-      "title": "10-year Treasury yields rise after high court rebukes Trump's tariffs - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNNDR0ODBzUzdrS0xZRmQ4Z2hNQ2lERnRvZXVSd0lSYWE4eDh5NGJlUnUza2RDN2ZnTW5ka0tyYzlQZ1VVQkc0NHlDdVNqZkYtLUZwak1DcFhYMVhTcEgwY04zeng0QTVEZVYxdFlCZzM1NkhZMDM4eE5zNWdkVHpIYkRyelM2RTZicmfSAY8BQVVfeXFMUHpBR1NJVzdHVFBfMFVaQl95SW9kaE9ZUk1VT013VjZTV0NJVG5XeTJRbXR0b3BfSVJibThZWWIzUy0yYXI5QkRjay13VnRtd1RYUkVSa05kTlc5bklZeW5JWmhFVU9FeHFNOEVxR2laZzV5dW9weG4tb3E3UWpfUUt2c0d2SEp5MF9LenljZDQ?oc=5",
-      "published": "Fri, 20 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "positive"
-    },
-    {
-      "title": "Treasury yields fall as investors weigh new Trump tariffs - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSjQ3UzR6LXU1UjR4UHdjYnRpMTg0T1ByRVFwZk9jUE1HSHY2Nm1NZWxiUWUtOUhtS3V6QmxBR0haeV9xZGczUFdwOWNuSFpaMGxUMV9rRi1iazZNZWZmdXo1cVBEYm5HcVgtdzZIQVBPR1dEMDVHRG1nUDhJTno2bTdlOG9ZTGtvN29BVDNUR0U2V03SAZgBQVVfeXFMTlhpQWdaWk0tQWozTjJMREhqUmktZVVUU1dkd2NFWnlBcncxOXg4Szg5ZVdSXzlOUDdSNWxzam0yMDBxeUFTQVIzYkdkX0tNN3pyMFVuS1FmeWlmZlRmeE9JOGJWMjNSUGlMNElHMGFGbXM4SkE3MTVEUTd3cjY5OXpfSlFIaktuQWQ0akdnYzkwMERiTUF6emo?oc=5",
-      "published": "Mon, 23 Feb 2026 08:00:00 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "neutral"
-    },
-    {
-      "title": "Geopolitics Hits Mortgage Rates As Iran Conflict Drives Oil And Yields Higher - National Mortgage Professional",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTTFhRVlhZkJoQlNJMWNvd2FCRi1LY2VUbExmQkgwV1dUMjkzeTdFRHgycndhMTRDeFhFUzlBbVc2Z3VVUGtXZlczOTNYQ3VYelNDZ2NZNURxMnJLVm5yR1locTQtMzdkbWhYbklQOG1lZVUtcmN3eWJCUGYzMkVCdGF1LVpSdkFfaF9vUlVaMnlaOWdwa1RSRDZyMTdHLUVXMW1fNDlad0NrRkhIa3EzeFRqbG91WkowWUhzSQ?oc=5",
-      "published": "Wed, 04 Mar 2026 15:45:36 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "mortgage",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "positive"
-    },
-    {
-      "title": "Treasury yields advance for fourth day as oil prices raise inflation risk - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUjhqaUZseUF2Um5JQjZNRDdWRGNkNFEwU3FfazlDNmZBSS10YldkdHhYRWM3aUljeXAzNm1xVnFPZWVYeV9KU05TT2JVR2pTaG9qeTdRSHlZWWM0YWtLazNpdDkzX1Q4WGtMTFJhUjBwZ0FSYWZXeUtrMHhBbWFuMHFXTHVFZV9yN3o4MEFoUS1jUjdFWTJxemZRMDZnUHVsWFRIZUNaRzdMYmxYMkFVc1JqT1J2V3R6SF9pNlJkTEJCZTNwQXptZHlLTlpDOGNGajgtQjhjelhIdjg?oc=5",
-      "published": "Thu, 05 Mar 2026 20:11:11 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "negative"
-    }
-  ],
-  "snapshot": {
-    "timestamp": "2026-03-06T14:00:13.915519+00:00",
-    "regime": "neutral",
-    "regime_confidence": 60,
-    "sentiment": 0.0,
-    "portfolio": {
-      "initial_balance": 10000,
-      "current_value": 10000,
-      "cash": 10000,
-      "total_return_usd": 0,
-      "total_return_pct": 0.0,
-      "unrealized_pnl": 0,
-      "realized_pnl": 0,
-      "open_positions": 0,
-      "total_trades": 0,
-      "winning_trades": 0,
-      "losing_trades": 0,
-      "win_rate_pct": 0
-    },
-    "signals_summary": {
-      "total": 28,
-      "bullish": 1,
-      "bearish": 4,
-      "neutral": 22,
-      "errors": 1
-    },
-    "news_count": 384,
-    "active_theses": 0,
-    "planned_actions": 0,
-    "circuit_breaker": false
+  "timezone_arb": {
+    "lead_lag": [
+      {
+        "leader": "^N225",
+        "follower": "^GDAXI",
+        "pair_name": "asia_to_europe",
+        "label": "Asia -> Europe",
+        "correlation": 0.242,
+        "lead_lag_days": 0,
+        "same_direction_pct": 51.8,
+        "reversal_pct": 48.2,
+        "avg_follow_magnitude": 0.74,
+        "sharp_move_threshold": 1.0,
+        "sharp_follow_rate": 55.1,
+        "sample_size": 139,
+        "signal": "neutral",
+        "confidence": 0.0,
+        "description": "No strong lead-lag pattern detected between Asia -> Europe"
+      },
+      {
+        "leader": "^N225",
+        "follower": "^GSPC",
+        "pair_name": "asia_to_us",
+        "label": "Asia -> US",
+        "correlation": 0.123,
+        "lead_lag_days": 0,
+        "same_direction_pct": 50.0,
+        "reversal_pct": 50.0,
+        "avg_follow_magnitude": 0.62,
+        "sharp_move_threshold": 1.0,
+        "sharp_follow_rate": 57.4,
+        "sample_size": 138,
+        "signal": "neutral",
+        "confidence": 0.0,
+        "description": "No strong lead-lag pattern detected between Asia -> US"
+      },
+      {
+        "leader": "^GDAXI",
+        "follower": "^GSPC",
+        "pair_name": "europe_to_us",
+        "label": "Europe -> US",
+        "correlation": 0.502,
+        "lead_lag_days": 0,
+        "same_direction_pct": 69.0,
+        "reversal_pct": 31.0,
+        "avg_follow_magnitude": 0.78,
+        "sharp_move_threshold": 1.0,
+        "sharp_follow_rate": 89.7,
+        "sample_size": 145,
+        "signal": "follow",
+        "confidence": 79.4,
+        "description": "When Europe moves sharply (>1.0%), US follows 89.7% of the time (avg magnitude: 0.78%)"
+      },
+      {
+        "leader": "^HSI",
+        "follower": "^GSPC",
+        "pair_name": "hk_to_us",
+        "label": "Hong Kong -> US",
+        "correlation": 0.034,
+        "lead_lag_days": 0,
+        "same_direction_pct": 54.2,
+        "reversal_pct": 45.8,
+        "avg_follow_magnitude": 0.6,
+        "sharp_move_threshold": 1.0,
+        "sharp_follow_rate": 48.1,
+        "sample_size": 142,
+        "signal": "neutral",
+        "confidence": 0.0,
+        "description": "No strong lead-lag pattern detected between Hong Kong -> US"
+      },
+      {
+        "leader": "^AXJO",
+        "follower": "^GDAXI",
+        "pair_name": "aus_to_europe",
+        "label": "Australia -> Europe",
+        "correlation": 0.165,
+        "lead_lag_days": 0,
+        "same_direction_pct": 51.0,
+        "reversal_pct": 49.0,
+        "avg_follow_magnitude": 0.76,
+        "sharp_move_threshold": 1.0,
+        "sharp_follow_rate": 55.0,
+        "sample_size": 147,
+        "signal": "neutral",
+        "confidence": 0.0,
+        "description": "No strong lead-lag pattern detected between Australia -> Europe"
+      },
+      {
+        "leader": "000001.SS",
+        "follower": "^GSPC",
+        "pair_name": "shanghai_to_us",
+        "label": "Shanghai -> US",
+        "correlation": 0.062,
+        "lead_lag_days": 0,
+        "same_direction_pct": 50.4,
+        "reversal_pct": 49.6,
+        "avg_follow_magnitude": 0.57,
+        "sharp_move_threshold": 1.0,
+        "sharp_follow_rate": 46.2,
+        "sample_size": 137,
+        "signal": "neutral",
+        "confidence": 0.0,
+        "description": "No strong lead-lag pattern detected between Shanghai -> US"
+      }
+    ],
+    "realtime_signals": [
+      {
+        "signal_type": "momentum_handoff",
+        "direction": "bearish",
+        "strength": 0.62,
+        "target_market": "americas",
+        "source_market": "europe",
+        "description": "Strong momentum from Europe (-1.86%) continuing in Americas (-1.51%)",
+        "supporting_data": {
+          "from_change": -1.86,
+          "to_change": -1.51
+        }
+      },
+      {
+        "signal_type": "broad_weakness",
+        "direction": "bearish",
+        "strength": 1.0,
+        "target_market": "europe",
+        "source_market": "europe",
+        "description": "Europe: only 0.0% positive, broad weakness",
+        "supporting_data": {
+          "breadth": 0.0,
+          "avg_change": -1.86
+        }
+      },
+      {
+        "signal_type": "broad_weakness",
+        "direction": "bearish",
+        "strength": 1.0,
+        "target_market": "americas",
+        "source_market": "americas",
+        "description": "Americas: only 0.0% positive, broad weakness",
+        "supporting_data": {
+          "breadth": 0.0,
+          "avg_change": -1.51
+        }
+      }
+    ],
+    "analyzed_at": "2026-03-06T15:03:58.173686+00:00"
   },
-  "equity_history": [
+  "cross_correlations": {
+    "matrix": {
+      "tickers": [
+        "^GSPC",
+        "^IXIC",
+        "^N225",
+        "^GDAXI",
+        "^FTSE",
+        "^HSI",
+        "000001.SS",
+        "^AXJO",
+        "^BVSP",
+        "^TNX",
+        "GC=F",
+        "CL=F",
+        "HG=F",
+        "BTC-USD",
+        "ETH-USD",
+        "DX-Y.NYB",
+        "USDJPY=X"
+      ],
+      "names": [
+        "S&P 500",
+        "Nasdaq",
+        "Nikkei",
+        "DAX",
+        "FTSE 100",
+        "Hang Seng",
+        "Shanghai",
+        "ASX 200",
+        "Bovespa",
+        "US 10Y",
+        "Gold",
+        "WTI Oil",
+        "Copper",
+        "Bitcoin",
+        "Ethereum",
+        "Dollar Index",
+        "USD/JPY"
+      ],
+      "matrix_30d": [
+        [
+          1.0,
+          0.936,
+          0.018,
+          0.548,
+          0.602,
+          -0.095,
+          0.097,
+          -0.12,
+          0.465,
+          0.068,
+          0.213,
+          -0.361,
+          0.184,
+          0.728,
+          0.771,
+          -0.272,
+          -0.122
+        ],
+        [
+          0.936,
+          1.0,
+          -0.005,
+          0.529,
+          0.416,
+          -0.016,
+          0.083,
+          -0.15,
+          0.424,
+          0.158,
+          0.21,
+          -0.284,
+          0.173,
+          0.692,
+          0.753,
+          -0.278,
+          -0.118
+        ],
+        [
+          0.018,
+          -0.005,
+          1.0,
+          0.073,
+          0.163,
+          0.484,
+          0.692,
+          0.455,
+          0.231,
+          0.01,
+          0.321,
+          0.053,
+          0.326,
+          -0.025,
+          0.019,
+          -0.193,
+          -0.1
+        ],
+        [
+          0.548,
+          0.529,
+          0.073,
+          1.0,
+          0.71,
+          -0.258,
+          0.056,
+          -0.045,
+          0.484,
+          -0.103,
+          0.056,
+          -0.631,
+          0.049,
+          0.414,
+          0.413,
+          -0.339,
+          -0.072
+        ],
+        [
+          0.602,
+          0.416,
+          0.163,
+          0.71,
+          1.0,
+          -0.041,
+          0.274,
+          0.169,
+          0.41,
+          -0.113,
+          0.132,
+          -0.504,
+          0.234,
+          0.408,
+          0.462,
+          -0.288,
+          0.028
+        ],
+        [
+          -0.095,
+          -0.016,
+          0.484,
+          -0.258,
+          -0.041,
+          1.0,
+          0.642,
+          0.397,
+          0.226,
+          0.063,
+          0.49,
+          0.219,
+          0.416,
+          -0.255,
+          -0.16,
+          -0.131,
+          -0.227
+        ],
+        [
+          0.097,
+          0.083,
+          0.692,
+          0.056,
+          0.274,
+          0.642,
+          1.0,
+          0.585,
+          0.189,
+          0.128,
+          0.487,
+          0.163,
+          0.335,
+          -0.136,
+          -0.03,
+          -0.183,
+          -0.112
+        ],
+        [
+          -0.12,
+          -0.15,
+          0.455,
+          -0.045,
+          0.169,
+          0.397,
+          0.585,
+          1.0,
+          0.098,
+          0.131,
+          0.259,
+          -0.034,
+          0.086,
+          -0.349,
+          -0.25,
+          -0.144,
+          0.022
+        ],
+        [
+          0.465,
+          0.424,
+          0.231,
+          0.484,
+          0.41,
+          0.226,
+          0.189,
+          0.098,
+          1.0,
+          -0.145,
+          0.463,
+          -0.413,
+          0.436,
+          0.208,
+          0.232,
+          -0.504,
+          -0.06
+        ],
+        [
+          0.068,
+          0.158,
+          0.01,
+          -0.103,
+          -0.113,
+          0.063,
+          0.128,
+          0.131,
+          -0.145,
+          1.0,
+          -0.067,
+          0.34,
+          -0.096,
+          0.245,
+          0.256,
+          0.259,
+          -0.169
+        ],
+        [
+          0.213,
+          0.21,
+          0.321,
+          0.056,
+          0.132,
+          0.49,
+          0.487,
+          0.259,
+          0.463,
+          -0.067,
+          1.0,
+          0.042,
+          0.633,
+          0.133,
+          0.225,
+          -0.562,
+          -0.164
+        ],
+        [
+          -0.361,
+          -0.284,
+          0.053,
+          -0.631,
+          -0.504,
+          0.219,
+          0.163,
+          -0.034,
+          -0.413,
+          0.34,
+          0.042,
+          1.0,
+          0.075,
+          -0.074,
+          -0.114,
+          0.082,
+          0.055
+        ],
+        [
+          0.184,
+          0.173,
+          0.326,
+          0.049,
+          0.234,
+          0.416,
+          0.335,
+          0.086,
+          0.436,
+          -0.096,
+          0.633,
+          0.075,
+          1.0,
+          0.119,
+          0.183,
+          -0.532,
+          0.014
+        ],
+        [
+          0.728,
+          0.692,
+          -0.025,
+          0.414,
+          0.408,
+          -0.255,
+          -0.136,
+          -0.349,
+          0.208,
+          0.245,
+          0.133,
+          -0.074,
+          0.119,
+          1.0,
+          0.965,
+          -0.204,
+          -0.097
+        ],
+        [
+          0.771,
+          0.753,
+          0.019,
+          0.413,
+          0.462,
+          -0.16,
+          -0.03,
+          -0.25,
+          0.232,
+          0.256,
+          0.225,
+          -0.114,
+          0.183,
+          0.965,
+          1.0,
+          -0.231,
+          -0.034
+        ],
+        [
+          -0.272,
+          -0.278,
+          -0.193,
+          -0.339,
+          -0.288,
+          -0.131,
+          -0.183,
+          -0.144,
+          -0.504,
+          0.259,
+          -0.562,
+          0.082,
+          -0.532,
+          -0.204,
+          -0.231,
+          1.0,
+          -0.113
+        ],
+        [
+          -0.122,
+          -0.118,
+          -0.1,
+          -0.072,
+          0.028,
+          -0.227,
+          -0.112,
+          0.022,
+          -0.06,
+          -0.169,
+          -0.164,
+          0.055,
+          0.014,
+          -0.097,
+          -0.034,
+          -0.113,
+          1.0
+        ]
+      ],
+      "matrix_90d": [
+        [
+          1.0,
+          0.951,
+          0.043,
+          0.546,
+          0.502,
+          -0.027,
+          0.008,
+          -0.026,
+          0.366,
+          0.221,
+          0.107,
+          -0.076,
+          0.334,
+          0.628,
+          0.679,
+          0.023,
+          -0.15
+        ],
+        [
+          0.951,
+          1.0,
+          0.023,
+          0.526,
+          0.37,
+          -0.03,
+          -0.016,
+          -0.047,
+          0.31,
+          0.268,
+          0.1,
+          -0.057,
+          0.29,
+          0.608,
+          0.667,
+          0.05,
+          -0.164
+        ],
+        [
+          0.043,
+          0.023,
+          1.0,
+          0.173,
+          0.21,
+          0.493,
+          0.547,
+          0.553,
+          0.245,
+          -0.035,
+          0.243,
+          0.043,
+          0.216,
+          -0.013,
+          -0.003,
+          -0.109,
+          0.005
+        ],
+        [
+          0.546,
+          0.526,
+          0.173,
+          1.0,
+          0.689,
+          0.04,
+          0.151,
+          0.162,
+          0.346,
+          -0.019,
+          0.124,
+          -0.4,
+          0.174,
+          0.386,
+          0.375,
+          -0.12,
+          -0.149
+        ],
+        [
+          0.502,
+          0.37,
+          0.21,
+          0.689,
+          1.0,
+          0.148,
+          0.295,
+          0.238,
+          0.384,
+          -0.054,
+          0.15,
+          -0.245,
+          0.308,
+          0.367,
+          0.351,
+          -0.133,
+          0.005
+        ],
+        [
+          -0.027,
+          -0.03,
+          0.493,
+          0.04,
+          0.148,
+          1.0,
+          0.75,
+          0.518,
+          0.158,
+          0.089,
+          0.367,
+          0.162,
+          0.313,
+          -0.171,
+          -0.159,
+          -0.084,
+          -0.128
+        ],
+        [
+          0.008,
+          -0.016,
+          0.547,
+          0.151,
+          0.295,
+          0.75,
+          1.0,
+          0.542,
+          0.034,
+          0.122,
+          0.286,
+          0.158,
+          0.257,
+          -0.12,
+          -0.087,
+          -0.019,
+          0.003
+        ],
+        [
+          -0.026,
+          -0.047,
+          0.553,
+          0.162,
+          0.238,
+          0.518,
+          0.542,
+          1.0,
+          0.107,
+          0.035,
+          0.232,
+          -0.055,
+          0.078,
+          -0.229,
+          -0.203,
+          -0.137,
+          -0.104
+        ],
+        [
+          0.366,
+          0.31,
+          0.245,
+          0.346,
+          0.384,
+          0.158,
+          0.034,
+          0.107,
+          1.0,
+          0.038,
+          0.3,
+          -0.183,
+          0.264,
+          0.236,
+          0.252,
+          -0.312,
+          -0.065
+        ],
+        [
+          0.221,
+          0.268,
+          -0.035,
+          -0.019,
+          -0.054,
+          0.089,
+          0.122,
+          0.035,
+          0.038,
+          1.0,
+          -0.087,
+          0.38,
+          0.018,
+          0.2,
+          0.209,
+          0.346,
+          -0.127
+        ],
+        [
+          0.107,
+          0.1,
+          0.243,
+          0.124,
+          0.15,
+          0.367,
+          0.286,
+          0.232,
+          0.3,
+          -0.087,
+          1.0,
+          -0.008,
+          0.542,
+          0.131,
+          0.169,
+          -0.453,
+          -0.157
+        ],
+        [
+          -0.076,
+          -0.057,
+          0.043,
+          -0.4,
+          -0.245,
+          0.162,
+          0.158,
+          -0.055,
+          -0.183,
+          0.38,
+          -0.008,
+          1.0,
+          0.173,
+          -0.005,
+          -0.008,
+          0.151,
+          0.115
+        ],
+        [
+          0.334,
+          0.29,
+          0.216,
+          0.174,
+          0.308,
+          0.313,
+          0.257,
+          0.078,
+          0.264,
+          0.018,
+          0.542,
+          0.173,
+          1.0,
+          0.198,
+          0.232,
+          -0.314,
+          -0.028
+        ],
+        [
+          0.628,
+          0.608,
+          -0.013,
+          0.386,
+          0.367,
+          -0.171,
+          -0.12,
+          -0.229,
+          0.236,
+          0.2,
+          0.131,
+          -0.005,
+          0.198,
+          1.0,
+          0.938,
+          -0.085,
+          -0.102
+        ],
+        [
+          0.679,
+          0.667,
+          -0.003,
+          0.375,
+          0.351,
+          -0.159,
+          -0.087,
+          -0.203,
+          0.252,
+          0.209,
+          0.169,
+          -0.008,
+          0.232,
+          0.938,
+          1.0,
+          -0.081,
+          -0.027
+        ],
+        [
+          0.023,
+          0.05,
+          -0.109,
+          -0.12,
+          -0.133,
+          -0.084,
+          -0.019,
+          -0.137,
+          -0.312,
+          0.346,
+          -0.453,
+          0.151,
+          -0.314,
+          -0.085,
+          -0.081,
+          1.0,
+          -0.03
+        ],
+        [
+          -0.15,
+          -0.164,
+          0.005,
+          -0.149,
+          0.005,
+          -0.128,
+          0.003,
+          -0.104,
+          -0.065,
+          -0.127,
+          -0.157,
+          0.115,
+          -0.028,
+          -0.102,
+          -0.027,
+          -0.03,
+          1.0
+        ]
+      ],
+      "avg_correlation_30d": 0.259,
+      "avg_correlation_90d": 0.218,
+      "systemic_risk_score": 25.9
+    },
+    "anomalies": [
+      {
+        "ticker_a": "BTC-USD",
+        "name_a": "Bitcoin",
+        "ticker_b": "ETH-USD",
+        "name_b": "Ethereum",
+        "correlation_30d": 0.965,
+        "correlation_90d": 0.938,
+        "correlation_change": 0.027,
+        "is_breakdown": false,
+        "is_unusual": false,
+        "is_concentrated": true,
+        "signal": "concentration_risk",
+        "description": "Bitcoin and Ethereum extremely correlated (30d: 0.96). Holding both adds no diversification."
+      },
+      {
+        "ticker_a": "^GSPC",
+        "name_a": "S&P 500",
+        "ticker_b": "^IXIC",
+        "name_b": "Nasdaq",
+        "correlation_30d": 0.936,
+        "correlation_90d": 0.951,
+        "correlation_change": -0.015,
+        "is_breakdown": false,
+        "is_unusual": false,
+        "is_concentrated": true,
+        "signal": "concentration_risk",
+        "description": "S&P 500 and Nasdaq extremely correlated (30d: 0.94). Holding both adds no diversification."
+      }
+    ],
+    "top_correlated": [
+      {
+        "pair": "Bitcoin / Ethereum",
+        "correlation": 0.965
+      },
+      {
+        "pair": "S&P 500 / Nasdaq",
+        "correlation": 0.936
+      },
+      {
+        "pair": "S&P 500 / Ethereum",
+        "correlation": 0.771
+      },
+      {
+        "pair": "Nasdaq / Ethereum",
+        "correlation": 0.753
+      },
+      {
+        "pair": "S&P 500 / Bitcoin",
+        "correlation": 0.728
+      },
+      {
+        "pair": "DAX / FTSE 100",
+        "correlation": 0.71
+      },
+      {
+        "pair": "Nasdaq / Bitcoin",
+        "correlation": 0.692
+      },
+      {
+        "pair": "Nikkei / Shanghai",
+        "correlation": 0.692
+      },
+      {
+        "pair": "Hang Seng / Shanghai",
+        "correlation": 0.642
+      },
+      {
+        "pair": "Gold / Copper",
+        "correlation": 0.633
+      }
+    ],
+    "best_hedges": [
+      {
+        "pair": "DAX / WTI Oil",
+        "correlation": -0.631
+      },
+      {
+        "pair": "Gold / Dollar Index",
+        "correlation": -0.562
+      },
+      {
+        "pair": "Copper / Dollar Index",
+        "correlation": -0.532
+      },
+      {
+        "pair": "FTSE 100 / WTI Oil",
+        "correlation": -0.504
+      },
+      {
+        "pair": "Bovespa / Dollar Index",
+        "correlation": -0.504
+      },
+      {
+        "pair": "Bovespa / WTI Oil",
+        "correlation": -0.413
+      },
+      {
+        "pair": "S&P 500 / WTI Oil",
+        "correlation": -0.361
+      },
+      {
+        "pair": "ASX 200 / Bitcoin",
+        "correlation": -0.349
+      },
+      {
+        "pair": "DAX / Dollar Index",
+        "correlation": -0.339
+      },
+      {
+        "pair": "FTSE 100 / Dollar Index",
+        "correlation": -0.288
+      }
+    ],
+    "systemic_risk_score": 25.9,
+    "analyzed_at": "2026-03-06T15:03:59.571943+00:00"
+  },
+  "proposals": [
     {
-      "timestamp": "2026-03-06T13:04:30.944791+00:00",
-      "value": 10000,
-      "pnl": 0,
-      "pnl_pct": 0.0,
-      "positions": 0
+      "id": "5005ce33",
+      "ticker": "^VIX",
+      "name": "^VIX",
+      "direction": "long",
+      "entry_price": 28.35,
+      "target_price": 31.0957,
+      "stop_price": 26.7026,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 85,
+      "max_loss_usd": 58.11,
+      "max_gain_usd": 96.85,
+      "category": "momentum",
+      "reasoning": "Strong long momentum: ^VIX moved +19.4% today. Targeting continuation to 31.10 with stop at 26.70.",
+      "supporting_signals": [
+        "^VIX +19.4% today",
+        "Threshold breached at 25"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429719+00:00",
+      "expires_at": "2026-03-06T21:04:02.429713+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
     },
     {
-      "timestamp": "2026-03-06T13:10:17.177736+00:00",
-      "value": 10000,
-      "pnl": 0,
-      "pnl_pct": 0.0,
-      "positions": 0
+      "id": "1d421ec0",
+      "ticker": "CLNX.MC",
+      "name": "Cellnex Telecom",
+      "direction": "short",
+      "entry_price": 28.93,
+      "target_price": 28.3861,
+      "stop_price": 29.2563,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 68,
+      "max_loss_usd": 11.28,
+      "max_gain_usd": 18.8,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: Cellnex Telecom moved -3.8% today. Targeting continuation to 28.39 with stop at 29.26.",
+      "supporting_signals": [
+        "Cellnex Telecom -3.8% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429575+00:00",
+      "expires_at": "2026-03-06T21:04:02.429548+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
     },
     {
-      "timestamp": "2026-03-06T13:30:15.699511+00:00",
-      "value": 10000,
-      "pnl": 0,
-      "pnl_pct": 0.0,
-      "positions": 0
+      "id": "9dbb5eb9",
+      "ticker": "LEN",
+      "name": "LEN",
+      "direction": "short",
+      "entry_price": 101.28,
+      "target_price": 99.5329,
+      "stop_price": 102.3282,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 67,
+      "max_loss_usd": 10.35,
+      "max_gain_usd": 17.25,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: LEN moved -3.5% today. Targeting continuation to 99.53 with stop at 102.33.",
+      "supporting_signals": [
+        "LEN -3.5% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429654+00:00",
+      "expires_at": "2026-03-06T21:04:02.429648+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
     },
     {
-      "timestamp": "2026-03-06T14:00:13.915519+00:00",
-      "value": 10000,
-      "pnl": 0,
-      "pnl_pct": 0.0,
-      "positions": 0
+      "id": "d2b009c1",
+      "ticker": "XHB",
+      "name": "XHB",
+      "direction": "short",
+      "entry_price": 104.76,
+      "target_price": 102.9529,
+      "stop_price": 105.8443,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 67,
+      "max_loss_usd": 10.35,
+      "max_gain_usd": 17.25,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: XHB moved -3.5% today. Targeting continuation to 102.95 with stop at 105.84.",
+      "supporting_signals": [
+        "XHB -3.5% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429705+00:00",
+      "expires_at": "2026-03-06T21:04:02.429699+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "02954935",
+      "ticker": "ITB",
+      "name": "ITB",
+      "direction": "short",
+      "entry_price": 97.67,
+      "target_price": 96.0243,
+      "stop_price": 98.6574,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 66,
+      "max_loss_usd": 10.11,
+      "max_gain_usd": 16.85,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: ITB moved -3.4% today. Targeting continuation to 96.02 with stop at 98.66.",
+      "supporting_signals": [
+        "ITB -3.4% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429629+00:00",
+      "expires_at": "2026-03-06T21:04:02.429622+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "8c24b699",
+      "ticker": "DHI",
+      "name": "DHI",
+      "direction": "short",
+      "entry_price": 145.87,
+      "target_price": 143.6236,
+      "stop_price": 147.2178,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 65,
+      "max_loss_usd": 9.24,
+      "max_gain_usd": 15.4,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: DHI moved -3.1% today. Targeting continuation to 143.62 with stop at 147.22.",
+      "supporting_signals": [
+        "DHI -3.1% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429598+00:00",
+      "expires_at": "2026-03-06T21:04:02.429588+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "d0f392ed",
+      "ticker": "PHM",
+      "name": "PHM",
+      "direction": "short",
+      "entry_price": 125.63,
+      "target_price": 123.6827,
+      "stop_price": 126.7984,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 65,
+      "max_loss_usd": 9.3,
+      "max_gain_usd": 15.5,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: PHM moved -3.1% today. Targeting continuation to 123.68 with stop at 126.80.",
+      "supporting_signals": [
+        "PHM -3.1% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429681+00:00",
+      "expires_at": "2026-03-06T21:04:02.429675+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "fbd63ad8",
+      "ticker": "TOL",
+      "name": "TOL",
+      "direction": "short",
+      "entry_price": 145.33,
+      "target_price": 143.0701,
+      "stop_price": 146.6859,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 65,
+      "max_loss_usd": 9.33,
+      "max_gain_usd": 15.55,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: TOL moved -3.1% today. Targeting continuation to 143.07 with stop at 146.69.",
+      "supporting_signals": [
+        "TOL -3.1% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429692+00:00",
+      "expires_at": "2026-03-06T21:04:02.429687+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "28ee6bca",
+      "ticker": "IAG.L",
+      "name": "IAG.L",
+      "direction": "short",
+      "entry_price": 360.2,
+      "target_price": 354.887,
+      "stop_price": 363.3878,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 64,
+      "max_loss_usd": 8.85,
+      "max_gain_usd": 14.75,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: IAG.L moved -3.0% today. Targeting continuation to 354.89 with stop at 363.39.",
+      "supporting_signals": [
+        "IAG.L -3.0% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429615+00:00",
+      "expires_at": "2026-03-06T21:04:02.429608+00:00",
+      "status": "active",
+      "urgency": "normal",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "9e7528cf",
+      "ticker": "SPY",
+      "name": "S&P 500 (session handoff)",
+      "direction": "short",
+      "entry_price": 530.0,
+      "target_price": 527.35,
+      "stop_price": 531.59,
+      "risk_reward": 1.67,
+      "position_size_pct": 10.0,
+      "position_size_usd": 1000.0,
+      "confidence": 63,
+      "max_loss_usd": 3.0,
+      "max_gain_usd": 5.0,
+      "category": "timezone_arb",
+      "reasoning": "Timezone arbitrage: Strong momentum from Europe (-1.86%) continuing in Americas (-1.51%). europe session signals short handoff to americas.",
+      "supporting_signals": [
+        "europe -> americas: bearish"
+      ],
+      "opposing_signals": [
+        "Session handoffs are probabilistic, not guaranteed"
+      ],
+      "created_at": "2026-03-06T15:04:02.429751+00:00",
+      "expires_at": "2026-03-06T17:04:02.429745+00:00",
+      "status": "active",
+      "urgency": "high",
+      "seconds_remaining": 7196
+    },
+    {
+      "id": "30e38dcf",
+      "ticker": "KGX.DE",
+      "name": "Knorr-Bremse (indirect German wealth proxy)",
+      "direction": "short",
+      "entry_price": 50.7,
+      "target_price": 50.0434,
+      "stop_price": 51.0939,
+      "risk_reward": 1.67,
+      "position_size_pct": 9.81,
+      "position_size_usd": 981.14,
+      "confidence": 62,
+      "max_loss_usd": 7.62,
+      "max_gain_usd": 12.71,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: Knorr-Bremse (indirect German wealth proxy) moved -2.6% today. Targeting continuation to 50.04 with stop at 51.09.",
+      "supporting_signals": [
+        "Knorr-Bremse (indirect German wealth proxy) -2.6% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429642+00:00",
+      "expires_at": "2026-03-06T21:04:02.429636+00:00",
+      "status": "active",
+      "urgency": "normal",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "10e46b3b",
+      "ticker": "MRL.MC",
+      "name": "MRL.MC",
+      "direction": "short",
+      "entry_price": 14.17,
+      "target_price": 14.0042,
+      "stop_price": 14.2695,
+      "risk_reward": 1.67,
+      "position_size_pct": 9.41,
+      "position_size_usd": 941.17,
+      "confidence": 61,
+      "max_loss_usd": 6.61,
+      "max_gain_usd": 11.01,
+      "category": "momentum",
+      "reasoning": "Strong short momentum: MRL.MC moved -2.3% today. Targeting continuation to 14.00 with stop at 14.27.",
+      "supporting_signals": [
+        "MRL.MC -2.3% today"
+      ],
+      "opposing_signals": [],
+      "created_at": "2026-03-06T15:04:02.429668+00:00",
+      "expires_at": "2026-03-06T21:04:02.429662+00:00",
+      "status": "active",
+      "urgency": "normal",
+      "seconds_remaining": 21596
+    },
+    {
+      "id": "41d4ef4a",
+      "ticker": "XLY",
+      "name": "Consumer Weakness Play",
+      "direction": "short",
+      "entry_price": 180.0,
+      "target_price": 170.0,
+      "stop_price": 186.0,
+      "risk_reward": 1.67,
+      "position_size_pct": 7.01,
+      "position_size_usd": 701.35,
+      "confidence": 55,
+      "max_loss_usd": 23.38,
+      "max_gain_usd": 38.96,
+      "category": "macro",
+      "reasoning": "Consumer Sentiment at 56.4 (below 60 threshold). Weak consumers = weak discretionary spending.",
+      "supporting_signals": [
+        "Consumer Sentiment 56.4"
+      ],
+      "opposing_signals": [
+        "Markets may have already priced this in"
+      ],
+      "created_at": "2026-03-06T15:04:02.429736+00:00",
+      "expires_at": "2026-03-08T15:04:02.429729+00:00",
+      "status": "active",
+      "urgency": "normal",
+      "seconds_remaining": 172796
     }
   ]
 }
