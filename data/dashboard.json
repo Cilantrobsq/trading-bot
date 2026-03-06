@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-06T13:07:02.198956+00:00",
+  "exported_at": "2026-03-06T13:10:57.650674+00:00",
   "portfolio": {
     "balance": 10000,
     "initial_balance": 10000,
@@ -26,9 +26,9 @@
       {
         "ticker": "CLNX.MC",
         "name": "Cellnex Telecom",
-        "price": 28.72,
+        "price": 28.74,
         "prev_close": 30.06,
-        "change_pct": -4.46,
+        "change_pct": -4.39,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -38,9 +38,9 @@
       {
         "ticker": "COL.MC",
         "name": "COL.MC",
-        "price": 5.27,
+        "price": 5.275,
         "prev_close": 5.29,
-        "change_pct": -0.38,
+        "change_pct": -0.28,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -62,9 +62,9 @@
       {
         "ticker": "EURGBP=X",
         "name": "EURGBP=X",
-        "price": 0.8671,
+        "price": 0.8669,
         "prev_close": 0.869,
-        "change_pct": -0.21,
+        "change_pct": -0.24,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -74,9 +74,9 @@
       {
         "ticker": "EURUSD=X",
         "name": "EURUSD=X",
-        "price": 1.1562,
+        "price": 1.1566,
         "prev_close": 1.1612,
-        "change_pct": -0.43,
+        "change_pct": -0.39,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -86,9 +86,9 @@
       {
         "ticker": "IAG.L",
         "name": "IAG.L",
-        "price": 363.4,
+        "price": 364.2,
         "prev_close": 371.15,
-        "change_pct": -2.09,
+        "change_pct": -1.87,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -122,9 +122,9 @@
       {
         "ticker": "KGX.DE",
         "name": "Knorr-Bremse (indirect German wealth proxy)",
-        "price": 51.1,
+        "price": 51.05,
         "prev_close": 52.05,
-        "change_pct": -1.83,
+        "change_pct": -1.92,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -194,9 +194,9 @@
       {
         "ticker": "MRL.MC",
         "name": "MRL.MC",
-        "price": 14.26,
+        "price": 14.24,
         "prev_close": 14.51,
-        "change_pct": -1.72,
+        "change_pct": -1.86,
         "threshold": null,
         "threshold_breached": false,
         "signal": "bearish",
@@ -254,9 +254,9 @@
       {
         "ticker": "TUI1.DE",
         "name": "TUI1.DE",
-        "price": 7.284,
+        "price": 7.294,
         "prev_close": 7.314,
-        "change_pct": -0.41,
+        "change_pct": -0.27,
         "threshold": null,
         "threshold_breached": false,
         "signal": "neutral",
@@ -338,9 +338,9 @@
       {
         "ticker": "^VIX",
         "name": "^VIX",
-        "price": 26.16,
+        "price": 26.13,
         "prev_close": 23.75,
-        "change_pct": 10.15,
+        "change_pct": 10.02,
         "threshold": 25,
         "threshold_breached": true,
         "signal": "bullish",
@@ -348,7 +348,7 @@
         "error": null
       }
     ],
-    "fetched_at": "2026-03-06T13:04:28.865855+00:00"
+    "fetched_at": "2026-03-06T13:10:14.625358+00:00"
   },
   "opportunities": {
     "opportunities": [],
@@ -505,6 +505,42 @@
             "name": "Consumer Sentiment",
             "threshold": 60.0,
             "direction": "falling"
+          },
+          {
+            "id": "T10Y3M",
+            "name": "10Y-3M Yield Curve",
+            "threshold": -0.5,
+            "direction": "falling"
+          },
+          {
+            "id": "STLFSI4",
+            "name": "Financial Stress Index",
+            "threshold": 1.5,
+            "direction": "rising"
+          },
+          {
+            "id": "BAMLH0A0HYM2",
+            "name": "HY Credit Spread",
+            "threshold": 5.0,
+            "direction": "rising"
+          },
+          {
+            "id": "ICSA",
+            "name": "Weekly Jobless Claims",
+            "threshold": 300000,
+            "direction": "rising"
+          },
+          {
+            "id": "M2SL",
+            "name": "M2 Money Supply",
+            "threshold": null,
+            "direction": "falling"
+          },
+          {
+            "id": "DTWEXBGS",
+            "name": "Trade-Weighted USD Index",
+            "threshold": 130.0,
+            "direction": "rising"
           }
         ]
       },
@@ -909,9 +945,42 @@
       "correlation_warning": false,
       "correlation_details": ""
     },
-    "last_updated": "2026-03-06T13:04:30.944656+00:00"
+    "last_updated": "2026-03-06T13:10:17.177639+00:00"
   },
   "decisions": [
+    {
+      "id": "301f1c3f",
+      "timestamp": "2026-03-06T13:10:17.177423+00:00",
+      "decision_type": "signal_eval",
+      "input_data": {
+        "signals_count": 27
+      },
+      "output_data": {
+        "regime": "neutral",
+        "confidence": 60,
+        "sentiment": 0.0
+      },
+      "reasoning": "Market regime assessed as neutral",
+      "confidence": 60,
+      "action_taken": "regime_assessed"
+    },
+    {
+      "id": "286aecbb",
+      "timestamp": "2026-03-06T13:10:14.625714+00:00",
+      "decision_type": "signal_eval",
+      "input_data": {
+        "ticker_count": 28
+      },
+      "output_data": {
+        "ok": 27,
+        "errors": 1,
+        "bullish": 2,
+        "bearish": 4
+      },
+      "reasoning": "Fetched 28 macro signals via yfinance",
+      "confidence": 80,
+      "action_taken": "signals_updated"
+    },
     {
       "id": "28506952",
       "timestamp": "2026-03-06T13:04:30.944348+00:00",
@@ -989,12 +1058,29 @@
       ],
       "matched_keywords": [
         "bond",
-        "treasury",
         "geopolitical",
-        "yield",
-        "market"
+        "market",
+        "treasury",
+        "yield"
       ],
       "relevance_score": 1.0,
+      "sentiment_hint": "neutral"
+    },
+    {
+      "title": "Rising Oil and Treasury Yields Add Pressure Despite Stable Labor Market - Investing.com",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNHZlSDRHdlNfNTRuRF9PWl9OTW9fRXVIdnkyWWJuc3RMYkVUUkV5NzBYQmo4WjNLRzNNQ0JLZXlTX243UzA2MjBSY1A2eUhvSWg0ckhTTGpuVE5xZWVkUTV0eDNDUjNlbnpueDBHaWJlX09UaVdxSXczY0U4RjFWS3JocHR0ek1jd2h4MTZqaFE5R09NNlczRTM0SExKb01Qd1hFeG5GWDdaTEQwaWthSklxZnRiWTA?oc=5",
+      "published": "Thu, 05 Mar 2026 19:15:07 GMT",
+      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
+      "matched_themes": [
+        "theme-housing-bonds-war"
+      ],
+      "matched_keywords": [
+        "pressure",
+        "market",
+        "yields",
+        "treasury"
+      ],
+      "relevance_score": 0.8,
       "sentiment_hint": "neutral"
     },
     {
@@ -1007,8 +1093,8 @@
       ],
       "matched_keywords": [
         "mortgage",
-        "treasury",
-        "housing"
+        "housing",
+        "treasury"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "positive"
@@ -1023,8 +1109,8 @@
       ],
       "matched_keywords": [
         "mortgage",
-        "housing",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1039,8 +1125,8 @@
       ],
       "matched_keywords": [
         "mortgage",
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1054,9 +1140,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
+        "market",
         "yields",
-        "market"
+        "treasury"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1070,9 +1156,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
+        "pressure",
         "yields",
-        "pressure"
+        "treasury"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1086,9 +1172,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
+        "market",
         "treasury",
-        "yield",
-        "market"
+        "yield"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1102,8 +1188,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "mortgage",
         "bond",
+        "mortgage",
         "yields"
       ],
       "relevance_score": 0.6,
@@ -1119,8 +1205,8 @@
       ],
       "matched_keywords": [
         "bond",
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1134,9 +1220,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
+        "yields",
         "treasury",
-        "yield",
-        "yields"
+        "yield"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1150,9 +1236,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1166,9 +1252,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1182,9 +1268,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1198,9 +1284,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1214,9 +1300,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1230,9 +1316,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1246,9 +1332,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1262,9 +1348,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1279,8 +1365,8 @@
       ],
       "matched_keywords": [
         "mortgage",
-        "housing",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1294,9 +1380,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1310,9 +1396,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1326,9 +1412,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1342,9 +1428,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1358,9 +1444,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1374,9 +1460,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
+        "market",
         "vanguard",
-        "market"
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1390,9 +1476,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1406,9 +1492,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1422,9 +1508,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1438,9 +1524,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1454,9 +1540,9 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "housing",
         "real",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "negative"
@@ -1471,8 +1557,8 @@
       ],
       "matched_keywords": [
         "mortgage",
-        "housing",
-        "market"
+        "market",
+        "housing"
       ],
       "relevance_score": 0.6,
       "sentiment_hint": "neutral"
@@ -1486,8 +1572,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "american",
-        "market"
+        "market",
+        "american"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "negative"
@@ -1501,8 +1587,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "positive"
@@ -1516,8 +1602,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "neutral"
@@ -1531,8 +1617,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "neutral"
@@ -1546,8 +1632,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "positive"
@@ -1561,8 +1647,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "neutral"
@@ -1584,7 +1670,7 @@
     },
     {
       "title": "10-year Treasury yield hits a three-month low \u2014 and it may have to do with AI, strategist says - MarketWatch",
-      "link": "https://news.google.com/rss/articles/CBMi4ANBVV95cUxQOU5SQ29oR1NjZkNqWTBMajdDVVpFazlhWnRNbllLMFlkOEtUZ0RUZzRRV3hHS0J4NWRrN3M0OGRjcUo5R3NqVGVEV3ZkUVhWTmlEX0cxNHZjSlRXWEkxam9fbVFYOGhNM2RBQ2lXWEkzdXk0czJVZ2Y3QTFfcnc5N3BoUFZCOTcwd0hPNDYtRFhhN0ZuTmRZdmxGNW9MakV0ZnJjY1BYLTNuLXhNTDMyOUNCeWNRdVlvOHU5YWxwVktuajZNYWhPTWF3ZGVubldUN2phb0dicjFSbnZMSDdiN1U5NlltQjViNEd0LXE3enBWM2JWTG4wTy1JQUpEd0ZzMEc5eTBLVHNRdVdZU3J0R3dEY3k5d29rRGF1U2Nhc0kzM2NHdk50WDRNX3R2YWpNRHpjY29XdHVqNHk0UjQ0aWlmYkVieEFYS0ZlRUhoUFR4N05zeVJ6ZW1aUG55aWxwV0liVGdjMjZmUkdjOFBEYWpFSEt6OVY1YUlTLXdYUWZDWEUtZ3M5T2ZYV2VCSEFGVTlKVmZhNEM1U3didUF4NDVnLUQzczl4NlN6RzdIVkxtYV9WbFF1cFJUVmxBMTlZbFBScEZ6RVpsM1JsajQwVmdSbW5FMWdfU2hKLTdIZ18?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMi4ANBVV95cUxPU2dBR3QtRDJ4VGFnQm1uZVJIeVFEam56UWN3eEZLdXhpVlRUOVRVTlM4OV9BYTVEa1ladXhPT2FRbWI1OTBjemZCNnZWNlprOHh0MkQxQ0tIbjNMRjFyeHhVNGhMaW82OWFqNlFwdHRFeWV2RjhIN0t2bWY4c1FqZ1Q0QTNPd0NBSngtWV9EZTY4bFlONmlNX1Z5QzFyQXVnMUhTY1RWYi1ldDFhUlQ2MjRwbEZtQlNfWmVXdnFPb3BGdkYxd1kxNzc0U0oxWVZsS3dzbVRWRWhPYXYxU24yV0t2dDFiOU12ZW9kQkxWLU05RkJZS1ZVUmxOV2ItcDlub3k1dndpcFIxVk5EMUFIM1VuVmtTd0toWExCdkRfckJHdUVaNmFUZ25NVm5DMjM1OV9WWjducURHM1VCZmhZRE43cVA0NEFjeUtrcTdyb1F2S1VINWJ6SkNmd3djcmh0NVM5Xy1GTkFJeGFwb3l1X3NtOElOZnRXYXJYTWVMWUtDVHdSRkVFYU9FQld0WXVwTXBPSEhzSk5aaDNBa3NISHozMVdBYVF0WTZuRlhpU1FDd2wyX2psd3R1OVFFWXlxc2lpektDYUJpR2szcktLYTEtR2Z6d3pQdU9GMUI0YXY?oc=5",
       "published": "Thu, 26 Feb 2026 08:00:00 GMT",
       "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
       "matched_themes": [
@@ -1606,8 +1692,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "neutral"
@@ -1621,8 +1707,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "neutral"
@@ -1636,8 +1722,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "positive"
@@ -1666,8 +1752,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "neutral"
@@ -1696,8 +1782,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "negative"
@@ -1711,8 +1797,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "positive"
@@ -1726,8 +1812,8 @@
         "theme-housing-bonds-war"
       ],
       "matched_keywords": [
-        "treasury",
-        "yields"
+        "yields",
+        "treasury"
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "neutral"
@@ -1746,25 +1832,10 @@
       ],
       "relevance_score": 0.4,
       "sentiment_hint": "positive"
-    },
-    {
-      "title": "Treasury yields advance for fourth day as oil prices raise inflation risk - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNUjhqaUZseUF2Um5JQjZNRDdWRGNkNFEwU3FfazlDNmZBSS10YldkdHhYRWM3aUljeXAzNm1xVnFPZWVYeV9KU05TT2JVR2pTaG9qeTdRSHlZWWM0YWtLazNpdDkzX1Q4WGtMTFJhUjBwZ0FSYWZXeUtrMHhBbWFuMHFXTHVFZV9yN3o4MEFoUS1jUjdFWTJxemZRMDZnUHVsWFRIZUNaRzdMYmxYMkFVc1JqT1J2V3R6SF9pNlJkTEJCZTNwQXptZHlLTlpDOGNGajgtQjhjelhIdjg?oc=5",
-      "published": "Thu, 05 Mar 2026 20:11:11 GMT",
-      "source_feed": "https://news.google.com/rss/search?q=treasury+yields",
-      "matched_themes": [
-        "theme-housing-bonds-war"
-      ],
-      "matched_keywords": [
-        "treasury",
-        "yields"
-      ],
-      "relevance_score": 0.4,
-      "sentiment_hint": "negative"
     }
   ],
   "snapshot": {
-    "timestamp": "2026-03-06T13:04:30.944791+00:00",
+    "timestamp": "2026-03-06T13:10:17.177736+00:00",
     "regime": "neutral",
     "regime_confidence": 60,
     "sentiment": 0.0,
