@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "status": "development",
+
+  "risk_management": {
+    "max_position_size_pct": 10,
+    "max_single_theme_exposure_pct": 40,
+    "stop_loss_pct": 8,
+    "take_profit_pct": 20,
+    "max_per_market_pct": 5,
+    "max_per_event_category_pct": 15,
+    "min_spread_after_fees_pct": 1.5,
+    "kelly_fraction": 0.25
+  },
+
+  "polymarket": {
+    "enabled": true,
+    "api_base": "https://clob.polymarket.com",
+    "data_api": "https://data-api.polymarket.com",
+    "chain": "polygon",
+    "fee_note": "Most markets 0% fee. 15-min crypto markets up to 3%. US DCM 0.10%"
+  },
+
+  "kalshi": {
+    "enabled": false,
+    "api_base": "https://trading-api.kalshi.com",
+    "note": "Enable when Kalshi API access is set up"
+  },
+
+  "macro_signals": {
+    "enabled": true,
+    "fred_api_key_path": "secrets/fred.json",
+    "indicators": [
+      {"id": "DGS10", "name": "10Y Treasury Yield", "threshold_alert": 4.5},
+      {"id": "DGS30", "name": "30Y Treasury Yield", "threshold_alert": 5.0},
+      {"id": "MORTGAGE30US", "name": "30Y Mortgage Rate", "threshold_alert": 7.5},
+      {"id": "VIXCLS", "name": "VIX Close", "threshold_alert": 25}
+    ]
+  },
+
+  "data_sources": {
+    "yfinance_tickers": [
+      "^TNX", "^TYX", "^VIX", "EURUSD=X", "EURGBP=X",
+      "XHB", "ITB", "XLRE", "LEN", "DHI", "TOL", "PHM",
+      "O", "AMT", "VNQ", "ITA", "LMT", "RTX", "MBB", "VMBS",
+      "MEL.MC", "IAG.L", "TUI1.DE", "MRLB.MC", "COL.MC"
+    ],
+    "news_feeds": [
+      "https://news.google.com/rss/search?q=polymarket",
+      "https://news.google.com/rss/search?q=prediction+market",
+      "https://news.google.com/rss/search?q=treasury+yields",
+      "https://news.google.com/rss/search?q=housing+market+crash"
+    ]
+  },
+
+  "paper_trading": {
+    "enabled": true,
+    "initial_balance_usd": 10000,
+    "note": "Paper trading mode. Set enabled=false and add real credentials to go live."
+  }
+}

@@ -1,0 +1,31 @@
+# Core trading
+py-clob-client>=0.5.0
+python-dotenv>=1.0.0
+
+# Market data
+yfinance>=0.2.36
+fredapi>=0.5.1
+requests>=2.31.0
+websockets>=12.0
+
+# Analysis and modeling
+pandas>=2.1.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+
+# NLP / signals
+feedparser>=6.0.0
+beautifulsoup4>=4.12.0
+
+# Crypto
+web3>=6.15.0
+eth-account>=0.11.0
+
+# Dashboard API
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Utilities
+schedule>=1.2.0
+rich>=13.7.0
