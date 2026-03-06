@@ -160,6 +160,53 @@ def get_cross_correlations():
     return data
 
 
+def get_brain():
+    data = read_json(DATA_DIR / "brain-state.json")
+    if data is None:
+        return None
+    return sanitize(data)
+
+
+def get_fred():
+    data = read_json(SNAPSHOTS_DIR / "latest-fred.json")
+    if data is None:
+        return None
+    return sanitize(data)
+
+
+def get_news():
+    data = read_json(SNAPSHOTS_DIR / "latest-news.json")
+    if data is None:
+        return None
+    return data
+
+
+def get_decisions():
+    from datetime import date
+    decisions_dir = DATA_DIR / "decisions"
+    today = date.today().isoformat()
+    decisions_file = decisions_dir / f"decisions-{today}.jsonl"
+    if not decisions_file.exists():
+        candidates = sorted(decisions_dir.glob("decisions-*.jsonl"), reverse=True) if decisions_dir.exists() else []
+        if candidates:
+            decisions_file = candidates[0]
+        else:
+            return None
+    decisions = []
+    try:
+        with open(decisions_file) as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    try:
+                        decisions.append(json.loads(line))
+                    except json.JSONDecodeError:
+                        continue
+    except FileNotFoundError:
+        return None
+    return decisions[-50:] if decisions else None
+
+
 def get_proposals():
     proposals_file = DATA_DIR / "proposals" / "active.json"
     data = read_json(proposals_file)
@@ -190,6 +237,10 @@ def main():
     global_macro = get_global_macro()
     tz_arb = get_tz_arb()
     cross_corr = get_cross_correlations()
+    brain = get_brain()
+    fred = get_fred()
+    news = get_news()
+    decisions = get_decisions()
 
     dashboard = {
         "exported_at": datetime.now(timezone.utc).isoformat(),
@@ -199,6 +250,22 @@ def main():
         "trades": get_trades(),
         "config": get_config(),
     }
+
+    # Add brain state
+    if brain:
+        dashboard["brain"] = brain
+
+    # Add FRED macro data
+    if fred:
+        dashboard["fred"] = fred
+
+    # Add news
+    if news:
+        dashboard["news"] = news
+
+    # Add decisions log
+    if decisions:
+        dashboard["decisions"] = decisions
 
     # Add global data if available
     if global_markets:
