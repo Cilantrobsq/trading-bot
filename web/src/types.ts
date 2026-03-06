@@ -22,18 +22,40 @@ export interface Position {
 }
 
 export interface Signal {
-  name: string
   ticker: string
-  value: number | null
+  name: string
+  price: number | null
+  prev_close: number | null
+  change_pct: number | null
   threshold: number | null
-  direction: string
-  status: string
-  theme: string
+  threshold_breached: boolean
+  signal: string
+  source: string
+  error: string | null
 }
 
 export interface SignalsData {
   signals: Signal[]
-  last_updated: string | null
+  fetched_at?: string | null
+  last_updated?: string | null
+}
+
+export interface FredSignal {
+  series_id: string
+  name: string
+  value: number | null
+  prev_value: number | null
+  change_pct: number | null
+  threshold: number | null
+  breached: boolean
+  direction: string
+  last_updated: string
+  error: string | null
+}
+
+export interface FredData {
+  signals: FredSignal[]
+  fetched_at?: string | null
 }
 
 export interface Opportunity {
@@ -178,9 +200,9 @@ export interface CircuitBreakerData {
 // Correlation
 export interface CorrelationData {
   diversification_score: number
-  high_correlations: Array<{ pair: string[]; correlation: number }>
+  high_correlations: Array<{ ticker_a: string; ticker_b: string; correlation: number; risk: string }>
   warnings: string[]
-  suggested_hedges: string[]
+  suggested_hedges: Array<{ ticker: string; name: string; correlation_to_portfolio: number; hedge_effectiveness: string }>
 }
 
 // Niche Markets
@@ -227,6 +249,172 @@ export interface SnapshotData {
   circuit_breaker: boolean
 }
 
+export interface EquityPoint {
+  timestamp: string
+  value: number
+  pnl: number
+  pnl_pct: number
+  positions: number
+}
+
+// Global Markets
+export interface GlobalMarketPoint {
+  ticker: string
+  name: string
+  region: string
+  price: number | null
+  prev_close: number | null
+  change_pct: number | null
+  week_change_pct: number | null
+  month_change_pct: number | null
+  volume: number | null
+  volume_ratio: number | null
+  pct_from_52w_high: number | null
+  ma_50d: number | null
+  ma_200d: number | null
+  above_50d: boolean | null
+  above_200d: boolean | null
+  error: string | null
+  extra?: Record<string, unknown>
+}
+
+export interface SessionSummary {
+  session: string
+  label: string
+  markets_up: number
+  markets_down: number
+  markets_flat: number
+  avg_change_pct: number
+  strongest: string | null
+  strongest_pct: number | null
+  weakest: string | null
+  weakest_pct: number | null
+  breadth: number
+}
+
+export interface GapSignal {
+  from_session: string
+  to_session: string
+  from_avg_change: number
+  to_avg_change: number
+  gap_magnitude: number
+  divergent: boolean
+  description: string
+}
+
+export interface GlobalMarketsData {
+  indices: Record<string, GlobalMarketPoint[]>
+  forex: GlobalMarketPoint[]
+  commodities: GlobalMarketPoint[]
+  crypto: GlobalMarketPoint[]
+  bonds: GlobalMarketPoint[]
+  sessions: Record<string, SessionSummary>
+  gaps: GapSignal[]
+  global_breadth: number
+  total_markets: number
+  fetched_at: string
+}
+
+// Global Macro
+export interface GlobalMacroSignal {
+  series_id: string
+  name: string
+  country: string
+  category: string
+  value: number | null
+  prev_value: number | null
+  change_pct: number | null
+  threshold: number | null
+  breached: boolean
+  direction: string
+  last_updated: string
+  error: string | null
+}
+
+export interface RateDifferential {
+  high_rate_country: string
+  low_rate_country: string
+  high_rate: number
+  low_rate: number
+  differential: number
+  direction: string
+  description: string
+}
+
+export interface GlobalMacroData {
+  signals: GlobalMacroSignal[]
+  by_category: Record<string, GlobalMacroSignal[]>
+  by_country: Record<string, GlobalMacroSignal[]>
+  rate_differentials: RateDifferential[]
+  breaches: GlobalMacroSignal[]
+  total_series: number
+  fetched_ok: number
+  total_breaches: number
+  analyzed_at: string
+}
+
+// Timezone Arbitrage
+export interface LeadLagResult {
+  leader: string
+  follower: string
+  pair_name: string
+  label: string
+  correlation: number | null
+  same_direction_pct: number | null
+  sharp_follow_rate: number | null
+  sample_size: number
+  signal: string
+  confidence: number
+  description: string
+}
+
+export interface TimezoneSignal {
+  signal_type: string
+  direction: string
+  strength: number
+  target_market: string
+  source_market: string
+  description: string
+  supporting_data: Record<string, unknown>
+}
+
+export interface TimezoneArbData {
+  lead_lag: LeadLagResult[]
+  realtime_signals: TimezoneSignal[]
+  analyzed_at: string
+}
+
+// Cross Correlations
+export interface CrossCorrelationData {
+  matrix: {
+    tickers: string[]
+    names: string[]
+    matrix_30d: (number | null)[][]
+    matrix_90d: (number | null)[][]
+    avg_correlation_30d: number
+    avg_correlation_90d: number
+    systemic_risk_score: number
+  }
+  anomalies: Array<{
+    ticker_a: string
+    name_a: string
+    ticker_b: string
+    name_b: string
+    correlation_30d: number | null
+    correlation_90d: number | null
+    correlation_change: number | null
+    is_breakdown: boolean
+    is_unusual: boolean
+    is_concentrated: boolean
+    signal: string
+    description: string
+  }>
+  top_correlated: Array<{ pair: string; correlation: number }>
+  best_hedges: Array<{ pair: string; correlation: number }>
+  systemic_risk_score: number
+  analyzed_at: string
+}
+
 export interface DashboardData {
   exported_at: string
   portfolio: PortfolioData
@@ -245,4 +433,10 @@ export interface DashboardData {
   niche_markets?: NicheMarket[]
   news?: NewsItem[]
   snapshot?: SnapshotData
+  fred?: FredData
+  equity_history?: EquityPoint[]
+  global_markets?: GlobalMarketsData
+  global_macro?: GlobalMacroData
+  timezone_arb?: TimezoneArbData
+  cross_correlations?: CrossCorrelationData
 }

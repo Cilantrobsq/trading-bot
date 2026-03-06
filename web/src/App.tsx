@@ -10,6 +10,7 @@ import { ThesesView } from '@/components/ThesesView'
 import { DecisionsView } from '@/components/DecisionsView'
 import { NicheView } from '@/components/NicheView'
 import { NewsView } from '@/components/NewsView'
+import { GlobalView } from '@/components/GlobalView'
 import type { DashboardData } from '@/types'
 
 const BASE = import.meta.env.BASE_URL
@@ -60,25 +61,27 @@ function App() {
 
   return (
     <div className="dark min-h-screen bg-background text-foreground">
-      <header className="border-b border-border px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <h1 className="text-xl font-bold tracking-tight">Trading Bot</h1>
-          <span className="text-xs text-muted-foreground px-2 py-0.5 rounded bg-muted">
-            {data?.portfolio?.mode === 'paper' ? 'PAPER' : 'LIVE'}
-          </span>
-          {data?.kill_switch?.active && (
-            <span className="text-xs px-2 py-0.5 rounded bg-red-900/50 text-red-300 animate-pulse">
-              KILL SWITCH
+      <header className="border-b border-border px-3 sm:px-4 py-3">
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 flex-wrap min-w-0">
+            <h1 className="text-lg sm:text-xl font-bold tracking-tight whitespace-nowrap">Trading Bot</h1>
+            <span className="text-xs text-muted-foreground px-2 py-0.5 rounded bg-muted shrink-0">
+              {data?.portfolio?.mode === 'paper' ? 'PAPER' : 'LIVE'}
             </span>
-          )}
-          {data?.brain?.market_regime && (
-            <span className="text-xs px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">
-              {data.brain.market_regime.replace(/_/g, ' ')}
-            </span>
-          )}
-        </div>
-        <div className="text-xs text-muted-foreground">
-          {lastUpdate && `Updated: ${new Date(lastUpdate).toLocaleString()}`}
+            {data?.kill_switch?.active && (
+              <span className="text-xs px-2 py-0.5 rounded bg-red-900/50 text-red-300 animate-pulse shrink-0">
+                KILL SWITCH
+              </span>
+            )}
+            {data?.brain?.market_regime && (
+              <span className="text-xs px-2 py-0.5 rounded bg-zinc-800 text-zinc-300 shrink-0">
+                {data.brain.market_regime.replace(/_/g, ' ')}
+              </span>
+            )}
+          </div>
+          <div className="text-xs text-muted-foreground whitespace-nowrap shrink-0">
+            {lastUpdate && new Date(lastUpdate).toLocaleTimeString()}
+          </div>
         </div>
       </header>
 
@@ -88,10 +91,12 @@ function App() {
         </div>
       )}
 
-      <main className="p-4 max-w-7xl mx-auto">
+      <main className="px-3 sm:px-4 py-4 max-w-7xl mx-auto">
         <Tabs defaultValue="brain">
-          <TabsList className="mb-4 flex-wrap">
+          <div className="overflow-x-auto -mx-3 sm:-mx-4 px-3 sm:px-4 mb-4">
+          <TabsList className="inline-flex w-max sm:w-auto">
             <TabsTrigger value="brain">Brain</TabsTrigger>
+            <TabsTrigger value="global">Global</TabsTrigger>
             <TabsTrigger value="portfolio">Portfolio</TabsTrigger>
             <TabsTrigger value="signals">Signals</TabsTrigger>
             <TabsTrigger value="theses">Theses</TabsTrigger>
@@ -102,15 +107,24 @@ function App() {
             <TabsTrigger value="trades">Trades</TabsTrigger>
             <TabsTrigger value="config">Config</TabsTrigger>
           </TabsList>
+          </div>
 
           <TabsContent value="brain">
             <BrainView data={data?.brain} killSwitch={data?.kill_switch} onToggleKillSwitch={API_BASE ? toggleKillSwitch : undefined} />
           </TabsContent>
+          <TabsContent value="global">
+            <GlobalView
+              globalMarkets={data?.global_markets}
+              globalMacro={data?.global_macro}
+              timezoneArb={data?.timezone_arb}
+              crossCorrelations={data?.cross_correlations}
+            />
+          </TabsContent>
           <TabsContent value="portfolio">
-            <PortfolioView data={data?.portfolio} />
+            <PortfolioView data={data?.portfolio} equityHistory={data?.equity_history} />
           </TabsContent>
           <TabsContent value="signals">
-            <SignalsView data={data?.signals} />
+            <SignalsView data={data?.signals} fred={data?.fred} />
           </TabsContent>
           <TabsContent value="theses">
             <ThesesView theses={data?.theses} overrides={data?.overrides} apiBase={API_BASE} onRefresh={fetchData} />
@@ -119,7 +133,17 @@ function App() {
             <OpportunitiesView data={data?.opportunities} />
           </TabsContent>
           <TabsContent value="niche">
-            <NicheView nicheMarkets={data?.niche_markets} correlations={data?.correlations} circuitBreaker={data?.circuit_breaker} regime={data?.regime} />
+            <NicheView
+              nicheMarkets={data?.niche_markets}
+              correlations={data?.correlations}
+              circuitBreaker={data?.circuit_breaker}
+              regime={data?.regime}
+              fred={data?.fred}
+              signals={data?.signals}
+              brain={data?.brain}
+              decisions={data?.decisions}
+              snapshot={data?.snapshot}
+            />
           </TabsContent>
           <TabsContent value="news">
             <NewsView data={data?.news} />

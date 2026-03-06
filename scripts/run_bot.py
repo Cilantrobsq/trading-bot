@@ -30,6 +30,10 @@ from src.core.paper_trader import PaperTrader
 from src.signals.macro import MacroSignalFetcher
 from src.signals.fred_macro import FredMacroFetcher
 from src.signals.news import NewsFeedMonitor
+from src.signals.global_markets import GlobalMarketCollector
+from src.signals.global_macro import GlobalMacroFetcher
+from src.signals.timezone_arb import TimezoneArbDetector
+from src.signals.cross_correlation import CrossCorrelationEngine
 from src.reasoning.thesis import ThesisManager
 from src.reasoning.overrides import OverrideManager
 
@@ -100,6 +104,73 @@ def run():
     except Exception as e:
         _log(f"  FRED fetch failed: {e}")
         fred_signals = []
+
+    # Step 1c: Fetch global market data
+    _log("Step 1c: Fetching global markets...")
+    global_data = {}
+    try:
+        global_collector = GlobalMarketCollector()
+        global_data = global_collector.fetch_all()
+        with open(cfg.data_path("snapshots", "latest-global-markets.json"), "w") as f:
+            json.dump(global_data, f, indent=2)
+        _log(f"  Global: {global_data.get('total_markets', 0)} markets, breadth={global_data.get('global_breadth', 0)}%")
+
+        decision_log.log_decision(
+            decision_type="signal_eval",
+            input_data={"global_markets": global_data.get("total_markets", 0)},
+            output_data={
+                "breadth": global_data.get("global_breadth", 0),
+                "gaps": len(global_data.get("gaps", [])),
+                "sessions": {k: v.get("avg_change_pct", 0) for k, v in global_data.get("sessions", {}).items()},
+            },
+            reasoning=f"Global markets: {global_data.get('total_markets', 0)} indices, breadth {global_data.get('global_breadth', 0)}%",
+            confidence=75,
+            action_taken="global_markets_updated",
+        )
+    except Exception as e:
+        _log(f"  Global markets fetch failed: {e}")
+
+    # Step 1d: Fetch global macro indicators
+    _log("Step 1d: Fetching global macro indicators...")
+    global_macro_data = {}
+    try:
+        key_path = os.path.join(PROJECT_ROOT, "secrets", "fred.json")
+        global_macro = GlobalMacroFetcher(key_path=key_path)
+        global_macro_result = global_macro.full_analysis()
+        global_macro_data = global_macro_result
+        with open(cfg.data_path("snapshots", "latest-global-macro.json"), "w") as f:
+            json.dump(global_macro_result, f, indent=2)
+        _log(f"  Global macro: {global_macro_result.get('fetched_ok', 0)}/{global_macro_result.get('total_series', 0)} series, {global_macro_result.get('total_breaches', 0)} breaches")
+    except Exception as e:
+        _log(f"  Global macro fetch failed: {e}")
+
+    # Step 1e: Timezone arbitrage analysis
+    _log("Step 1e: Running timezone arbitrage analysis...")
+    tz_arb_data = {}
+    try:
+        tz_detector = TimezoneArbDetector()
+        tz_arb_data = tz_detector.full_analysis(global_data=global_data if global_data else None)
+        with open(cfg.data_path("snapshots", "latest-tz-arb.json"), "w") as f:
+            json.dump(tz_arb_data, f, indent=2)
+        ll_count = len(tz_arb_data.get("lead_lag", []))
+        rt_count = len(tz_arb_data.get("realtime_signals", []))
+        _log(f"  TZ Arb: {ll_count} lead-lag pairs, {rt_count} realtime signals")
+    except Exception as e:
+        _log(f"  TZ arb analysis failed: {e}")
+
+    # Step 1f: Cross-market correlation analysis
+    _log("Step 1f: Running cross-market correlation analysis...")
+    correlation_data = {}
+    try:
+        corr_engine = CrossCorrelationEngine()
+        correlation_data = corr_engine.full_analysis()
+        with open(cfg.data_path("snapshots", "latest-correlations.json"), "w") as f:
+            json.dump(correlation_data, f, indent=2)
+        anomaly_count = len(correlation_data.get("anomalies", []))
+        systemic = correlation_data.get("systemic_risk_score", 0)
+        _log(f"  Correlations: {anomaly_count} anomalies, systemic risk={systemic}")
+    except Exception as e:
+        _log(f"  Correlation analysis failed: {e}")
 
     # Step 2: Fetch news
     _log("Step 2: Fetching news feeds...")

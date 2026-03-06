@@ -132,8 +132,41 @@ def get_config():
     return {"strategy": sanitize(strategy), "themes": sanitize(themes)}
 
 
+def get_global_markets():
+    data = read_json(SNAPSHOTS_DIR / "latest-global-markets.json")
+    if data is None:
+        return None
+    return data
+
+
+def get_global_macro():
+    data = read_json(SNAPSHOTS_DIR / "latest-global-macro.json")
+    if data is None:
+        return None
+    return sanitize(data)
+
+
+def get_tz_arb():
+    data = read_json(SNAPSHOTS_DIR / "latest-tz-arb.json")
+    if data is None:
+        return None
+    return data
+
+
+def get_cross_correlations():
+    data = read_json(SNAPSHOTS_DIR / "latest-correlations.json")
+    if data is None:
+        return None
+    return data
+
+
 def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    global_markets = get_global_markets()
+    global_macro = get_global_macro()
+    tz_arb = get_tz_arb()
+    cross_corr = get_cross_correlations()
 
     dashboard = {
         "exported_at": datetime.now(timezone.utc).isoformat(),
@@ -144,13 +177,28 @@ def main():
         "config": get_config(),
     }
 
+    # Add global data if available
+    if global_markets:
+        dashboard["global_markets"] = global_markets
+    if global_macro:
+        dashboard["global_macro"] = global_macro
+    if tz_arb:
+        dashboard["timezone_arb"] = tz_arb
+    if cross_corr:
+        dashboard["cross_correlations"] = cross_corr
+
     output_path = OUTPUT_DIR / "dashboard.json"
     with open(output_path, "w") as f:
         json.dump(dashboard, f, indent=2)
 
+    gm_count = len(global_markets.get("indices", {}).get("asia", []) +
+                    global_markets.get("indices", {}).get("europe", []) +
+                    global_markets.get("indices", {}).get("americas", [])) if global_markets else 0
+
     print(f"Exported dashboard to {output_path}")
     print(f"  Portfolio balance: ${dashboard['portfolio']['balance']:,.2f}")
     print(f"  Signals: {len(dashboard['signals']['signals'])}")
+    print(f"  Global markets: {gm_count}")
     print(f"  Opportunities: {len(dashboard['opportunities']['opportunities'])}")
     print(f"  Trades: {dashboard['trades']['count']}")
 
