@@ -192,10 +192,10 @@
         },
         {
           "signal": "European Tourism Index",
-          "ticker": "TOUR.AS",
+          "ticker": "TUI1.DE",
           "name": "TUI AG",
           "note": "Major European package tour operator, Mallorca is core destination",
-          "source": "Amsterdam Stock Exchange"
+          "source": "Frankfurt (XETRA)"
         },
         {
           "signal": "Spanish Property Price Index",
@@ -230,14 +230,6 @@
             "play": "dominant European tour operator, Mallorca is top destination; long on package holiday demand",
             "mallorca_exposure": "direct - largest foreign tour operator in Balearics",
             "liquidity": "medium"
-          },
-          {
-            "ticker": "NH.MC",
-            "name": "NH Hotel Group",
-            "exchange": "BME (Madrid)",
-            "play": "urban-focused hotel chain with Spanish exposure",
-            "mallorca_exposure": "indirect",
-            "liquidity": "medium"
           }
         ],
         "spanish_reits_socimis": [
@@ -248,7 +240,7 @@
             "note": "Infrastructure, not directly Balearic but major Spanish listed company"
           },
           {
-            "ticker": "MRLB.MC",
+            "ticker": "MRL.MC",
             "name": "Merlin Properties",
             "exchange": "BME (Madrid)",
             "play": "largest Spanish SOCIMI (REIT equivalent), diversified Spanish commercial RE",
@@ -266,11 +258,6 @@
           }
         ],
         "luxury_real_estate_proxies": [
-          {
-            "ticker": "SAFG.SW",
-            "name": "Sothebys / luxury RE proxies",
-            "note": "No direct Mallorca luxury RE listed vehicles; use SICAV structures or private funds"
-          },
           {
             "ticker": "KGX.DE",
             "name": "Knorr-Bremse (indirect German wealth proxy)",

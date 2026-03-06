@@ -17,6 +17,8 @@ xgboost>=2.0.0
 # NLP / signals
 feedparser>=6.0.0
 beautifulsoup4>=4.12.0
+finnhub-python>=2.4.0
+anthropic>=0.39.0
 
 # Crypto
 web3>=6.15.0

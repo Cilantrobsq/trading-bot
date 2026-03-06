@@ -1,0 +1,35 @@
+{
+  "market_regime": "neutral",
+  "regime_confidence": 60,
+  "overall_sentiment": 0.0,
+  "active_themes": [
+    {
+      "theme_id": "theme-housing-bonds-war",
+      "theme_name": "Housing Market / Bond Yields / Geopolitical War Pressure",
+      "conviction": 1.0,
+      "signals_supporting": [
+        "30Y Fixed Mortgage Rate"
+      ],
+      "signals_against": []
+    },
+    {
+      "theme_id": "theme-mallorca",
+      "theme_name": "Mallorca / Balearic Islands Opportunity Strategy",
+      "conviction": 0.0,
+      "signals_supporting": [],
+      "signals_against": []
+    }
+  ],
+  "planned_actions": [],
+  "risk_state": {
+    "daily_pnl": 0,
+    "daily_pnl_pct": 0.0,
+    "max_daily_loss_pct": -5.0,
+    "circuit_breaker_active": false,
+    "exposure_pct": 0.0,
+    "max_exposure_pct": 80.0,
+    "correlation_warning": false,
+    "correlation_details": ""
+  },
+  "last_updated": "2026-03-06T13:04:30.944656+00:00"
+}

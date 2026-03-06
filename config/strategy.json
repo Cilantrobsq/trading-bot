@@ -43,7 +43,7 @@
       "^TNX", "^TYX", "^VIX", "EURUSD=X", "EURGBP=X",
       "XHB", "ITB", "XLRE", "LEN", "DHI", "TOL", "PHM",
       "O", "AMT", "VNQ", "ITA", "LMT", "RTX", "MBB", "VMBS",
-      "MEL.MC", "IAG.L", "TUI1.DE", "MRLB.MC", "COL.MC"
+      "MEL.MC", "IAG.L", "TUI1.DE", "MRL.MC", "COL.MC"
     ],
     "news_feeds": [
       "https://news.google.com/rss/search?q=polymarket",
@@ -51,6 +51,38 @@
       "https://news.google.com/rss/search?q=treasury+yields",
       "https://news.google.com/rss/search?q=housing+market+crash"
     ]
+  },
+
+  "fred_api": {
+    "series": [
+      {"id": "DGS10",       "name": "10Y Treasury Yield",      "threshold": 4.5,  "direction": "rising"},
+      {"id": "DGS30",       "name": "30Y Treasury Yield",      "threshold": 5.0,  "direction": "rising"},
+      {"id": "MORTGAGE30US","name": "30Y Mortgage Rate",        "threshold": 7.5,  "direction": "rising"},
+      {"id": "T10Y2Y",      "name": "10Y-2Y Yield Curve",      "threshold": -0.2, "direction": "falling"},
+      {"id": "VIXCLS",      "name": "VIX Close",               "threshold": 25.0, "direction": "rising"},
+      {"id": "UNRATE",      "name": "Unemployment Rate",        "threshold": 5.0,  "direction": "rising"},
+      {"id": "CPIAUCSL",    "name": "CPI All Urban Consumers",  "threshold": null, "direction": "rising"},
+      {"id": "FEDFUNDS",    "name": "Federal Funds Rate",       "threshold": 5.5,  "direction": "rising"},
+      {"id": "GDP",         "name": "Gross Domestic Product",    "threshold": null, "direction": "falling"},
+      {"id": "UMCSENT",     "name": "Consumer Sentiment",       "threshold": 60.0, "direction": "falling"}
+    ]
+  },
+
+  "finnhub": {
+    "tickers": ["AAPL", "TSLA", "SPY", "NVDA", "MSFT"],
+    "crypto_symbols": ["BTC", "ETH"]
+  },
+
+  "llm_analysis": {
+    "model": "claude-haiku-4-5-20251001",
+    "max_batch_size": 20,
+    "max_daily_calls": 100
+  },
+
+  "prediction_markets": {
+    "platforms": ["polymarket", "manifold", "metaculus"],
+    "arbitrage_threshold_pct": 5.0,
+    "max_markets_per_platform": 50
   },
 
   "paper_trading": {
