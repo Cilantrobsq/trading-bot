@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-03-06T19:01:38.963533+00:00",
+  "regime": "neutral",
+  "regime_confidence": 60,
+  "sentiment": 0.0,
+  "portfolio": {
+    "initial_balance": 10000,
+    "current_value": 10000,
+    "cash": 10000,
+    "total_return_usd": 0,
+    "total_return_pct": 0.0,
+    "unrealized_pnl": 0,
+    "realized_pnl": 0,
+    "open_positions": 0,
+    "total_trades": 0,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "win_rate_pct": 0
+  },
+  "signals_summary": {
+    "total": 111,
+    "bullish": 12,
+    "bearish": 44,
+    "neutral": 53,
+    "errors": 2
+  },
+  "news_count": 3416,
+  "active_theses": 0,
+  "planned_actions": 0,
+  "circuit_breaker": false
+}

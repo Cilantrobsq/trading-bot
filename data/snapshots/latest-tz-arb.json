@@ -1,0 +1,171 @@
+{
+  "lead_lag": [
+    {
+      "leader": "^N225",
+      "follower": "^GDAXI",
+      "pair_name": "asia_to_europe",
+      "label": "Asia -> Europe",
+      "correlation": 0.246,
+      "lead_lag_days": 0,
+      "same_direction_pct": 51.8,
+      "reversal_pct": 48.2,
+      "avg_follow_magnitude": 0.74,
+      "sharp_move_threshold": 1.0,
+      "sharp_follow_rate": 55.1,
+      "sample_size": 139,
+      "signal": "neutral",
+      "confidence": 0.0,
+      "description": "No strong lead-lag pattern detected between Asia -> Europe"
+    },
+    {
+      "leader": "^N225",
+      "follower": "^GSPC",
+      "pair_name": "asia_to_us",
+      "label": "Asia -> US",
+      "correlation": 0.123,
+      "lead_lag_days": 0,
+      "same_direction_pct": 50.0,
+      "reversal_pct": 50.0,
+      "avg_follow_magnitude": 0.62,
+      "sharp_move_threshold": 1.0,
+      "sharp_follow_rate": 57.4,
+      "sample_size": 138,
+      "signal": "neutral",
+      "confidence": 0.0,
+      "description": "No strong lead-lag pattern detected between Asia -> US"
+    },
+    {
+      "leader": "^GDAXI",
+      "follower": "^GSPC",
+      "pair_name": "europe_to_us",
+      "label": "Europe -> US",
+      "correlation": 0.495,
+      "lead_lag_days": 0,
+      "same_direction_pct": 69.0,
+      "reversal_pct": 31.0,
+      "avg_follow_magnitude": 0.76,
+      "sharp_move_threshold": 1.0,
+      "sharp_follow_rate": 89.3,
+      "sample_size": 145,
+      "signal": "follow",
+      "confidence": 78.6,
+      "description": "When Europe moves sharply (>1.0%), US follows 89.3% of the time (avg magnitude: 0.76%)"
+    },
+    {
+      "leader": "^HSI",
+      "follower": "^GSPC",
+      "pair_name": "hk_to_us",
+      "label": "Hong Kong -> US",
+      "correlation": 0.035,
+      "lead_lag_days": 0,
+      "same_direction_pct": 54.2,
+      "reversal_pct": 45.8,
+      "avg_follow_magnitude": 0.59,
+      "sharp_move_threshold": 1.0,
+      "sharp_follow_rate": 48.1,
+      "sample_size": 142,
+      "signal": "neutral",
+      "confidence": 0.0,
+      "description": "No strong lead-lag pattern detected between Hong Kong -> US"
+    },
+    {
+      "leader": "^AXJO",
+      "follower": "^GDAXI",
+      "pair_name": "aus_to_europe",
+      "label": "Australia -> Europe",
+      "correlation": 0.158,
+      "lead_lag_days": 0,
+      "same_direction_pct": 51.0,
+      "reversal_pct": 49.0,
+      "avg_follow_magnitude": 0.76,
+      "sharp_move_threshold": 1.0,
+      "sharp_follow_rate": 55.0,
+      "sample_size": 147,
+      "signal": "neutral",
+      "confidence": 0.0,
+      "description": "No strong lead-lag pattern detected between Australia -> Europe"
+    },
+    {
+      "leader": "000001.SS",
+      "follower": "^GSPC",
+      "pair_name": "shanghai_to_us",
+      "label": "Shanghai -> US",
+      "correlation": 0.062,
+      "lead_lag_days": 0,
+      "same_direction_pct": 50.4,
+      "reversal_pct": 49.6,
+      "avg_follow_magnitude": 0.57,
+      "sharp_move_threshold": 1.0,
+      "sharp_follow_rate": 46.2,
+      "sample_size": 137,
+      "signal": "neutral",
+      "confidence": 0.0,
+      "description": "No strong lead-lag pattern detected between Shanghai -> US"
+    }
+  ],
+  "realtime_signals": [
+    {
+      "signal_type": "momentum_handoff",
+      "direction": "bearish",
+      "strength": 0.37000000000000005,
+      "target_market": "americas",
+      "source_market": "europe",
+      "description": "Strong momentum from Europe (-1.11%) continuing in Americas (-1.40%)",
+      "supporting_data": {
+        "from_change": -1.11,
+        "to_change": -1.4
+      }
+    },
+    {
+      "signal_type": "broad_weakness",
+      "direction": "bearish",
+      "strength": 1.0,
+      "target_market": "europe",
+      "source_market": "europe",
+      "description": "Europe: only 0.0% positive, broad weakness",
+      "supporting_data": {
+        "breadth": 0.0,
+        "avg_change": -1.11
+      }
+    },
+    {
+      "signal_type": "broad_weakness",
+      "direction": "bearish",
+      "strength": 1.0,
+      "target_market": "americas",
+      "source_market": "americas",
+      "description": "Americas: only 0.0% positive, broad weakness",
+      "supporting_data": {
+        "breadth": 0.0,
+        "avg_change": -1.4
+      }
+    },
+    {
+      "signal_type": "fx_equity_divergence",
+      "direction": "neutral",
+      "strength": 0.3275,
+      "target_market": "^AXJO",
+      "source_market": "AUDUSD=X",
+      "description": "FX-equity divergence: AUD/USD (+0.31%) vs ASX 200 (-1.00%). AUD strength correlates with commodity/risk appetite for ASX",
+      "supporting_data": {
+        "fx_change": 0.31,
+        "equity_change": -1.0,
+        "expected_rel": "positive"
+      }
+    },
+    {
+      "signal_type": "fx_equity_divergence",
+      "direction": "neutral",
+      "strength": 0.41500000000000004,
+      "target_market": "^GSPC",
+      "source_market": "DX-Y.NYB",
+      "description": "FX-equity divergence: US Dollar Index (-0.33%) vs S&P 500 (-1.33%). Strong dollar is headwind for S&P 500 multinationals",
+      "supporting_data": {
+        "fx_change": -0.33,
+        "equity_change": -1.33,
+        "expected_rel": "negative"
+      }
+    }
+  ],
+  "analyzed_at": "2026-03-07T14:20:42.733263+00:00"
+}
